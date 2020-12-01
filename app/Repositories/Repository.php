@@ -31,6 +31,13 @@ class Repository implements RepositoryInterface
         return $this->model->all();
     }
 
+
+    public function pluck($column1,$column2)
+    {
+//        dd($this->model->query());
+        return $this->model->query()->pluck($column1,$column2);
+    }
+
     // create a new record in the database
     public function create(Request $request)
     {

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Panel\MenuItemController;
+use App\Http\Controllers\Panel\RoleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,5 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'panel', 'as' => 'panel.'/*, 'namespace' => 'Backend'*/, 'middleware' => ['web'/*, 'auth'*/]], function () {
     Route::resource('menu_items', MenuItemController::class);
+    Route::resource('roles', RoleController::class);
 });
