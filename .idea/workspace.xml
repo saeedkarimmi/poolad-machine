@@ -2,13 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="install livewire to project">
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/GeneralException.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Models/Panel/MenuItem.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Utils/helpers.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan (3).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IranYekan.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb(FaNum).eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb(FaNum).ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanweblight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanweblight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/panel/menu-item/create.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php" afterDir="false" />
@@ -16,12 +64,16 @@
       <change afterPath="$PROJECT_DIR$/resources/views/partials/panel/footer.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/partials/panel/head.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PooladMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PooladMachine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundle/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundle/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,44 +86,12 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/panel/head.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bootstrap</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,22 +103,39 @@
         <option value="$PROJECT_DIR$/resources/views/backend/sidebar/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_11_28_151029_create_sidebars_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Backend/MenuItem.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/menu-item/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/MenuItemController.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/menu-item/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/panel/head.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/resources/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
+        <option value="$PROJECT_DIR$/public/css/panel.css" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/resources/views/panel/menu-item/create.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/GeneralException.php" />
+        <option value="$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Repository.php" />
+        <option value="$PROJECT_DIR$/app/Utils/helpers.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" />
       </list>
     </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -213,8 +250,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -231,28 +268,6 @@
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
@@ -280,21 +295,6 @@
               <item name="panel" type="462c0819:PsiDirectoryNode" />
               <item name="menu-item" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -305,7 +305,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/fonts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -315,15 +315,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\PooladMachine\public\fonts" />
+      <recent name="C:\laragon\www\PooladMachine\public" />
       <recent name="C:\laragon\www\PooladMachine\resources\js" />
       <recent name="C:\laragon\www\PooladMachine\resources\css" />
       <recent name="C:\laragon\www\PooladMachine\resources\views\partials\panel" />
-      <recent name="C:\laragon\www\PooladMachine\resources\views\backend\menu-item" />
-      <recent name="C:\laragon\www\PooladMachine\resources\views\backend\sidebar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -355,7 +355,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606575216526</updated>
       <workItem from="1606575217642" duration="1371000" />
-      <workItem from="1606799034510" duration="8068000" />
+      <workItem from="1606799034510" duration="21171000" />
     </task>
     <task id="LOCAL-00001" summary="install livewire to project">
       <created>1606799313556</created>
@@ -385,11 +385,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606807843127</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="install spatie/laravel-permission package">
+      <created>1606808580392</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606808580392</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9439000" />
+    <option name="totallyTimeSpent" value="22542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,7 +410,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -419,7 +426,7 @@
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5098336" side_tool="true" weight="0.4256651" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49016643" weight="0.4147105" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49167928" visible="true" weight="0.45226917" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49167928" weight="0.45226917" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -483,18 +490,12 @@
     <MESSAGE value="add css and js" />
     <MESSAGE value="Implementation webpack" />
     <MESSAGE value="generated css and js" />
-    <option name="LAST_COMMIT_MESSAGE" value="generated css and js" />
+    <MESSAGE value="install spatie/laravel-permission package" />
+    <option name="LAST_COMMIT_MESSAGE" value="install spatie/laravel-permission package" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_28_151029_create_sidebars_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -517,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -531,27 +525,6 @@
           <folding>
             <element signature="e#33#73#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/MenuItemRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Panel/MenuItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -564,12 +537,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/menu-item/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -606,25 +573,49 @@
     <entry file="file://$PROJECT_DIR$/resources/css/chart.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/panel.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/panel.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="208">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa4928.8858/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <caret line="2" column="24" lean-forward="true" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101088">
+          <caret line="3888" column="13" lean-forward="true" selection-start-line="3888" selection-start-column="13" selection-end-line="3888" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,17 +624,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="91">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding>
+            <element signature="e#3347#3704#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/bundle/panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80106">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/GeneralException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/panel/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="364">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/menu-item/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/RepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="680" column="13" selection-start-line="680" selection-start-column="13" selection-end-line="680" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Utils/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#82#0#PHP" expanded="true" />
+            <element signature="e#402#481#0#PHP" />
+            <element signature="e#508#625#0#PHP" />
+            <element signature="e#631#732#0#PHP" />
+            <element signature="e#737#891#0#PHP" />
+            <element signature="e#897#1006#0#PHP" />
+            <element signature="e#1172#1329#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+          <folding>
+            <element signature="e#110#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/MenuItemRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#110#140#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/menu-item/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Panel/MenuItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
