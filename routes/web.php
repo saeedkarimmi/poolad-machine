@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Panel\MenuItemController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::group(['prefix' => 'panel', 'as' => 'panel.'/*, 'namespace' => 'Backend'*/, 'middleware' => ['web'/*, 'auth'*/]], function () {
+    Route::resource('menu_items', MenuItemController::class);
+});
