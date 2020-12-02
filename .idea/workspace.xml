@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="base of partial!">
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/DataTables/BaseDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DataTables/DatabaseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PooladMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PooladMachine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,63 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/panel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-              <folding>
-                <element signature="e#112#1309#0" />
-                <element signature="e#1622#2263#0" />
-                <element signature="e#2503#5923#0" />
-                <element signature="e#6948#7198#0" />
-                <element signature="e#7222#9423#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/panel/role/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/lang/fa/validation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+            <state relative-caret-position="57">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -118,8 +69,6 @@
         <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/public/css/panel.css" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/panel/menu-item/create.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php" />
@@ -129,7 +78,6 @@
         <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RoleInterface.php" />
-        <option value="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
@@ -140,15 +88,22 @@
         <option value="$PROJECT_DIR$/app/Repositories/RoleRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Repository.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" />
         <option value="$PROJECT_DIR$/resources/js/auth.js" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/resources/views/partials/panel/scripts.blade.php" />
         <option value="$PROJECT_DIR$/public/js/panel.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/lang/fa/validation.php" />
+        <option value="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/DataTables/DatabaseInterface.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" />
+        <option value="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/BaseDataTable.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" />
+        <option value="$PROJECT_DIR$/public/css/panel.css" />
+        <option value="$PROJECT_DIR$/app/DataTables/BaseasdfsdfsdDataTable.php" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" />
       </list>
     </option>
   </component>
@@ -266,6 +221,17 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-buttons" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-html" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -281,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,49 +262,44 @@
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="DataTables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="fa" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/fa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/DataTables" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -353,11 +313,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\PooladMachine\app\DataTables" />
       <recent name="C:\laragon\www\PooladMachine\resources\lang\fa" />
       <recent name="C:\laragon\www\PooladMachine\resources\js" />
       <recent name="C:\laragon\www\PooladMachine\app\Repositories" />
       <recent name="C:\laragon\www\PooladMachine\resources\views\panel\role" />
-      <recent name="C:\laragon\www\PooladMachine\app\Http\Requests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,7 +350,8 @@
       <updated>1606575216526</updated>
       <workItem from="1606575217642" duration="1371000" />
       <workItem from="1606799034510" duration="30590000" />
-      <workItem from="1606885543924" duration="3416000" />
+      <workItem from="1606885543924" duration="11448000" />
+      <workItem from="1606918602847" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="install livewire to project">
       <created>1606799313556</created>
@@ -483,11 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606832535439</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add validation and some script!">
+      <created>1606889388132</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606889388132</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35377000" />
+    <option name="totallyTimeSpent" value="44667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +470,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -518,7 +486,7 @@
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5098336" side_tool="true" weight="0.4256651" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49016643" weight="0.4147105" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49167928" weight="0.45226917" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49167928" weight="0.2769953" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -591,64 +559,12 @@
     <MESSAGE value="add HasRole trait" />
     <MESSAGE value="base of partial!" />
     <MESSAGE value="Role and Permission CRUDs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Role and Permission CRUDs" />
+    <MESSAGE value="add validation and some script!" />
+    <option name="LAST_COMMIT_MESSAGE" value="add validation and some script!" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/select2.full.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/chart.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa4928.8858/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js" />
-    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding>
-            <element signature="e#3347#3704#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bundle/panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80106">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_12_01_051511_create_menu_items_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -786,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/role/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Role/StoreRoleRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -866,36 +775,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#418#497#0#PHP" />
-            <element signature="e#591#701#0#PHP" />
-            <element signature="e#420#560#0#PHP" />
-            <element signature="e#814#946#0#PHP" />
-            <element signature="e#687#827#0#PHP" />
-            <element signature="e#1010#1139#0#PHP" />
-            <element signature="e#1741#1958#0#PHP" />
-            <element signature="e#2249#2403#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/auth.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="39" column="41" selection-start-line="32" selection-start-column="8" selection-end-line="39" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/panel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -917,17 +802,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/bundle/panel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="1007">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/role/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/lang/fa/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="58" />
+        <state relative-caret-position="227">
+          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -938,10 +823,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/fa/validation.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/role/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+        <state relative-caret-position="156">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/mamadDataTableHtml.php" />
+    <entry file="file://$PROJECT_DIR$/app/DataTables/TestsDataTable.php" />
+    <entry file="file://$PROJECT_DIR$/app/DataTables/TewwstsDataTable.php" />
+    <entry file="file://$PROJECT_DIR$/app/DataTables/BaseasdfsdfsdDataTable.php" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/BaseDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding>
+            <element signature="e#1447#1567#0#PHP" />
+            <element signature="e#1572#1820#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/RoleDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="51" />
+          <folding>
+            <element signature="e#46#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/role/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#295#320#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="e#3347#3704#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/DatabaseInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
