@@ -8,9 +8,10 @@
             <div class="col-md-8">
                 <form class="inline" method="post" data-type="ajax-form" action="{{ route('panel.roles.store') }}">
                     @csrf
+                    <div class="alert alert-warning hidden"></div>
                     <div class="form-group inline wow fadeInUp faster" data-wow-delay="0s">
                         <label for="exampleInputEmail1">{{ trans('role.form.name') }}</label>
-                        <input type="text" class="form-control" name="name" value="" required>
+                        <input type="text" class="form-control" name="name" value="" >
                     </div>
                     <div class="form-group inline wow fadeIn faster" data-wow-delay="0.05s">
                         <div class="form-group inline checkbox-group-list">
@@ -27,15 +28,9 @@
                     </div>
                     <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
                         <button type="submit" class="btn btn-green svg-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg">
-                                <rect class="shape" />
-                            </svg>
                             {{ trans('role.form.submit') }}
                         </button>
                         <a href="{{ route('panel.roles.index') }}" class="btn btn-purple svg-wrapper purple">
-                            <svg xmlns="http://www.w3.org/2000/svg">
-                                <rect class="shape" />
-                            </svg>
                             {{ trans('role.form.back') }}
                         </a>
                     </div>

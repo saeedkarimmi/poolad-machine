@@ -23,6 +23,14 @@
 
 @yield('content')
 @include('partials.panel.scripts')
+<script>
+    $(document).ready(function () {
+        @if ($errors->any())
+            var errors = {!! json_encode($errors->all(), true) !!};
+            console.log(errors);
+        @endif
+    });
+</script>
 </body>
 </html>
 

@@ -36,3 +36,30 @@ strong {font-weight:900;font-size:1.3em}
 /*****/
 body {color: #000;font-size:1em;font-family: iransans;font-weight: 300;overflow-x:hidden;background:#fff;line-height:25px}
 /******/
+ul {
+    list-style: none; padding: 0px; margin: 0px;
+}
+a, span, i {
+    display: inline-block;
+}
+a {
+    text-decoration: none !important;
+}
+button, a,
+textarea, input,
+.select2-search__field {
+    outline: none !important;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.btn.btn-green,
+.btn.btn-white,
+.btn.btn-blue,
+.btn.btn-gray {
+    height: 41px; border-radius: 5px;
+}
+.btn.btn-green {
+    width: 225px; background: #15C5A1 0% 0% no-repeat padding-box;
+    color: var(--white);
+}
