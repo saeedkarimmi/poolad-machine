@@ -6,8 +6,6 @@ use App\DataTables\RoleDataTable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Role\StoreRoleRequest;
 use App\Http\Requests\Role\UpdateRoleRequest;
-use App\Models\Panel\MenuItem;
-use App\Repositories\MenuItemRepository;
 use App\Repositories\PermissionRepository;
 use App\Repositories\RoleRepository;
 use GuzzleHttp\Client;
@@ -37,11 +35,11 @@ class RoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(RoleDataTable $dataTable)
     {
-        $roles = $this->role->all();
+//        $roles = $this->role->all();
 
-        return view('panel.role.index', compact('roles'));
+        return $dataTable->render('panel.role.index');
     }
 
     /**

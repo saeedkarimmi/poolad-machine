@@ -5,12 +5,8 @@
       <change afterPath="$PROJECT_DIR$/app/DataTables/BaseDataTable.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/DataTables/DatabaseInterface.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PooladMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PooladMachine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" afterDir="false" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="286">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -351,7 +347,7 @@
       <workItem from="1606575217642" duration="1371000" />
       <workItem from="1606799034510" duration="30590000" />
       <workItem from="1606885543924" duration="11448000" />
-      <workItem from="1606918602847" duration="1258000" />
+      <workItem from="1606918602847" duration="1517000" />
     </task>
     <task id="LOCAL-00001" summary="install livewire to project">
       <created>1606799313556</created>
@@ -451,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606889388132</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="install yajra dataTables package">
+      <created>1606921806374</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606921806374</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44667000" />
+    <option name="totallyTimeSpent" value="44926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,7 +563,8 @@
     <MESSAGE value="base of partial!" />
     <MESSAGE value="Role and Permission CRUDs" />
     <MESSAGE value="add validation and some script!" />
-    <option name="LAST_COMMIT_MESSAGE" value="add validation and some script!" />
+    <MESSAGE value="install yajra dataTables package" />
+    <option name="LAST_COMMIT_MESSAGE" value="install yajra dataTables package" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot">
@@ -905,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/panel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="286">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>

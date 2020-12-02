@@ -63,3 +63,42 @@ textarea, input,
     width: 225px; background: #15C5A1 0% 0% no-repeat padding-box;
     color: var(--white);
 }
+
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 0px !important;
+}
+table.dataTable thead th {
+    background-color: #f7f7fa; color: #383838; text-align: right;
+}
+.dataTables_processing {
+    background: transparent !important;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc {
+    position: relative; background-image: none !important;
+}
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting::before {
+    display: none !important;
+}
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting::before,
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting_desc::after {
+    content: "\f078"; font-family: "Font Awesome 5 Pro"; -webkit-font-smoothing: antialiased;
+    display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1;
+    right: 10px; top: 50%; position: absolute; font-size: 7px; transform: translateY(-50%);
+    opacity: 0.3;
+}
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_asc::after {
+    content: "\f077";
+}
+table.dataTable thead .sorting::after {
+    top: 15px;
+}
+table.dataTable thead .sorting::before {
+    top: 20px;
+}
