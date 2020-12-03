@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Panel;
 
+use App\DataTables\MenuItemDataTable;
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MenuItem\StoreRequest;
@@ -27,13 +28,12 @@ class MenuItemController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param MenuItemDataTable $dataTable
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(MenuItemDataTable $dataTable)
     {
-        $menuItems = $this->menuItem->all();
-
-        return view('panel.menu-item.index', compact('menuItems'));
+        return $dataTable->render('panel.menu-item.index');
     }
 
     /**
