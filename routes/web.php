@@ -23,3 +23,7 @@ Route::group(['prefix' => 'panel', 'as' => 'panel.'/*, 'namespace' => 'Backend'*
     Route::resource('menu_items', MenuItemController::class);
     Route::resource('roles', RoleController::class);
 });
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
