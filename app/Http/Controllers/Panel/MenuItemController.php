@@ -6,6 +6,7 @@ use App\DataTables\MenuItemDataTable;
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MenuItem\StoreRequest;
+use App\Http\Requests\MenuItem\UpdateRequest;
 use App\Models\Panel\MenuItem;
 use App\Repositories\MenuItemRepository;
 use App\Repositories\MenuItemRepositoryInterface;
@@ -58,8 +59,33 @@ class MenuItemController extends Controller
         try {
             $this->menuItem->create($request);
             DB::commit();
+            return returnSuccess(trans('general.message.create.success'),route('panel.menu_items.index'));
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            dd($exception->getMessage(), $exception->getTraceAsString());
+        }
+    }
+
+    public function edit(MenuItem $menuItem)
+    {
+        $menuItems = $this->menuItem->all();
+        return view('panel.menu-item.edit', compact('menuItem','menuItems'));
+    }
+
+    /**
+     * @param UpdateRequest $reqeust
+     * @param MenuItem $menuItem
+     */
+    public function update(UpdateRequest $reqeust, MenuItem $menuItem)
+    {
+        DB::beginTransaction();
+        try {
+            $this->menuItem->update($reqeust, $menuItem->id);
+
+            DB::commit();
             return returnSuccess(trans('general.message.update.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
+
             DB::rollBack();
             dd($exception->getMessage(), $exception->getTraceAsString());
         }
