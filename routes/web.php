@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Panel\DashboardController;
 use App\Http\Controllers\Panel\MenuItemController;
 use App\Http\Controllers\Panel\RoleController;
 use Illuminate\Support\Facades\Route;
@@ -16,14 +17,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
-Route::group(['prefix' => 'panel', 'as' => 'panel.'/*, 'namespace' => 'Backend'*/, 'middleware' => ['web'/*, 'auth'*/]], function () {
+Route::prefix('panel')->as('panel.')->middleware('web')->group(function () {
+
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index')->middleware(['permission:manage-dashboard']);
+
     Route::resource('menu_items', MenuItemController::class);
     Route::resource('roles', RoleController::class);
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//    return view('dashboard');
+//})->name('dashboard');
