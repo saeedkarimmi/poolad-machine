@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Panel\MenuItem;
 use App\Repositories\MenuItemRepository;
 use App\Repositories\MenuItemRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -28,6 +29,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View()->composer('panel.*', function ($view) {
+            $menuItems = MenuItem::getTree();
+            $view->with(['menuItems' => $menuItems]);
+        });
     }
 }
