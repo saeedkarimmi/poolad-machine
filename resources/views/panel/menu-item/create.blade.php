@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <form method="post" action="{{ route('panel.menu_items.store') }}">
+                <form method="post" action="{{ route('panel.menu_items.store') }}" data-type="ajax-form">
                     @csrf
                     <div class="form-group">
                         <label for="name">نام منو</label>
