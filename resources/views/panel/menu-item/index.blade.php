@@ -4,10 +4,11 @@
 
 @section('content')
     <div class="content-wrapper">
+        <a href="{{ route('panel.menu_items.create') }}" class="btn btn-success btn-sm float-left">ایجاد</a>
         @if($dataTable)
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <div class="table-responsive" style="overflow: visible">
+                    <div class="table-responsive table-striped table-hover" style="overflow: visible">
                         {!! $dataTable->table() !!}
                     </div>
                 </div>
