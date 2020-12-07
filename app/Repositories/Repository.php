@@ -45,10 +45,10 @@ class Repository implements RepositoryInterface
     }
 
     // update record in the database
-    public function update(array $data, $id)
+    public function update(Request $request, $id)
     {
         $record = $this->find($id);
-        return $record->update($data);
+        return $record->update($request->only($this->model->getFillable()));
     }
 
     // remove record from the database
@@ -60,7 +60,7 @@ class Repository implements RepositoryInterface
     // show the record with the given id
     public function show($id)
     {
-        return $this->model->findOrFail($id);
+        return $this->find($id);
     }
 
     // Get the associated model
@@ -80,5 +80,10 @@ class Repository implements RepositoryInterface
     public function with($relations)
     {
         return $this->model->with($relations);
+    }
+
+    private function find($id)
+    {
+        return $this->model->findOrFail($id);
     }
 }

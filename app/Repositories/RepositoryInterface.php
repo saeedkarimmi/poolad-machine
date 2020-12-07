@@ -14,7 +14,7 @@ interface RepositoryInterface
 
     public function create(Request $request);
 
-    public function update(array $data, $id);
+    public function update(Request $request, $id);
 
     public function delete($id);
 
