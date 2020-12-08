@@ -1,9 +1,9 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,img{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{outline:none;padding:0;margin:0}*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /*******/
-@font-face {font-family: 'FontAwesome';src: url('../../../fonts/fontawesome-webfont.eot?v=4.7.0');src: url('../../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../../../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../../../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../../../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'FontAwesome';src: url('fonts/fontawesome-webfont.eot?v=4.7.0');src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight: normal;font-style: normal;}
 
 a {color:#e60e17;-webkit-transition: color 0.4s  ease-out;-moz-transition: color 0.4s  ease-out;-ms-transition: color 0.4s  ease-out;-o-transition: color 0.4s  ease-out;transition: color 0.4s  ease-out;}
-a ,a:hover a:focus ,a:active {text-decoration:none!important;outline:none;color:#333;}
+/*a ,a:hover a:focus ,a:active {text-decoration:none!important;outline:none;color:#333;}*/
 a:hover , a:focus ,a:active ,a:not([href]):not([tabindex]):hover {color:#056a6a;}
 a {color:#3b778c}
 .trans {-webkit-transition: all 0.4s  ease-out;-moz-transition: all 0.4s  ease-out;-ms-transition: all 0.4s  ease-out;-o-transition: all 0.4s  ease-out;transition: all 0.4s  ease-out;}
@@ -16,6 +16,80 @@ h1,h2,h3,h4,h5,h6 {}
 .fa-user-o:before {content: "\f2c0";}
 /***/
 h2 {font-weight: 900;}
+@font-face {font-family: "Iranyekan";font-style: normal;font-weight: 700;font-weight: 700;src: url(fonts/iranyekanwebbold.eot) format("embedded-opentype"),url(fonts/iranyekanwebbold.woff2) format("woff2"),url(fonts/iranyekanwebbold.woff) format("woff"),url(fonts/iranyekanwebbold.ttf) format("truetype");}
+@font-face {font-family: "Iranyekan";font-style: normal;font-weight: 300;font-weight: 400;font-weight: 500;font-weight: lighter;src: url(fonts/iranyekanweblight.eot) format("embedded-opentype"),url(fonts/iranyekanweblight.woff2) format("woff2"),url(fonts/iranyekanweblight.woff) format("woff"),url(fonts/iranyekanweblight.ttf) format("truetype");}
+@font-face {font-family: "IranYekan";src: url(fonts/IranYekan.woff) format("woff"),url(fonts/IranYekan.woff2) format("woff2");font-weight: 900;font-style: normal;}
+@font-face {font-family: "aviny";src: url(fonts/IranYekan.woff) format("woff"),url(fonts/IranYekan.woff2) format("woff2");font-weight: 900;font-style: normal;}
+textarea {resize:vertical;}
+strong {font-weight:900;font-size:1.3em}
+/*****/
+body {color: #000;font-size:1em;font-family: IranYekan;font-weight: 300;overflow-x:hidden;background:#fff;line-height:25px}
+/*******/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../../../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../../../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../../../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../../../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #e60e17;
+    -webkit-transition: color 0.4s ease-out;
+    -moz-transition: color 0.4s ease-out;
+    -ms-transition: color 0.4s ease-out;
+    -o-transition: color 0.4s ease-out;
+    transition: color 0.4s ease-out;
+}
+
+a, a:hover a:focus, a:active {
+    text-decoration: none !important;
+    outline: none;
+    color: #333;
+}
+
+a:hover, a:focus, a:active, a:not([href]):not([tabindex]):hover {
+    color: #056a6a;
+}
+
+a {
+    color: #3b778c
+}
+
+.trans {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    float: right !important;
+}
+
+.app {
+    direction: rtl;
+    text-align: right;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/***/
+h2 {
+    font-weight: 900;
+}
+
 @font-face {
     font-family: 'iransans';
     font-display: auto;
@@ -32,73 +106,50 @@ h2 {font-weight: 900;}
     url('../fonts/iransans/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
     url('../fonts/iransans/woff/IRANSansWeb_Bold.woff') format('woff');
 }
-strong {font-weight:900;font-size:1.3em}
-/*****/
-body {color: #000;font-size:1em;font-family: iransans;font-weight: 300;overflow-x:hidden;background:#fff;line-height:25px}
-/******/
-ul {
-    list-style: none; padding: 0px; margin: 0px;
-}
-a, span, i {
-    display: inline-block;
-}
-a {
-    text-decoration: none !important;
-}
-button, a,
-textarea, input,
-.select2-search__field {
-    outline: none !important;
-}
-.form-group {
-    margin-bottom: 20px;
-}
-.btn.btn-green,
-.btn.btn-white,
-.btn.btn-blue,
-.btn.btn-gray {
-    height: 41px; border-radius: 5px;
-}
-.btn.btn-green {
-    width: 225px; background: #15C5A1 0% 0% no-repeat padding-box;
-    color: var(--white);
+
+strong {
+    font-weight: 900;
+    font-size: 1.3em
 }
 
-table.dataTable thead th,
-table.dataTable thead td {
-    border-bottom: 0px !important;
+/*****/
+body {
+    color: #000;
+    font-size: 1em;
+    font-family: iransans;
+    font-weight: 300;
+    overflow-x: hidden;
+    background: #fff;
+    line-height: 25px
 }
-table.dataTable thead th {
-    background-color: #f7f7fa; color: #383838; text-align: right;
+
+/******/
+
+.navbar {
+
 }
-.dataTables_processing {
-    background: transparent !important;
+.navbar-light .navbar-nav .nav-link  {
+    color: #fff;
+    float: right;
+    text-align: center;
 }
-table.dataTable thead .sorting,
-table.dataTable thead .sorting_desc,
-table.dataTable thead .sorting_asc {
-    position: relative; background-image: none !important;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #8c8c8c;
 }
-table.dataTable thead .sorting::after,
-table.dataTable thead .sorting::before {
-    display: none !important;
+
+main {
+    flex: 1; padding: 30px 66px 60px 66px; flex: none;min-height: 100vh;
 }
-table.dataTable thead .sorting::after,
-table.dataTable thead .sorting::before,
-table.dataTable thead .sorting_asc::after,
-table.dataTable thead .sorting_desc::after {
-    content: "\f078"; font-family: "Font Awesome 5 Pro"; -webkit-font-smoothing: antialiased;
-    display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1;
-    right: 10px; top: 50%; position: absolute; font-size: 7px; transform: translateY(-50%);
-    opacity: 0.3;
+
+.main-content .step-content {
+    width: 700px; max-width: 100%; margin: auto; padding: 25px;
 }
-table.dataTable thead .sorting::after,
-table.dataTable thead .sorting_asc::after {
-    content: "\f077";
+.main-content .step-content > h3 {
+    font-size: 16px; margin-bottom: 40px; padding-right: 10px;
 }
-table.dataTable thead .sorting::after {
-    top: 15px;
+.main-content .step-content > h3 > small {
+    color: #FD2E50; display: block; font-size: 12px; line-height: 22px; margin-top: 15px;
 }
-table.dataTable thead .sorting::before {
-    top: 20px;
+.main-content .step-content > h3 > small:not(:nth-child(2)) {
+    margin-top: 0px;
 }
