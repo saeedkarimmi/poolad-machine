@@ -36,7 +36,6 @@ class Repository implements RepositoryInterface
 
     public function pluck($column1,$column2)
     {
-//        dd($this->model->query());
         return $this->model->query()->pluck($column1,$column2);
     }
 

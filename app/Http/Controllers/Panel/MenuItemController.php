@@ -3,13 +3,11 @@
 namespace App\Http\Controllers\Panel;
 
 use App\DataTables\MenuItemDataTable;
-use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MenuItem\StoreRequest;
 use App\Http\Requests\MenuItem\UpdateRequest;
 use App\Models\Panel\MenuItem;
 use App\Repositories\MenuItemRepository;
-use App\Repositories\MenuItemRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -56,12 +54,14 @@ class MenuItemController extends Controller
      */
     public function store(StoreRequest $request)
     {
+        DB::beginTransaction();
         try {
             $this->menuItem->create($request->only(['name','parent_id']));
             DB::commit();
             return returnSuccess(trans('general.message.create.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
             DB::rollBack();
+            dd($exception->getMessage(), $exception->getTraceAsString());
             return returnError([trans('general.message.internal_server_error')]);
         }
     }
