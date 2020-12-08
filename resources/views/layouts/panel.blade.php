@@ -3,7 +3,7 @@
 <head>
     @include('partials.panel.head')
 </head>
-<body>
+<body dir="rtl">
 <div class="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand" href="#">پولاد ماشین</a>
