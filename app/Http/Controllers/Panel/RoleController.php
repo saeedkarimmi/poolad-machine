@@ -33,12 +33,11 @@ class RoleController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param RoleDataTable $dataTable
      * @return \Illuminate\Http\Response
      */
     public function index(RoleDataTable $dataTable)
     {
-//        $roles = $this->role->all();
-
         return $dataTable->render('panel.role.index');
     }
 
@@ -63,20 +62,15 @@ class RoleController extends Controller
     {
         DB::beginTransaction();
         try {
-            /** @var Role $role */
-            $role = $this->role->create($request);
-
-            $role->givePermissionTo(request()->permissions);
+            $this->role->create($request->only(['name', 'permissions']));
 
             DB::commit();
             return returnSuccess(trans('general.message.create.success'), route('panel.roles.index'));
-
         } catch (\Exception $e) {
             DB::rollBack();
             return returnError([trans('general.message.internal_server_error')]);
         }
     }
-
 
     /**
      * Show the form for editing the specified resource.
@@ -103,7 +97,7 @@ class RoleController extends Controller
     {
         DB::beginTransaction();
         try {
-            $role->syncPermissions($request->get('permissions'));
+            $this->role->update($request->only(['permissions']), $role);
 
             DB::commit();
             return returnSuccess(trans('general.message.update.success'), route('panel.roles.index'));

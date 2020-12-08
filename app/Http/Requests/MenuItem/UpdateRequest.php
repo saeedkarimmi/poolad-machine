@@ -24,8 +24,8 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'      => ['required', 'string', 'max:100'],
-            'parent_id' => ['nullable', 'exists:menu_items,id']
+//            'name'      => ['required', 'string', 'max:100'],
+            'parent_id' => ['nullable', 'exists:menu_items,id','not_in:'.$this->menu_item->id]
         ];
     }
 }

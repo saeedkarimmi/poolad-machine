@@ -25,7 +25,9 @@ class Repository implements RepositoryInterface
         $this->model = $model;
     }
 
-    // Get all instances of model
+    /**
+     * @return mixed
+     */
     public function all()
     {
         return $this->model->all();
@@ -39,16 +41,15 @@ class Repository implements RepositoryInterface
     }
 
     // create a new record in the database
-    public function create(Request $request)
+    public function create(array $data)
     {
-        return $this->model->create($request->only($this->model->getFillable()));
+        return $this->model->create($data);
     }
 
     // update record in the database
-    public function update(Request $request, $id)
+    public function update(array $data, Model $record)
     {
-        $record = $this->find($id);
-        return $record->update($request->only($this->model->getFillable()));
+        return $record->update($data);
     }
 
     // remove record from the database
@@ -82,7 +83,7 @@ class Repository implements RepositoryInterface
         return $this->model->with($relations);
     }
 
-    private function find($id)
+    protected function find($id)
     {
         return $this->model->findOrFail($id);
     }

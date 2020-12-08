@@ -13,7 +13,7 @@ namespace App\Repositories;
 use App\Models\Panel\MenuItem;
 use Illuminate\Http\Request;
 
-class MenuItemRepository extends Repository implements MenuItemRepositoryInterface
+class MenuItemRepository extends Repository implements RepositoryInterface
 {
     //
 }

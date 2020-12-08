@@ -57,12 +57,12 @@ class MenuItemController extends Controller
     public function store(StoreRequest $request)
     {
         try {
-            $this->menuItem->create($request);
+            $this->menuItem->create($request->only(['name','parent_id']));
             DB::commit();
             return returnSuccess(trans('general.message.create.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
             DB::rollBack();
-            dd($exception->getMessage(), $exception->getTraceAsString());
+            return returnError([trans('general.message.internal_server_error')]);
         }
     }
 
@@ -73,21 +73,21 @@ class MenuItemController extends Controller
     }
 
     /**
-     * @param UpdateRequest $reqeust
+     * @param UpdateRequest $request
      * @param MenuItem $menuItem
+     * @return array
      */
-    public function update(UpdateRequest $reqeust, MenuItem $menuItem)
+    public function update(UpdateRequest $request, MenuItem $menuItem)
     {
         DB::beginTransaction();
         try {
-            $this->menuItem->update($reqeust, $menuItem->id);
+            $this->menuItem->update($request->only(['name', 'parent_id']), $menuItem);
 
             DB::commit();
             return returnSuccess(trans('general.message.update.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
-
             DB::rollBack();
-            dd($exception->getMessage(), $exception->getTraceAsString());
+            return returnError([trans('general.message.internal_server_error')]);
         }
     }
 }

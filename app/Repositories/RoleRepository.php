@@ -10,14 +10,30 @@
 namespace App\Repositories;
 
 
+use App\Http\Requests\Role\UpdateRoleRequest;
 use App\Models\Panel\MenuItem;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
-class RoleRepository extends Repository implements MenuItemRepositoryInterface
+class RoleRepository extends Repository implements RepositoryInterface
 {
-    // create a new record in the database
-    public function create(Request $request)
+    public function create(array $data)
     {
-        return $this->model->create($request->only(['name']));
+        /** @var Role $role */
+        $role = parent::create($data);
+
+        $role->givePermissionTo(request()->permissions);
+        return $role;
+    }
+
+    /**
+     * @param array $data
+     * @param Model $model
+     */
+    public function update(array $data,Model $model)
+    {
+        /** @var Role $model */
+        $model->syncPermissions($data['permissions']);
     }
 }

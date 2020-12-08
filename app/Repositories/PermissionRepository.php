@@ -13,7 +13,7 @@ namespace App\Repositories;
 use App\Models\Panel\MenuItem;
 use Illuminate\Http\Request;
 
-class PermissionRepository extends Repository implements MenuItemRepositoryInterface
+class PermissionRepository extends Repository implements RepositoryInterface
 {
     //
 }
