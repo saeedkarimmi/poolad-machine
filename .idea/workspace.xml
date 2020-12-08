@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="set dir attribute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MenuItem/UpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/MenuItem/UpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/MenuItemRepositoryInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/PermissionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PermissionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/PermissionRepositoryInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RoleInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RoleRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/panel/menu-item/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/menu-item/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" afterDir="false" />
@@ -44,56 +33,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="83" column="78" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
-              <folding>
-                <element signature="e#486#565#0#PHP" />
-                <element signature="e#595#715#0#PHP" />
-                <element signature="e#721#865#0#PHP" />
-                <element signature="e#870#993#0#PHP" />
-                <element signature="e#999#1108#0#PHP" />
-                <element signature="e#1113#1263#0#PHP" />
-                <element signature="e#1269#1426#0#PHP" />
-                <element signature="e#1841#2016#0#PHP" />
-                <element signature="e#2022#2124#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Repository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#425#457#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/RepositoryInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="7" />
-              <folding>
-                <element signature="e#38#77#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="17" />
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="22" />
+              <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+              <folding>
+                <element signature="e#498#577#0#PHP" />
+                <element signature="e#631#822#0#PHP" />
+                <element signature="e#829#969#0#PHP" />
+                <element signature="e#1094#1234#0#PHP" />
+                <element signature="e#1410#1539#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/RoleRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+              <folding>
+                <element signature="e#110#155#0#PHP" expanded="true" />
+                <element signature="e#572#636#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/Repository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <folding>
+                <element signature="e#340#424#0#PHP" />
+                <element signature="e#430#462#0#PHP" />
+                <element signature="e#543#696#0#PHP" />
+                <element signature="e#879#980#0#PHP" />
+                <element signature="e#1025#1107#0#PHP" />
+                <element signature="e#1154#1224#0#PHP" />
+                <element signature="e#1262#1329#0#PHP" />
+                <element signature="e#1367#1464#0#PHP" />
+                <element signature="e#1511#1602#0#PHP" />
+                <element signature="e#1608#1694#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,11 +162,11 @@
         <option value="$PROJECT_DIR$/app/Repositories/MenuItemRepository.php" />
         <option value="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/RoleRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Repository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/RoleRepository.php" />
       </list>
     </option>
   </component>
@@ -377,12 +362,6 @@
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="DataTables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -404,113 +383,7 @@
               <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-              <item name="MenuItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
-              <item name="menu-item" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="spatie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="spatie" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PooladMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PooladMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="spatie" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -582,7 +455,7 @@
       <workItem from="1607236473559" duration="4299000" />
       <workItem from="1607245373402" duration="14061000" />
       <workItem from="1607316826586" duration="20424000" />
-      <workItem from="1607403611133" duration="15851000" />
+      <workItem from="1607403611133" duration="17149000" />
     </task>
     <task id="LOCAL-00001" summary="install livewire to project">
       <created>1606799313556</created>
@@ -885,11 +758,25 @@
       <option name="project" value="LOCAL" />
       <updated>1607421041461</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="remove additional repositories">
+      <created>1607428177313</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1607428177313</updated>
+    </task>
+    <task id="LOCAL-00045" summary="rewrite controller and repositories due to new structure">
+      <created>1607428343302</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1607428343302</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115630000" />
+    <option name="totallyTimeSpent" value="116928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -990,8 +877,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="working on data table of menu item" />
-    <MESSAGE value="install  morilog/jalali, spatie/laravel-activitylog, wildside/userstamps packages" />
     <MESSAGE value="add parent_id column to permissions table" />
     <MESSAGE value="update composer!" />
     <MESSAGE value="install jet stream package" />
@@ -1015,7 +900,9 @@
     <MESSAGE value="webpack`s changes" />
     <MESSAGE value="Initial implementation view!" />
     <MESSAGE value="set dir attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="set dir attribute" />
+    <MESSAGE value="remove additional repositories" />
+    <MESSAGE value="rewrite controller and repositories due to new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrite controller and repositories due to new structure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/js/panel.js">
@@ -1327,34 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/RoleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#110#155#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-          <folding>
-            <element signature="e#498#577#0#PHP" />
-            <element signature="e#631#822#0#PHP" />
-            <element signature="e#829#969#0#PHP" />
-            <element signature="e#974#1088#0#PHP" />
-            <element signature="e#1094#1234#0#PHP" />
-            <element signature="e#1410#1539#0#PHP" />
-            <element signature="e#2121#2338#0#PHP" />
-            <element signature="e#2343#2617#0#PHP" />
-            <element signature="e#2623#2777#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/MenuItem/StoreRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1373,20 +1232,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#425#457#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/MenuItemController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="83" column="78" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+        <state relative-caret-position="702">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
           <folding>
             <element signature="e#486#565#0#PHP" />
             <element signature="e#595#715#0#PHP" />
@@ -1397,6 +1246,50 @@
             <element signature="e#1269#1426#0#PHP" />
             <element signature="e#1841#2016#0#PHP" />
             <element signature="e#2022#2124#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/RoleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#110#155#0#PHP" expanded="true" />
+            <element signature="e#572#636#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Panel/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <element signature="e#498#577#0#PHP" />
+            <element signature="e#631#822#0#PHP" />
+            <element signature="e#829#969#0#PHP" />
+            <element signature="e#1094#1234#0#PHP" />
+            <element signature="e#1410#1539#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="e#340#424#0#PHP" />
+            <element signature="e#430#462#0#PHP" />
+            <element signature="e#543#696#0#PHP" />
+            <element signature="e#879#980#0#PHP" />
+            <element signature="e#1025#1107#0#PHP" />
+            <element signature="e#1154#1224#0#PHP" />
+            <element signature="e#1262#1329#0#PHP" />
+            <element signature="e#1367#1464#0#PHP" />
+            <element signature="e#1511#1602#0#PHP" />
+            <element signature="e#1608#1694#0#PHP" />
           </folding>
         </state>
       </provider>

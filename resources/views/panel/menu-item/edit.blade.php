@@ -9,6 +9,7 @@
                 <form class="inline" method="post" data-type="ajax-form"  action="{{ route('panel.menu_items.update' , $menuItem->id) }}">
                     @csrf
                     @method('patch')
+                    <div class="alert alert-warning hidden"></div>
                     <div class="form-group">
                         <label for="name">نام منو</label>
                         <input type="text" class="form-control" value="{{ $menuItem->name }}" name="name" id="name">

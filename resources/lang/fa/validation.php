@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'captcha'=>'کد امنیتی وارد شده صحیح نمی باشد.',
-    'recaptcha'=>'فاقد اعتبار',
+    'captcha' => 'کد امنیتی وارد شده صحیح نمی باشد.',
+    'recaptcha' => 'فاقد اعتبار',
     'phone' => 'شماره تلفن ثابت معتبر نیست',
     'telephone_number' => ':attribute معتبر نیست',
-    'nationalCode'=> 'کد ملی',
+    'nationalCode' => 'کد ملی',
     'accepted' => ':attribute باید پذیرفته شده باشد.',
     'active_url' => 'آدرس :attribute معتبر نیست',
     'after' => ':attribute باید تاریخی بعد از :date باشد.',
@@ -109,10 +109,10 @@ return [
             'lastName' => 'نام خانوادگی',
             'businessCategory' => 'نوع فروشگاه',
             'shopName' => 'نام فروشگاه',
-            'nationalCode'=> 'کد ملی',
-            'cellPhoneNumber'=>'شماره تلفن همراه',
+            'nationalCode' => 'کد ملی',
+            'cellPhoneNumber' => 'شماره تلفن همراه',
             'amount' => 'مبلغ',
-            'expired_at'=>'تاریخ انقضا',
+            'expired_at' => 'تاریخ انقضا',
             'mobile' => 'شماره همراه',
             'abbreviation' => 'علامت اختصاری انگلیسی',
             'logo' => 'لوگو',
@@ -164,13 +164,14 @@ return [
             'product_title' => 'عنوان محصول',
             'product_code' => 'کد محصول',
             'captcha' => 'کد امنیتی',
-            'telephoneNumber'=>'شماره تلفن',
-            'icon'=>'آیکن',
-            'type'=>'نوع',
-            'message'=>'متن پیام',
+            'telephoneNumber' => 'شماره تلفن',
+            'icon' => 'آیکن',
+            'parent_id' => 'والد',
+            'type' => 'نوع',
+            'message' => 'متن پیام',
             'postalCode' => 'کد پستی',
             'role' => 'دسترسی',
-            'permissions' => 'سشسشس',
+            'permissions' => 'دسترسی ها',
 
             'data' => [
                 'groups' => [
