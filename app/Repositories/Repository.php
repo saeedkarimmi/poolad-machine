@@ -10,6 +10,7 @@
 namespace App\Repositories;
 
 
+use App\Models\Panel\BaseModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -20,9 +21,9 @@ class Repository implements RepositoryInterface
     protected $model;
 
     // Constructor to bind model to repo
-    public function __construct(Model $model)
+    public function __construct(BaseModel $model)
     {
-        $this->model = $model;
+        $this->setModel($model);
     }
 
     /**
@@ -33,34 +34,56 @@ class Repository implements RepositoryInterface
         return $this->model->all();
     }
 
-
+    /**
+     * @param $column1
+     * @param $column2
+     * @return mixed
+     */
     public function pluck($column1,$column2)
     {
         return $this->model->query()->pluck($column1,$column2);
     }
 
-    // create a new record in the database
+    /**
+     * @param array $data
+     * @return mixed
+     * create a new record in the database
+     */
     public function create(array $data)
     {
         return $this->model->create($data);
     }
 
-    // update record in the database
-    public function update(array $data, Model $record)
+    /**
+     * @param array $data
+     * @param BaseModel $model
+     * @return mixed
+     * update record in the database
+     */
+    public function update(array $data, BaseModel $model)
     {
-        return $record->update($data);
+        return $model->update($data);
     }
 
-    // remove record from the database
-    public function delete($id)
+    /**
+     * @param BaseModel $model
+     * @return mixed
+     * remove record from the database
+     * @throws \Exception
+     */
+    public function delete(BaseModel $model)
     {
-        return $this->model->destroy($id);
+        return $model->delete();
     }
 
-    // show the record with the given id
-    public function show($id)
+    /**
+     * @param BaseModel $model
+     * @return mixed
+     * show the record with the given id
+     */
+    public function show(BaseModel $model)
     {
-        return $this->find($id);
+        return $model;
     }
 
     // Get the associated model
@@ -70,7 +93,7 @@ class Repository implements RepositoryInterface
     }
 
     // Set the associated model
-    public function setModel($model)
+    public function setModel(BaseModel $model)
     {
         $this->model = $model;
         return $this;
@@ -82,7 +105,7 @@ class Repository implements RepositoryInterface
         return $this->model->with($relations);
     }
 
-    protected function find($id)
+    public function find($id)
     {
         return $this->model->findOrFail($id);
     }

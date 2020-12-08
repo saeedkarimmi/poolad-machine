@@ -4,6 +4,7 @@
 namespace App\Repositories;
 
 
+use App\Models\Panel\BaseModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -29,20 +30,22 @@ interface RepositoryInterface
 
     /**
      * @param array $data
-     * @param Model $model
+     * @param BaseModel $model
      * @return mixed
      */
-    public function update(array $data, Model $model);
+    public function update(array $data, BaseModel $model);
 
     /**
-     * @param $id
+     * @param BaseModel $model
      * @return mixed
      */
-    public function delete($id);
+    public function delete(BaseModel $model);
 
     /**
-     * @param $id
+     * @param BaseModel $model
      * @return mixed
      */
-    public function show($id);
+    public function show(BaseModel $model);
+
+    public function find($id);
 }
