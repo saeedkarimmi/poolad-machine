@@ -4,6 +4,7 @@
 
 @section('content')
     <div class="content-wrapper">
+        <a href="{{ route('panel.roles.create') }}" class="btn btn-success btn-sm float-left">ایجاد</a>
         @if($dataTable)
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
