@@ -1,5 +1,6 @@
 <?php
 return[
+    'pooladmachine' => 'پولاد ماشین',
     'message' => [
         'internal_server_error' => 'خطای سرور داخلی',
         'bad_request' => 'درخواست نامعتبر',
@@ -24,11 +25,14 @@ return[
     'form' => [
         'back' => 'بازگشت',
         'submit' => 'ارسال',
+        'login' => 'ورود',
+        'email_password_reset_link' => 'ارسال ایمیل تغییر رمز عبور',
         'filter' => 'فیلتر',
         'action' => 'عملیات',
         'accept' => 'تایید',
         'excel' => 'خروجی اکسل',
         'show' => 'نمایش',
-        'edit'=> 'ویرایش'
+        'edit'=> 'ویرایش',
+        'remember_me' => 'مرا به خاطر بسپار',
     ],
 ];
