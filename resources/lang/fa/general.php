@@ -1,6 +1,5 @@
 <?php
 return[
-    'pooladmachine' => 'پولاد ماشین',
     'message' => [
         'internal_server_error' => 'خطای سرور داخلی',
         'bad_request' => 'درخواست نامعتبر',
