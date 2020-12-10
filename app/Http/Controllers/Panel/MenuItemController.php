@@ -61,7 +61,6 @@ class MenuItemController extends Controller
             return returnSuccess(trans('general.message.create.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
             DB::rollBack();
-            dd($exception->getMessage(), $exception->getTraceAsString());
             return returnError([trans('general.message.internal_server_error')]);
         }
     }
