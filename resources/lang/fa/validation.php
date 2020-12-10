@@ -124,8 +124,6 @@ return [
             'username' => 'نام کاربری',
             'email' => 'پست الکترونیکی',
             'emailAddress' => 'پست الکترونیکی',
-            'first_name' => 'نام',
-            'last_name' => 'نام خانوادگی',
             'password' => 'رمز عبور',
             'password_confirmation' => 'تاییدیه ی رمز عبور',
             'city' => 'شهر',
@@ -171,6 +169,7 @@ return [
             'message' => 'متن پیام',
             'postalCode' => 'کد پستی',
             'role' => 'دسترسی',
+            'roles' => 'دسترسی ها',
             'permissions' => 'دسترسی ها',
 
             'data' => [

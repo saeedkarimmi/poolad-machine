@@ -3,6 +3,7 @@
 use App\Http\Controllers\Panel\DashboardController;
 use App\Http\Controllers\Panel\MenuItemController;
 use App\Http\Controllers\Panel\RoleController;
+use App\Http\Controllers\Panel\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::prefix('panel')->as('panel.')->middleware('web','auth', 'permission:admin
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index')->middleware(['permission:manage-dashboard']);
 
+    Route::resource('users', UserController::class);
     Route::resource('menu_items', MenuItemController::class);
     Route::resource('roles', RoleController::class);
 });
