@@ -30,6 +30,7 @@ trait PersianDateTrait
 
         return Jalalian::forge($this->$what)->format($format);
     }
+
     /**
      * Add persian dates to model's toJson, toArray, __toString
      *
@@ -43,12 +44,13 @@ trait PersianDateTrait
             return $arr;
         }
 
-        foreach($this->getDates() as $date){
+        foreach ($this->getDates() as $date) {
             $key = "{$this->getJalaliPrefix()}{$date}";
             $arr[$key] = $this->convertToPersian($date);
         }
         return $arr;
     }
+
     /**
      * Get jalali dates based on model
      *
@@ -58,13 +60,14 @@ trait PersianDateTrait
     public function __get($key)
     {
         $prefix = $this->getJalaliPrefix();
-        if (Str::startsWith($key, $prefix)){
+        if (Str::startsWith($key, $prefix)) {
             $parentKey = str_replace($prefix, '', $key);
             $parent = $this->$parentKey;
             return is_null($parent) ? null : $this->convertToPersian($parentKey);
         }
         return parent::__get($key);
     }
+
     /**
      * Get jalali prefix for accessing dates
      *
@@ -77,6 +80,7 @@ trait PersianDateTrait
         }
         return 'jalali_';
     }
+
     /**
      * Get jalali format
      *
@@ -89,6 +93,7 @@ trait PersianDateTrait
         }
         return 'Y/m/d';
     }
+
     /**
      * Set jalali format
      *
@@ -97,7 +102,8 @@ trait PersianDateTrait
      */
     public function setJalaliFormat($format)
     {
-        $this->jalaliDateFormat = $format; return $this;
+        $this->jalaliDateFormat = $format;
+        return $this;
     }
 
     /**
@@ -112,6 +118,7 @@ trait PersianDateTrait
         }
         return true;
     }
+
     /**
      * Don't append jalali by default
      *
