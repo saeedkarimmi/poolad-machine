@@ -21,7 +21,7 @@ class Repository implements RepositoryInterface
     protected $model;
 
     // Constructor to bind model to repo
-    public function __construct(BaseModel $model)
+    public function __construct(Model $model)
     {
         $this->setModel($model);
     }
@@ -60,28 +60,28 @@ class Repository implements RepositoryInterface
      * @return mixed
      * update record in the database
      */
-    public function update(array $data, BaseModel $model)
+    public function update(array $data, Model $model)
     {
         return $model->update($data);
     }
 
     /**
-     * @param BaseModel $model
+     * @param Model $model
      * @return mixed
      * remove record from the database
      * @throws \Exception
      */
-    public function delete(BaseModel $model)
+    public function delete(Model $model)
     {
         return $model->delete();
     }
 
     /**
-     * @param BaseModel $model
+     * @param Model $model
      * @return mixed
      * show the record with the given id
      */
-    public function show(BaseModel $model)
+    public function show(Model $model)
     {
         return $model;
     }
@@ -93,7 +93,7 @@ class Repository implements RepositoryInterface
     }
 
     // Set the associated model
-    public function setModel(BaseModel $model)
+    public function setModel(Model $model)
     {
         $this->model = $model;
         return $this;

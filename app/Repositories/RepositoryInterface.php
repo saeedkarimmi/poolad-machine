@@ -30,22 +30,26 @@ interface RepositoryInterface
 
     /**
      * @param array $data
-     * @param BaseModel $model
+     * @param Model $model
      * @return mixed
      */
-    public function update(array $data, BaseModel $model);
+    public function update(array $data, Model $model);
 
     /**
-     * @param BaseModel $model
+     * @param Model $model
      * @return mixed
      */
-    public function delete(BaseModel $model);
+    public function delete(Model $model);
 
     /**
-     * @param BaseModel $model
+     * @param Model $model
      * @return mixed
      */
-    public function show(BaseModel $model);
+    public function show(Model $model);
 
-    public function find($id);
+    /**
+     * @param Model $model
+     * @return mixed
+     */
+    public function find(Model $model);
 }
