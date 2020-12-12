@@ -8,9 +8,14 @@
             <div class="col-md-8">
                 <form method="post" action="{{ route('panel.menu_items.store') }}" data-type="ajax-form">
                     @csrf
+                    <div class="alert alert-warning hidden"></div>
                     <div class="form-group">
                         <label for="name">نام منو</label>
                         <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="link">لینک</label>
+                        <input type="text" class="form-control" name="link" id="link">
                     </div>
                     <div class="form-group">
                         <label for="parent_id">والد</label>

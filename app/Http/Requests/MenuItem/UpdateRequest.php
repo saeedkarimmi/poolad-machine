@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\MenuItem;
 
+use App\Rules\RouteExist;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRequest extends FormRequest
@@ -24,7 +25,8 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-//            'name'      => ['required', 'string', 'max:100'],
+            'name'      => ['required', 'string', 'max:100'],
+            'link'      => ['required', 'string', new RouteExist()],
             'parent_id' => ['nullable', 'exists:menu_items,id','not_in:'.$this->menu_item->id]
         ];
     }

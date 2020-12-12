@@ -124,6 +124,7 @@ return [
             'username' => 'نام کاربری',
             'email' => 'پست الکترونیکی',
             'emailAddress' => 'پست الکترونیکی',
+            'link' => 'لینک',
             'password' => 'رمز عبور',
             'password_confirmation' => 'تاییدیه ی رمز عبور',
             'city' => 'شهر',

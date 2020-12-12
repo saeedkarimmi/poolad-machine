@@ -15,6 +15,10 @@
                         <input type="text" class="form-control" value="{{ $menuItem->name }}" name="name" id="name">
                     </div>
                     <div class="form-group">
+                        <label for="link">لینک</label>
+                        <input type="text" class="form-control" name="link" value="{{ $menuItem->link }}" id="link">
+                    </div>
+                    <div class="form-group">
                         <label for="parent_id">والد</label>
                         <select class="form-control" name="parent_id" id="parent_id">
                             <option value="">--والد--</option>

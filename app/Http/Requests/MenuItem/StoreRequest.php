@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\MenuItem;
 
+use App\Rules\RouteExist;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreRequest extends FormRequest
@@ -25,6 +26,7 @@ class StoreRequest extends FormRequest
     {
         return [
             'name'      => ['required', 'string', 'max:100'],
+            'link'      => ['required', 'string', new RouteExist()],
             'parent_id' => ['nullable', 'exists:menu_items,id']
         ];
     }

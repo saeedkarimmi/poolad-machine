@@ -56,7 +56,7 @@ class MenuItemController extends Controller
     {
         DB::beginTransaction();
         try {
-            $this->menuItem->create($request->only(['name','parent_id']));
+            $this->menuItem->create($request->only(['name','parent_id', 'link']));
             DB::commit();
             return returnSuccess(trans('general.message.create.success'),route('panel.menu_items.index'));
         } catch (\Exception $exception) {
