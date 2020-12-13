@@ -35,13 +35,13 @@ class Repository implements RepositoryInterface
     }
 
     /**
-     * @param $column1
-     * @param $column2
+     * @param $column
+     * @param null $key
      * @return mixed
      */
-    public function pluck($column1,$column2)
+    public function pluck($column, $key = null)
     {
-        return $this->model->query()->pluck($column1,$column2);
+        return $this->model->query()->pluck($column, $key);
     }
 
     /**
@@ -108,5 +108,10 @@ class Repository implements RepositoryInterface
     public function find($id)
     {
         return $this->model->findOrFail($id);
+    }
+
+    public function updateOrCreate(array $attributes, array $values = [])
+    {
+        return $this->model->updateOrCreate($attributes, $values);
     }
 }
