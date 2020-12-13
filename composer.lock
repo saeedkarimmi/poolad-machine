@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "831060b1d4e30c62a6771fc6d9d8da80",
+    "content-hash": "ead7dfc21c51d065510f5f194238f472",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3759,6 +3759,62 @@
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
+            "name": "saeedkarimmi/cms",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/saeedkarimmi/cms",
+                "reference": "69233e8b2b78c49f79113ba7b42b08488b1ccdc4"
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.4|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "saeedkarimmi\\cms\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "saeedkarimmi\\cms\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "saeedkarimmi\\cms\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "",
+                    "email": ""
+                }
+            ],
+            "description": "A cms",
+            "keywords": [
+                "cms"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "spatie/laravel-activitylog",
             "version": "3.16.1",
             "source": {
@@ -7148,6 +7204,63 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "melihovv/laravel-package-generator",
+            "version": "7.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/melihovv/laravel-package-generator.git",
+                "reference": "1de707a0bfbae7f9eb9118729319ef404e7363af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/melihovv/laravel-package-generator/zipball/1de707a0bfbae7f9eb9118729319ef404e7363af",
+                "reference": "1de707a0bfbae7f9eb9118729319ef404e7363af",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0|^8.0",
+                "illuminate/container": "^6.0|^7.0|^8.0",
+                "illuminate/filesystem": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "illuminate/view": "^6.0|^7.0|^8.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Melihovv\\LaravelPackageGenerator\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Melihovv\\LaravelPackageGenerator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Melihov",
+                    "email": "amelihovv@ya.ru"
+                }
+            ],
+            "description": "A laravel package generator",
+            "keywords": [
+                "generator",
+                "laravel",
+                "package"
+            ],
+            "support": {
+                "issues": "https://github.com/melihovv/laravel-package-generator/issues",
+                "source": "https://github.com/melihovv/laravel-package-generator/tree/7.0.1"
+            },
+            "time": "2020-11-01T18:59:31+00:00"
+        },
+        {
             "name": "mockery/mockery",
             "version": "1.4.2",
             "source": {
@@ -9139,7 +9252,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "saeedkarimmi/cms": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

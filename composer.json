@@ -22,11 +22,13 @@
         "spatie/laravel-permission": "^3.18",
         "wildside/userstamps": "^2.1",
         "yajra/laravel-datatables-buttons": "^4.10",
-        "yajra/laravel-datatables-oracle": "~9.0"
+        "yajra/laravel-datatables-oracle": "~9.0",
+        "saeedkarimmi/cms": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "melihovv/laravel-package-generator": "^7.0",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
@@ -70,5 +72,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/saeedkarimmi/cms"
+        }
+    ]
 }
