@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="add updateOrCreate method and update pluck method arguments">
-      <change afterPath="$PROJECT_DIR$/database/seeders/AdminSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PooladMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PooladMachine.iml" afterDir="false" />
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RoleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PermissionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleAndPermissionSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RoleAndPermissionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleAndPermissionSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +235,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -290,21 +281,8 @@
       <workItem from="1607780244566" duration="1522000" />
       <workItem from="1607784562290" duration="1449000" />
       <workItem from="1607830913882" duration="2010000" />
-      <workItem from="1607835604761" duration="8059000" />
-    </task>
-    <task id="LOCAL-00009" summary="initial helper file to autoloader">
-      <created>1606826376539</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1606826376539</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Menu Item CRUD">
-      <created>1606826475595</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1606826475595</updated>
+      <workItem from="1607835604761" duration="11856000" />
+      <workItem from="1607858772497" duration="1173000" />
     </task>
     <task id="LOCAL-00011" summary="add HasRole trait">
       <created>1606826496731</created>
@@ -635,7 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607589523929</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add updateOrCreate method and update pluck method arguments">
+      <created>1607844335182</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1607844335182</updated>
+    </task>
+    <task id="LOCAL-00059" summary="make AdminSeeder and update RoleAndPermissionSeeder.php">
+      <created>1607844368412</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1607844368412</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -690,7 +682,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rollback" />
     <MESSAGE value="add index dashboard route" />
     <MESSAGE value="create general translation file and some trans in validation" />
     <MESSAGE value="update arguments" />
@@ -715,7 +706,8 @@
     <MESSAGE value="remove additional code" />
     <MESSAGE value="Implementation USER CRUD (Controller, DataTable, Store and Update Requests,Views and Route)" />
     <MESSAGE value="add updateOrCreate method and update pluck method arguments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updateOrCreate method and update pluck method arguments" />
+    <MESSAGE value="make AdminSeeder and update RoleAndPermissionSeeder.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="make AdminSeeder and update RoleAndPermissionSeeder.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -738,14 +730,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836310230" />
-    <state x="178" y="0" key="CommitChangelistDialog2" timestamp="1607844104215">
+    <state x="178" y="0" key="CommitChangelistDialog2" timestamp="1607844367527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607844104215" />
-    <state x="147" y="65" key="DiffContextDialog" timestamp="1607844069165">
+    <state x="178" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607844367527" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1607844347056">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1607844069165" />
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1607844347056" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1607835550067">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -754,14 +746,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607843990925" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1607835528483">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1607858699482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607835528483" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607858699482" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607844384688">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607844384688" />
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607836592933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836592933" />
+    <state x="467" y="201" key="git4idea.merge.GitPullDialog" timestamp="1607844379330">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1607844379330" />
     <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607844115524">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -770,10 +770,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607843748408">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607858445223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607843748408" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607858445223" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
