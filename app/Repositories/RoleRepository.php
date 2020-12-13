@@ -23,7 +23,7 @@ class RoleRepository extends Repository implements RepositoryInterface
         /** @var Role $role */
         $role = parent::create($data);
 
-        $role->givePermissionTo(request()->permissions);
+        $role->givePermissionTo($data['permissions']);
         return $role;
     }
 
@@ -35,5 +35,14 @@ class RoleRepository extends Repository implements RepositoryInterface
     {
         /** @var Role $model */
         $model->syncPermissions($data['permissions']);
+    }
+
+    public function updateOrCreate(array $attributes, array $values = [])
+    {
+        $role = parent::updateOrCreate(['name' => $attributes['name']]);
+
+        $role->syncPermissions($attributes['permissions']);
+
+        return $role;
     }
 }

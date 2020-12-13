@@ -2,12 +2,25 @@
 
 namespace Database\Seeders;
 
+use App\Repositories\PermissionRepository;
+use App\Repositories\RoleRepository;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
-class PermissionSeeder extends Seeder
+/**
+ * @property RoleRepository role
+ * @property PermissionRepository permission
+ */
+class RoleAndPermissionSeeder extends Seeder
 {
+    public function __construct(Role $role, Permission $permission)
+    {
+        $this->role = new RoleRepository($role);
+        $this->permission = new PermissionRepository($permission);
+    }
+
     /**
      * Run the database seeds.
      *
@@ -21,13 +34,21 @@ class PermissionSeeder extends Seeder
         ];
 
         foreach ($permissions as $row) {
-            Permission::query()->updateOrCreate([
+           $this->permission->updateOrCreate([
                 'id' => $row['id'],
             ],[
                 'name' => $row['name'],
                 'parent_id' => ($row['parent_id'] ?? null)
             ]);
         }
+
+        $permissions = $this->permission->pluck('id')->toArray();
+
+        $this->role->updateOrCreate([
+            'name' => 'admin-role',
+            'permissions' => $permissions
+        ]);
+
 
         Cache::flush();
     }

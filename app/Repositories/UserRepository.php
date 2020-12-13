@@ -40,4 +40,22 @@ class UserRepository extends Repository implements RepositoryInterface
 
         return $model;
     }
+
+    /**
+     * @param array $attributes
+     * @param array $values
+     * @param array|null $roles
+     * @return mixed
+     */
+    public function updateOrCreate(array $attributes, array $values = [], array $roles = null)
+    {
+        /** @var User $user */
+        $user = $this->model->updateOrCreate($attributes, $values);
+
+        if ($roles){
+            $user->syncRoles($roles);
+        }
+
+        return $user;
+    }
 }

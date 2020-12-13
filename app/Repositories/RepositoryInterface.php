@@ -5,6 +5,7 @@ namespace App\Repositories;
 
 
 use App\Models\Panel\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -16,11 +17,11 @@ interface RepositoryInterface
     public function all();
 
     /**
-     * @param $column1
-     * @param $column2
+     * @param $column
+     * @param null $key
      * @return mixed
      */
-    public function pluck($column1, $column2);
+    public function pluck($column, $key = null);
 
     /**
      * @param array $data
@@ -34,6 +35,14 @@ interface RepositoryInterface
      * @return mixed
      */
     public function update(array $data, Model $model);
+
+    /**
+     * Get the first record matching the attributes or create it.
+     *
+     * @param  array  $attributes
+     * @param  array  $values
+     */
+    public function updateOrCreate(array $attributes, array $values = []);
 
     /**
      * @param Model $model
