@@ -1,4 +1,4 @@
-@extends('layouts.panel')
+@extends('cms::theme-inspinia.layouts.master')
 
 @section('page-title'){{ trans('test') }}@endsection
 
