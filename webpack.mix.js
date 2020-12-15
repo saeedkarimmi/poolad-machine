@@ -23,30 +23,43 @@ mix.js('resources/js/app.js', 'public/js')
 // Panel Styles
 mix.styles(
     [
-        'resources/css/animate.css',
-        'resources/css/bootstrap.min.css',
-        'resources/css/chart.min.css',
-        'resources/css/fontawesome.css',
-        'resources/css/select2.min.css',
-        'resources/css/bootstrap-datepicker.min.css',
-        'resources/css/persianDatepicker-default.css',
-        'resources/css/datatable.min.css',
+        'packages/saeedkarimmi/cms/src/assets/css/bootstrap.min.css',
+        'packages/saeedkarimmi/cms/src/assets/css/font-awesome.min.css',
+        'packages/saeedkarimmi/cms/src/assets/css/plugins/toastr/toastr.min.css',
+        'packages/saeedkarimmi/cms/src/assets/css/plugins/dataTables/datatables.min.css',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/gritter/jquery.gritter.css',
+        'packages/saeedkarimmi/cms/src/assets/css/animate.css',
+        'packages/saeedkarimmi/cms/src/assets/css/style.css',
 
     ]
     , 'public/bundle/panel.css');
 
-
 // Panel Scripts
 mix.scripts(
     [
-        'resources/js/jquery.min.js',
-        'resources/js/popper.js',
-        'resources/js/jquery.form.min.js',
-        'resources/js/bootstrap.min.js',
-        'resources/js/chart.min.js',
-        'resources/js/progressbar.min.js',
-        'resources/js/datatables.min.js',
-        'resources/js/select2.full.min.js',
-        'resources/js/sweetalert.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/jquery-3.1.1.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/popper.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/bootstrap.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/metisMenu/jquery.metisMenu.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/slimscroll/jquery.slimscroll.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.tooltip.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.spline.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.resize.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.pie.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.symbol.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/flot/jquery.flot.time.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/peity/jquery.peity.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/demo/peity-demo.js',
+        'packages/saeedkarimmi/cms/src/assets/js/inspinia.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/pace/pace.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/jquery-ui/jquery-ui.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/gritter/jquery.gritter.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/dataTables/datatables.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/dataTables/dataTables.bootstrap4.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/sparkline/jquery.sparkline.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/demo/sparkline-demo.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/chartJs/Chart.min.js',
+        'packages/saeedkarimmi/cms/src/assets/js/plugins/toastr/toastr.min.js',
     ]
     , 'public/bundle/panel.js');
