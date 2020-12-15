@@ -21,7 +21,7 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Route::prefix('panel')->as('panel.')->middleware('web','auth', 'permission:admin-login')->group(function () {
+Route::prefix('panel')->as('panel.')->middleware(['web','auth', 'permission:admin-login'])->group(function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index')->middleware(['permission:manage-dashboard']);
 
