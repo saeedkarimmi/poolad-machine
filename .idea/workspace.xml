@@ -20,21 +20,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="initial cms package">
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/404.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/419.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/429.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/500.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/503.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/errors/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regulard41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/a4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/shattered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/backend.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/passwords.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/ServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/ServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/bundle/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundle/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (3).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_UltraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_UltraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +120,7 @@
     <select />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/packages/saeedkarimmi/cms" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -248,19 +306,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\poolad-machine\public\patterns" />
-      <recent name="C:\laragon\www\poolad-machine\public\img" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\css" />
-      <recent name="C:\laragon\www\poolad-machine\resources\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\poolad-machine\public\img" />
       <recent name="C:\laragon\www\poolad-machine\public" />
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\css" />
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
       <recent name="C:\laragon\www\poolad-machine\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\poolad-machine\public\fonts" />
+      <recent name="C:\laragon\www\poolad-machine\public\patterns" />
+      <recent name="C:\laragon\www\poolad-machine\public\img" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -304,6 +362,7 @@
       <workItem from="1608005825729" duration="23955000" />
       <workItem from="1608092208361" duration="4247000" />
       <workItem from="1608100344709" duration="9591000" />
+      <workItem from="1608179507299" duration="6285000" />
     </task>
     <task id="LOCAL-00020" summary="install  morilog/jalali, spatie/laravel-activitylog, wildside/userstamps packages">
       <created>1606977552426</created>
@@ -759,6 +818,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="348" y="67" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1607780401390" />
+    <state x="472" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608132224797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="472" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608132224797" />
     <state x="522" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1607835560375">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -775,22 +838,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836310230" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608123047794">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608192768175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608123047794" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608099471209">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608192768175" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608192700968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608099471209" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608192700968" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1607932085260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607932085260" />
-    <state x="589" y="115" key="RollbackChangesDialog" timestamp="1608124816127">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1608185586924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="589" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608124816127" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608185586924" />
+    <state x="589" y="115" key="RollbackChangesDialog" timestamp="1608192646742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="589" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608192646742" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1607941213033">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -807,10 +874,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836592933" />
-    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608094105371">
+    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608182731205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608094105371" />
+    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608182731205" />
     <state x="467" y="201" key="git4idea.merge.GitPullDialog" timestamp="1608099480963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -827,10 +894,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608123107637">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608186046212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608123107637" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608186046212" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

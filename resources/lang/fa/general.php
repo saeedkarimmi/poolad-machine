@@ -1,5 +1,5 @@
 <?php
-return[
+return [
     'message' => [
         'internal_server_error' => 'خطای سرور داخلی',
         'bad_request' => 'درخواست نامعتبر',
@@ -34,4 +34,8 @@ return[
         'edit'=> 'ویرایش',
         'remember_me' => 'مرا به خاطر بسپار',
     ],
+    'profile' => 'پروفایل',
+    'logout' => 'خروج',
+    'welcome_to_site' => 'به این سایت خوش آمدید',
+
 ];
