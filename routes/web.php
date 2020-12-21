@@ -25,9 +25,6 @@ Route::prefix('panel')->as('panel.')->middleware(['web','auth', 'permission:admi
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index')->middleware(['permission:manage-dashboard']);
 
-    Route::resource('users', UserController::class)->middleware('permission:manage-users');
-    Route::resource('menu_items', MenuItemController::class)->middleware('permission:manage-menu-items');
-    Route::resource('roles', RoleController::class)->middleware('permission:manage-users');
 });
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

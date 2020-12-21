@@ -30,6 +30,7 @@ return [
         'action' => 'عملیات',
         'accept' => 'تایید',
         'excel' => 'خروجی اکسل',
+        'pdf' => 'pdf خروجی',
         'show' => 'نمایش',
         'edit'=> 'ویرایش',
         'remember_me' => 'مرا به خاطر بسپار',
@@ -37,5 +38,6 @@ return [
     'profile' => 'پروفایل',
     'logout' => 'خروج',
     'welcome_to_site' => 'به این سایت خوش آمدید',
+    'search_for_something' => 'جستجو ...',
 
 ];
