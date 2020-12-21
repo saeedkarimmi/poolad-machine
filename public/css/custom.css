@@ -1,0 +1,22 @@
+div.dataTables_wrapper {
+    padding-left: 0;
+    overflow: visible
+}
+
+div.dataTables_wrapper >.dt-buttons {
+    float: right;
+}
+
+div.dataTables_wrapper >.dataTables_filter {
+    float: left;
+}
+div.dataTables_wrapper >.dataTables_filter > label > .form-control{
+    margin: 0 10px 0 0;
+}
+div.dataTables_wrapper >.dataTables_wrapper > .dt-buttons > .action {
+    /*border-radius: 10px;*/
+    background-color: #18a689;
+}
+div.dataTables_wrapper >.dataTables_wrapper > .dt-buttons > .action > span {
+    color: white;
+}
