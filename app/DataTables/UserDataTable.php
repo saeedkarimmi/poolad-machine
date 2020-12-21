@@ -19,11 +19,10 @@ class UserDataTable extends BaseDataTable implements DatabaseInterface
             ->eloquent($query)
             ->addIndexColumn()
             ->editColumn('action', function ($row){
-                return sprintf('
-                    <div class="dropdown">
-                        <a class="btn btn-primary" href="%s" title=""><i class="fal fa-edit"></i> ویرایش</a>
-                    </div>
-                ', route('panel.users.edit' , ['user' => $row->id]), $row->id, 'ویرایش');
+                return sprintf('<a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
+                    route('panel.users.edit', $row->id),__('general.form.edit'));
+            })->editColumn('active', function ($row){
+                return $row->isActive() ? __('validation.attributes.active') : __('validation.attributes.inactive');
             });
     }
 
@@ -40,9 +39,24 @@ class UserDataTable extends BaseDataTable implements DatabaseInterface
     {
         return [
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false),
-            Column::make('name')->title(trans('user.form.name')),
-            Column::make('email')->title(trans('user.form.email')),
+            Column::make('name')->title(trans('validation.attributes.name')),
+            Column::make('last_name')->title(trans('validation.attributes.last_name')),
+            Column::make('email')->title(trans('validation.attributes.email')),
+            Column::make('active')->title(trans('validation.attributes.active')),
+            Column::make('jalali_created_at', 'created_at')->title(trans('validation.attributes.created_at')),
+            Column::make('jalali_updated_at', 'updated_at')->title(trans('validation.attributes.updated_at')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
+    }
+
+    protected function getBuilderParameters()
+    {
+        $params =  parent::getBuilderParameters();
+        array_unshift($params['buttons'], [
+            'text' => 'ایجاد کاربر جدید',
+            'className' => 'action',
+            'action' => 'function(e, dt, node, config) { var u = "' . route('panel.users.create') . '"; window.location.href = u; }'
+        ]);
+        return $params;
     }
 }
