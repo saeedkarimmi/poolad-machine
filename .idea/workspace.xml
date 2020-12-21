@@ -19,80 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="initial cms package">
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons/glyphicons-halflings-regulard41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/material/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/a4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile-skin-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/header-profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/patterns/shattered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/passwords.php" afterDir="false" />
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="update due to cms package!">
+      <change afterPath="$PROJECT_DIR$/config/cruds.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/Configs/cruds.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/Controllers/Panel/RoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/Controllers/Panel/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundle/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (1).woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (2).woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan (3).woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/IranYekan.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb_UltraLight.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb_UltraLight.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/iransans/IRANSansWeb.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanwebbold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/iranyekanweblight.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/BaseDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/BaseDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/UserDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UserDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Utils/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utils/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/ServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/ServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar-row.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar-row.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +65,7 @@
     <select />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/packages/saeedkarimmi/cms" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -291,7 +236,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/Controllers/Panel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -307,18 +252,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\poolad-machine\public\img" />
-      <recent name="C:\laragon\www\poolad-machine\public" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\css" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
-      <recent name="C:\laragon\www\poolad-machine\public\css" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Controllers\Panel" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Configs" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\migrations" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Controllers\Panel" />
       <recent name="C:\laragon\www\poolad-machine\public\fonts" />
       <recent name="C:\laragon\www\poolad-machine\public\patterns" />
       <recent name="C:\laragon\www\poolad-machine\public\img" />
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -362,35 +307,11 @@
       <workItem from="1608005825729" duration="23955000" />
       <workItem from="1608092208361" duration="4247000" />
       <workItem from="1608100344709" duration="9591000" />
-      <workItem from="1608179507299" duration="6285000" />
-    </task>
-    <task id="LOCAL-00020" summary="install  morilog/jalali, spatie/laravel-activitylog, wildside/userstamps packages">
-      <created>1606977552426</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1606977552426</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add parent_id column to permissions table">
-      <created>1606978154701</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1606978154701</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update composer!">
-      <created>1607153271610</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1607153271610</updated>
-    </task>
-    <task id="LOCAL-00023" summary="install jet stream package">
-      <created>1607154763901</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1607154763901</updated>
+      <workItem from="1608179507299" duration="7146000" />
+      <workItem from="1608197935023" duration="1216000" />
+      <workItem from="1608349821281" duration="21565000" />
+      <workItem from="1608436102236" duration="21722000" />
+      <workItem from="1608526836200" duration="4812000" />
     </task>
     <task id="LOCAL-00024" summary="install jetstream livewire!">
       <created>1607155835755</created>
@@ -706,7 +627,31 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۶۸" />
       <updated>1608094891417</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL‎۰۰۰۶۹" summary="update due to cms package!">
+      <created>1608193247900</created>
+      <option name="number" value="LOCAL‎۰۰۰۶۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۶۹" />
+      <updated>1608193247901</updated>
+    </task>
+    <task id="LOCAL‎۰۰۰۷۰" summary="partials translation">
+      <created>1608351563373</created>
+      <option name="number" value="LOCAL‎۰۰۰۷۰" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۷۰" />
+      <updated>1608351563374</updated>
+    </task>
+    <task id="LOCAL‎۰۰۰۷۱" summary="fix migration bug">
+      <created>1608361868987</created>
+      <option name="number" value="LOCAL‎۰۰۰۷۱" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۷۱" />
+      <updated>1608361868987</updated>
+    </task>
+    <task id="LOCAL‎۰۰۰۷۲" summary="add migration loader to ServiceProvider.php">
+      <created>1608362499652</created>
+      <option name="number" value="LOCAL‎۰۰۰۷۲" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۷۲" />
+      <updated>1608362499652</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,7 +695,7 @@
                   <entry key="structure">
                     <value>
                       <list>
-                        <option value="dir:C:/laragon/www/poolad-machine/public/css" />
+                        <option value="dir:C:/laragon/www/poolad-machine/packages/saeedkarimmi/cms/src/views" />
                       </list>
                     </value>
                   </entry>
@@ -786,10 +731,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove additional repositories" />
-    <MESSAGE value="rewrite controller and repositories due to new structure" />
-    <MESSAGE value="add alert hidden input" />
-    <MESSAGE value="add create button" />
     <MESSAGE value="add auth middleware and admin-login permission to backend`s routes" />
     <MESSAGE value="add DB::beginTransaction before try catch" />
     <MESSAGE value="update method`s doc and arguments" />
@@ -811,7 +752,11 @@
     <MESSAGE value="extend form cms layout" />
     <MESSAGE value="git details from cms package" />
     <MESSAGE value="webpack" />
-    <option name="LAST_COMMIT_MESSAGE" value="webpack" />
+    <MESSAGE value="update due to cms package!" />
+    <MESSAGE value="partials translation" />
+    <MESSAGE value="fix migration bug" />
+    <MESSAGE value="add migration loader to ServiceProvider.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="add migration loader to ServiceProvider.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -830,34 +775,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607836380191" />
-    <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607838102487">
+    <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608355832394">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1607838102487" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607836310230">
+    <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608355832394" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608436842376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836310230" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608192768175">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608436842376" />
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608443053648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608192768175" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608192700968">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608443053648" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608443049354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608192700968" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1607932085260">
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608443049354" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1608529417284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607932085260" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608529417284" />
+    <state x="450" y="135" key="NewPhpClassDialog" timestamp="1608444451498">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1608444451497" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1608185586924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608185586924" />
-    <state x="589" y="115" key="RollbackChangesDialog" timestamp="1608192646742">
+    <state x="589" y="115" key="RollbackChangesDialog" timestamp="1608443013155">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="589" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608192646742" />
+    <state x="589" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608443013155" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1607941213033">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -874,18 +823,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836592933" />
-    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608182731205">
+    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608461005331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608182731205" />
-    <state x="467" y="201" key="git4idea.merge.GitPullDialog" timestamp="1608099480963">
+    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608461005331" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608193313418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608099480963" />
-    <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607844115524">
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608193313418" />
+    <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608193302119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607844115524" />
+    <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608193302119" />
     <state x="635" y="279" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1608045772916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -894,10 +843,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608186046212">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608531565162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608186046212" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608531565162" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
