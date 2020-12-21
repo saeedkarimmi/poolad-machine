@@ -3,21 +3,24 @@
 @section('page-title'){{ trans('test') }}@endsection
 
 @section('content')
-    <div class="content-wrapper">
-        <a href="{{ route('panel.users.create') }}" class="btn btn-success btn-sm float-left">ایجاد</a>
-        @if($dataTable)
-            <div class="ibox float-e-margins">
-                <div class="ibox-content">
-                    <div class="table-responsive" style="overflow: visible">
-                        {!! $dataTable->table() !!}
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    @if($dataTable)
+                    <div class="ibox-content text-center p-md">
+                        <div class="dataTables_wrapper container-fluid dt-bootstrap4">
+                            {!! $dataTable->table() !!}
+                        </div>
                     </div>
+                    @push('scripts')
+                        {!! $dataTable->scripts() !!}
+                    @endpush
+                    @endif
                 </div>
             </div>
-            @push('scripts')
-                {!! $dataTable->scripts() !!}
-            @endpush
-        @endif
-        <div class="clearfix"></div>
+            <div class="clearfix"></div>
+        </div>
     </div>
 @endsection
 
