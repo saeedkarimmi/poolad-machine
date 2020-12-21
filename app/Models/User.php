@@ -61,4 +61,9 @@ class User extends Authenticatable
     {
         return $this->roles()->pluck('id')->toArray();
     }
+
+    public function isActive()
+    {
+        return $this->active;
+    }
 }
