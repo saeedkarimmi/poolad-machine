@@ -9,11 +9,15 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Jetstream\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
+use saeedkarimmi\cms\Traits\PersianDateTrait;
 use Spatie\Permission\Traits\HasRoles;
-
+/**
+ * @property integer id
+ * @property integer active
+ * */
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, HasProfilePhoto, HasTeams, Notifiable, HasRoles, TwoFactorAuthenticatable;
+    use HasApiTokens, HasFactory, HasProfilePhoto, HasTeams, Notifiable, HasRoles, TwoFactorAuthenticatable,PersianDateTrait;
     /**
      * The attributes that are mass assignable.
      *
