@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="update due to cms package!">
-      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/vendor/cms/theme-inspinia/layouts/master.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/vendor/cms/theme-inspinia/partials/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Utils/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utils/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -311,21 +309,7 @@
       <workItem from="1608197935023" duration="1216000" />
       <workItem from="1608349821281" duration="21565000" />
       <workItem from="1608436102236" duration="21722000" />
-      <workItem from="1608526836200" duration="22460000" />
-    </task>
-    <task id="LOCAL-00030" summary="add $menuItems variable to panel`s views">
-      <created>1607339682061</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1607339682061</updated>
-    </task>
-    <task id="LOCAL-00031" summary="working on menu item`s update">
-      <created>1607339741177</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1607339741177</updated>
+      <workItem from="1608526836200" duration="23157000" />
     </task>
     <task id="LOCAL-00032" summary="change timezone">
       <created>1607339776374</created>
@@ -645,7 +629,19 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۷۸" />
       <updated>1608557293290</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL‎۰۰۰۷۹" summary="site title">
+      <created>1608557319292</created>
+      <option name="number" value="LOCAL‎۰۰۰۷۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۷۹" />
+      <updated>1608557319292</updated>
+    </task>
+    <task id="LOCAL‎۰۰۰۸۰" summary="datatable some styling!">
+      <created>1608557370356</created>
+      <option name="number" value="LOCAL‎۰۰۰۸۰" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۸۰" />
+      <updated>1608557370356</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView">
@@ -725,8 +721,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add gap!" />
-    <MESSAGE value="change model binder to Model class!" />
     <MESSAGE value="remove additional code" />
     <MESSAGE value="Implementation USER CRUD (Controller, DataTable, Store and Update Requests,Views and Route)" />
     <MESSAGE value="add updateOrCreate method and update pluck method arguments" />
@@ -750,7 +744,9 @@
     <MESSAGE value="add isActive function" />
     <MESSAGE value="add some column and change action's response" />
     <MESSAGE value="add user and role crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user and role crud" />
+    <MESSAGE value="site title" />
+    <MESSAGE value="datatable some styling!" />
+    <option name="LAST_COMMIT_MESSAGE" value="datatable some styling!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -777,14 +773,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608533319555" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608557292482">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608557399102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608557292482" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608557266378">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608557399102" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608557397058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608557266378" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608557397058" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1608532106473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
