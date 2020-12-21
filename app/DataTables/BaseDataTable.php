@@ -15,16 +15,18 @@ class BaseDataTable extends DataTable
 
     protected function getBuilderParameters()
     {
-        $buttons = /*Auth::user()->isAdministrator()*/true ? ['extend' => 'excel','text' => trans('general.form.excel')] : [];
+        $buttons = /*Auth::user()->isAdministrator()*/true ? [
+            ['extend' => 'excel','text' => trans('general.form.excel')],
+            ['extend' =>  'print', 'text' => trans('general.form.pdf')]
+        ] : [];
 
         return [
-            'buttons' => [
-                $buttons
-            ],
+            'buttons' => $buttons,
             'dom' => 'Bfrtip',
             'scrollX' => false,
             'autoWidth' => false,
-            'pageLength' => 10,
+            'pageLength' => 20,
+            'responsive' => true,
             'language' => [
                 "sProcessing" => "درحال پردازش...",
                 "sLengthMenu" => "نمایش محتویات _MENU_",
@@ -54,6 +56,7 @@ class BaseDataTable extends DataTable
     {
         return $this->builder()
             ->columns($this->getColumns())
+            ->addTableClass('table table-striped table-bordered table-hover dataTable')
             ->minifiedAjax()
             ->dom('Bfrtip')
             ->orderBy(1)
