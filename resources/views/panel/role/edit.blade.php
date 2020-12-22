@@ -3,37 +3,40 @@
 @section('page-title'){{ trans('test') }}@endsection
 
 @section('content')
-    <div class="container">
+    <div class="wrapper wrapper-content animated fadeInUp">
         <div class="row">
-            <div class="col-md-8">
-                <form class="inline" method="post" data-type="ajax-form"  action="{{ route('panel.roles.update' , $role->id) }}">
-                    @csrf
-                    @method('patch')
-                    <div class="alert alert-warning hidden"></div>
-                    <div class="form-group inline wow fadeInUp faster" data-wow-delay="0s">
-                        <label for="name">{{ trans('role.form.name') }}</label>
-                        <input type="text" id="name" class="form-control" name="name" value="{{ $role->name }}" disabled>
-                    </div>
-                    <div class="form-group inline">
-                        <div class="form-group inline checkbox-group-list">
-                            <div class="checkbox-list">
-                                @foreach($permissions as $id => $permission)
-                                    <div class="custom-checkbox nice">
-                                        <label for="permissions{{ $id }}">{{ trans('permission.' . $permission) }}</label>
-                                        <input type="checkbox" name="permissions[]" id="permissions{{ $id }}" value="{{ $id }}" {{ in_array($id , $rolePermissions) ? 'checked' :'' }} />
-                                        <label for="permissions{{ $id }}"></label>
+            <div class="col-lg-12">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form method="post" data-type="ajax-form" action="{{ route('panel.roles.update' , $role->id) }}">
+                                    @csrf
+                                    @method('patch')
+                                    <div class="alert alert-warning d-none"></div>
+                                    <div class="form-group">
+                                        <label for="name">{{ trans('validation.attributes.name') }}</label>
+                                        <input type="text" class="form-control" id="name" name="name" value="{{ $role->name }}" disabled>
                                     </div>
-                                @endforeach
+                                    <div class="form-group">
+                                        @foreach($permissions as $id => $permission)
+                                            <div class="i-checks">
+                                                <label> <input type="checkbox" name="permissions[]" {{ in_array($id , $rolePermissions) ? 'checked' :'' }} value="{{ $id }}"> <i></i> {{ trans('permission.' . $permission) }} </label>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
+                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <a href="{{ route('panel.roles.index') }}"
+                                           class="btn btn-purple svg-wrapper purple">
+                                            {{ trans('general.form.back') }}
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <a href="{{ route('panel.roles.index') }}" class="btn btn-purple svg-wrapper purple">
-                            {{ trans('role.form.back') }}
-                        </a>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

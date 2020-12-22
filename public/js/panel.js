@@ -201,12 +201,14 @@ $(function() {
                 var placeholder = target.attr('data-placeholder');
                 if (placeholder === undefined) {
                     target.select2({
-                        width: '100%'
+                        width: '100%',
+                        theme : 'bootstrap4'
                     });
                 } else {
                     target.select2({
                         width: '100%',
-                        placeholder: placeholder
+                        placeholder: placeholder,
+                        theme : 'bootstrap4'
                     });
                 }
             });

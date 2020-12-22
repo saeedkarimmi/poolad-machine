@@ -22,12 +22,9 @@ class RoleDataTable extends BaseDataTable implements DatabaseInterface
         return datatables()
             ->eloquent($query)
             ->addIndexColumn()
-            ->addColumn('action', function ($row){
-                return sprintf('
-                    <div class="dropdown">
-                        <a class="btn btn-primary" href="%s" title=""><i class="fal fa-edit"></i> ویرایش</a>
-                    </div>
-                ', route('panel.roles.edit' , ['role' => $row->id]), $row->id, 'ویرایش');
+            ->addColumn('action', function ($row) {
+                return sprintf('<a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
+                    route('panel.roles.edit', $row->id), __('general.form.edit'));
             });
     }
 
@@ -39,7 +36,7 @@ class RoleDataTable extends BaseDataTable implements DatabaseInterface
      */
     public function query(Role $model)
     {
-        return $model->newQuery()->orderBy('id');
+        return $model->newQuery();
     }
 
     /**
@@ -53,15 +50,15 @@ class RoleDataTable extends BaseDataTable implements DatabaseInterface
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false),
             Column::make('name')->title(trans('role.form.name')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
-            ];
+        ];
     }
 
     protected function getBuilderParameters()
     {
-        $params =  parent::getBuilderParameters();
+        $params = parent::getBuilderParameters();
         array_unshift($params['buttons'], [
             'text' => 'ایجاد نقش کاربری جدید',
-            'className' => '',
+            'className' => 'action',
             'action' => 'function(e, dt, node, config) { var u = "' . route('panel.roles.create') . '"; window.location.href = u; }'
         ]);
         return $params;
