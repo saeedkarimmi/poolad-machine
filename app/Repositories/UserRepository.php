@@ -22,9 +22,11 @@ class UserRepository extends Repository implements RepositoryInterface
     {
         /** @var User $user */
         $user = $this->model->create([
-            "name" => $data['name'],
-            "email" => $data['email'],
-            "password" => Hash::make($data['password']),
+            "name"      => $data['name'],
+            "last_name" => $data['last_name'],
+            "active"    => $data['status'],
+            "email"     => $data['email'],
+            "password"  => Hash::make($data['password']),
         ]);
 
         $user->syncRoles($data['roles']);

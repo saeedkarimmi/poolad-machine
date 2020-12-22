@@ -28,10 +28,12 @@ class StoreRequest extends FormRequest
     {
         return [
             'name'          => ['required', 'string'],
+            'last_name'     => ['required', 'string'],
             'roles'         => ['required', 'array'],
             'roles.*'       => ['required', 'exists:roles,id'],
             'password'      => $this->passwordRules(),
             'email'         => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'status'        => ['required' , 'in:1,0']
         ];
     }
 }

@@ -40,7 +40,7 @@ class UserController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function create()
     {
@@ -59,7 +59,7 @@ class UserController extends Controller
         DB::beginTransaction();
         try {
             $this->user->create($request->only([
-                'name','roles', 'password','email'
+                'name','roles', 'password','email','last_name','status'
             ]));
             DB::commit();
             return returnSuccess(trans('general.message.create.success'),route('panel.users.index'));
@@ -86,7 +86,7 @@ class UserController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param User $user
-     * @return void
+     * @return array
      */
     public function update(UpdateRequest $request, User $user)
     {
@@ -99,7 +99,6 @@ class UserController extends Controller
             return returnSuccess(trans('general.message.create.success'),route('panel.users.index'));
         } catch (\Exception $exception) {
             DB::rollBack();
-            dd($exception->getMessage(), $exception->getTraceAsString());
             return returnError([trans('general.message.internal_server_error')]);
         }
     }

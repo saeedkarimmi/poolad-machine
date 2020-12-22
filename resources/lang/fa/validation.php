@@ -148,6 +148,8 @@ return [
         "second" => "ثانیه",
         "title" => "عنوان",
         "text" => "متن",
+        "roles" => "دسترسی ها",
+        'status' => 'وضعیت',
         'active' => 'فعال',
         'inactive' => 'غیرفعال',
         'created_at'=>'تاریخ ایجاد',

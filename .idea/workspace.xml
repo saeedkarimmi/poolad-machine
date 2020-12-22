@@ -19,11 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="update due to cms package!">
-      <change beforePath="$PROJECT_DIR$/app/Utils/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utils/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="move some of routes to crud">
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/patterns/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/cms/theme-inspinia/partials/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/User/StoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/User/StoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cruds.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cruds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RoleAndPermissionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleAndPermissionSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundle/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundle/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle/panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +67,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -230,7 +243,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/patterns" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -246,19 +259,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\poolad-machine\public\images\patterns" />
+      <recent name="C:\laragon\www\poolad-machine\public\css" />
+      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
+      <recent name="C:\laragon\www\poolad-machine\resources\css" />
+      <recent name="C:\laragon\www\poolad-machine\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Controllers\Panel" />
       <recent name="C:\laragon\www\poolad-machine\public\fonts" />
       <recent name="C:\laragon\www\poolad-machine\public\patterns" />
       <recent name="C:\laragon\www\poolad-machine\public\img" />
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\poolad-machine\resources\views\vendor\cms" />
-      <recent name="C:\laragon\www\poolad-machine\resources\views\vendor\cms\panel\theme-inspinia" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\DataTables" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\views" />
-      <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\Repositories" />
     </key>
   </component>
   <component name="RunManager">
@@ -306,14 +319,8 @@
       <workItem from="1608197935023" duration="1216000" />
       <workItem from="1608349821281" duration="21565000" />
       <workItem from="1608436102236" duration="21722000" />
-      <workItem from="1608526836200" duration="23907000" />
-    </task>
-    <task id="LOCAL-00034" summary="rollback">
-      <created>1607339856060</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1607339856060</updated>
+      <workItem from="1608526836200" duration="27902000" />
+      <workItem from="1608608888517" duration="17625000" />
     </task>
     <task id="LOCAL-00035" summary="add index dashboard route">
       <created>1607339904351</created>
@@ -636,7 +643,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۸۲" />
       <updated>1608559571174</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL‎۰۰۰۸۳" summary="move some of routes to crud">
+      <created>1608559617873</created>
+      <option name="number" value="LOCAL‎۰۰۰۸۳" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۸۳" />
+      <updated>1608559617873</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView">
@@ -716,7 +729,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add updateOrCreate method and update pluck method arguments" />
     <MESSAGE value="make AdminSeeder and update RoleAndPermissionSeeder.php" />
     <MESSAGE value="add some permission to route and seeder" />
     <MESSAGE value="install package-generation package" />
@@ -741,7 +753,8 @@
     <MESSAGE value="datatable some styling!" />
     <MESSAGE value="add package's layouts to vendor" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="move some of routes to crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="move some of routes to crud" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -768,14 +781,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608533319555" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608559570414">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608638253524">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608559570414" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608559563429">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608638253524" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608559615516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608559563429" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608559615516" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1608532106473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -800,26 +813,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1608538574524" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1608020983697">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1608625587004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608020983697" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608099492658">
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608625587004" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608559626756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608099492658" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608559626756" />
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607836592933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836592933" />
-    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608554127434">
+    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608636753500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608554127434" />
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608193313418">
+    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608636753500" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608559620180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608193313418" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608559620180" />
     <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608193302119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -832,10 +845,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608552627719">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608637312374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608552627719" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608637312374" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
