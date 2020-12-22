@@ -22,9 +22,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('panel')->as('panel.')->middleware(['web','auth', 'permission:admin-login'])->group(function () {
-
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index')->middleware(['permission:manage-dashboard']);
-
+    // panel routes
 });
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

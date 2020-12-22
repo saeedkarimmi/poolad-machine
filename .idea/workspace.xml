@@ -19,15 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="update user edit structure">
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/RoleDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cruds.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cruds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,14 +308,7 @@
       <workItem from="1608349821281" duration="21565000" />
       <workItem from="1608436102236" duration="21722000" />
       <workItem from="1608526836200" duration="27902000" />
-      <workItem from="1608608888517" duration="26284000" />
-    </task>
-    <task id="LOCAL-00040" summary="create dashboard controller and view">
-      <created>1607340135971</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1607340135971</updated>
+      <workItem from="1608608888517" duration="27686000" />
     </task>
     <task id="LOCAL-00041" summary="webpack`s changes">
       <created>1607340191687</created>
@@ -636,7 +625,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۸۸" />
       <updated>1608642081865</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL‎۰۰۰۸۹" summary="update role crud">
+      <created>1608649864562</created>
+      <option name="number" value="LOCAL‎۰۰۰۸۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۸۹" />
+      <updated>1608649864562</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TodoView">
@@ -716,7 +711,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove additional css and js" />
     <MESSAGE value="change docs" />
     <MESSAGE value="extend form cms layout" />
     <MESSAGE value="git details from cms package" />
@@ -741,7 +735,8 @@
     <MESSAGE value="update webpack due to cms package" />
     <MESSAGE value="update styles" />
     <MESSAGE value="update user edit structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="update user edit structure" />
+    <MESSAGE value="update role crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="update role crud" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -768,10 +763,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608533319555" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608649621071">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608649862816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608649621071" />
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608649862816" />
     <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608649612116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -804,22 +799,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608625587004" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608642086772">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608649887517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608642086772" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608649887517" />
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607836592933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1607836592933" />
-    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608636753500">
+    <state x="235" y="45" width="1126" height="721" key="find.popup" timestamp="1608650467287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608636753500" />
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608642082863">
+    <state x="235" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608650467287" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608649867567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608642082863" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608649867567" />
     <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608193302119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -832,10 +827,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608647308473">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608650399277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608647308473" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608650399277" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
