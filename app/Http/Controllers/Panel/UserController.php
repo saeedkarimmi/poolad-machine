@@ -51,8 +51,8 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return array
      */
     public function store(StoreRequest $request)
     {
@@ -84,7 +84,7 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param UpdateRequest $request
      * @param User $user
      * @return array
      */
@@ -93,7 +93,7 @@ class UserController extends Controller
         DB::beginTransaction();
         try {
             $this->user->update($request->only([
-                'name','roles','email'
+                'name','roles','email','last_name','status'
             ]), $user);
             DB::commit();
             return returnSuccess(trans('general.message.create.success'),route('panel.users.index'));

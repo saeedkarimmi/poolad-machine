@@ -18,15 +18,13 @@
                                         <label for="name">{{ trans('validation.attributes.name') }}</label>
                                         <input type="text" class="form-control" id="name" name="name"
                                                value=""
-                                               data-persian
                                                required>
                                     </div>
                                     <div class="form-group">
                                         <label for="last_name">{{ trans('validation.attributes.last_name') }}</label>
                                         <input type="text" class="form-control" id="last_name" name="last_name"
                                                value=""
-                                               data-persian
-                                               {{--required--}}>
+                                               required>
                                     </div>
                                     <div class="form-group">
                                         <label for="email">{{ trans('validation.attributes.email') }}</label>
@@ -57,11 +55,12 @@
                                         <div class="i-checks "><label> <input type="radio" checked="" value="1" name="status"> <i></i> {{ trans('validation.attributes.active') }} </label></div>
                                         <div class="i-checks "><label> <input type="radio" value="0" name="status"> <i></i> {{ trans('validation.attributes.inactive') }} </label></div>
                                     </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-4 col-sm-offset-2">
-                                            <button class="btn btn-primary" name="submit" type="submit">{{ trans('role.form.submit') }}</button>
-                                            <a class="btn btn-white" href="{{ route('panel.users.index') }}">{{ trans('role.form.back') }}</a>
-                                        </div>
+                                    <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
+                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <a href="{{ route('panel.users.index') }}"
+                                           class="btn btn-purple svg-wrapper purple">
+                                            {{ trans('general.form.back') }}
+                                        </a>
                                     </div>
                                 </form>
                             </div>

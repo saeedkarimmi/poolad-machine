@@ -36,7 +36,12 @@ class UserRepository extends Repository implements RepositoryInterface
 
     public function update(array $data, Model $model)
     {
-        parent::update($data, $model);
+        $model->update([
+            "name"      => $data['name'],
+            "last_name" => $data['last_name'],
+            "active"    => $data['status'],
+            "email"     => $data['email'],
+        ]);
 
         $model->syncRoles($data['roles']);
 
