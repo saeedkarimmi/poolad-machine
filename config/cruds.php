@@ -18,7 +18,7 @@ return [
         ],
         [
             'name' => 'roles',
-            'controller' => \saeedkarimmi\cms\Controllers\Panel\RoleController::class,
+            'controller' => \App\Http\Controllers\Panel\RoleController::class,
             'except' => ['show','destroy'],
             'permission' => 'manage-roles',
             'permission_name' => 'مدیریت دسترسی به کاربران',

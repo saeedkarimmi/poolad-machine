@@ -34,6 +34,7 @@ class RoleAndPermissionSeeder extends Seeder
             ['id' => '3','name' => 'manage-users'],
             ['id' => '4','name' => 'manage-menu-items'],
             ['id' => '5','name' => 'manage-users'],
+            ['id' => '5','name' => 'manage-roles'],
         ];
 
         foreach ($permissions as $row) {
