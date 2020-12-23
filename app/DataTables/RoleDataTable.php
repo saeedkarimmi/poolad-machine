@@ -47,7 +47,7 @@ class RoleDataTable extends BaseDataTable implements DatabaseInterface
     public function getColumns()
     {
         return [
-            Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false),
+            Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),
             Column::make('name')->title(trans('role.form.name')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];

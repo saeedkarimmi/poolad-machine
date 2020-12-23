@@ -38,7 +38,7 @@ class UserDataTable extends BaseDataTable implements DatabaseInterface
     public function getColumns()
     {
         return [
-            Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false),
+            Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),
             Column::make('name')->title(trans('validation.attributes.name')),
             Column::make('last_name')->title(trans('validation.attributes.last_name')),
             Column::make('email')->title(trans('validation.attributes.email')),
