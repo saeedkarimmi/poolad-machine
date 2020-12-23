@@ -4,7 +4,6 @@ $(function() {
             state = 'success';
         }
         var error_container = form_instance.find('div.alert.alert-warning');
-        console.log(error_container.length );
         if (error_container.length > 0) {
             text = text.join('<br/>');
             error_container.html(text);
@@ -108,11 +107,11 @@ $(function() {
                 // window.showLoading(false);
                 
                 if (data.status === 422) {
-                    inputs.removeClass('has-error');
+                    inputs.parents().removeClass('has-error');
                     var json = data.responseJSON;
                     var errors = [];
                     $.each(json.errors, function (index, element) {
-                        form.find('[name="' + index + '"]').addClass('has-error');
+                        form.find('[name="' + index + '"]').parent().addClass('has-error');
                         for (var i = 0; i < $(this).length; i++) {
                             if (errors.indexOf($(this).get(i)) < 0) {
                                 errors.push($(this).get(i));
