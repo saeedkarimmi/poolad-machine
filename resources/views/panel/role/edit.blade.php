@@ -1,6 +1,6 @@
 @extends('cms::theme-inspinia.layouts.master')
 
-@section('page-title'){{ trans('test') }}@endsection
+@section('page-title'){{ trans('general.page-titles.roles.edit') }}@endsection
 
 @section('content')
     <div class="wrapper wrapper-content animated fadeInUp">

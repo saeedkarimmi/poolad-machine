@@ -1,8 +1,6 @@
 @extends('cms::theme-inspinia.layouts.master')
 
-@section('page-title')
-    {{ trans('dashboard.title') }}
-@endsection
+@section('page-title'){{ trans('general.page-titles.dashboard') }}@endsection
 
 @section('content')
     <div class="container-fluid">

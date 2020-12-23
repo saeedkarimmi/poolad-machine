@@ -35,7 +35,7 @@ return [
             'except' => ['show','destroy'],
             'permission' => 'manage-roles',
             'permission_name' => 'مدیریت دسترسی به کاربران',
-            'title' => 'گروه های کاربری',
+            'title' => 'نقش های کاربری',
             'route' => 'panel.roles.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
