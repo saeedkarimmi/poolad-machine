@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="add dashboard crud">
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cruds.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cruds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/role/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/saeedkarimmi/cms/src/views/theme-inspinia/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,14 +308,7 @@
       <workItem from="1608436102236" duration="21722000" />
       <workItem from="1608526836200" duration="27902000" />
       <workItem from="1608608888517" duration="28341000" />
-      <workItem from="1608695038780" duration="7758000" />
-    </task>
-    <task id="LOCAL-00043" summary="set dir attribute">
-      <created>1607421041461</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1607421041461</updated>
+      <workItem from="1608695038780" duration="11446000" />
     </task>
     <task id="LOCAL-00044" summary="remove additional repositories">
       <created>1607428177313</created>
@@ -634,7 +622,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۹۱" />
       <updated>1608704094148</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL‎۰۰۰۹۲" summary="implementation title translation">
+      <created>1608707023511</created>
+      <option name="number" value="LOCAL‎۰۰۰۹۲" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۹۲" />
+      <updated>1608707023511</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TodoView">
@@ -714,7 +708,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="git details from cms package" />
     <MESSAGE value="webpack" />
     <MESSAGE value="update due to cms package!" />
     <MESSAGE value="partials translation" />
@@ -739,7 +732,8 @@
     <MESSAGE value="update role crud" />
     <MESSAGE value="add dashboard crud" />
     <MESSAGE value="assign header title and breadcrumbs" />
-    <option name="LAST_COMMIT_MESSAGE" value="assign header title and breadcrumbs" />
+    <MESSAGE value="implementation title translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation title translation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -766,14 +760,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608533319555" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608704091292">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608707021900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608704091292" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608704062921">
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608707021900" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608706993018">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608704062921" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608706993018" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1608532106473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -798,14 +792,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1608538574524" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1608625587004">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1608706889048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608625587004" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608651222506">
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608706889048" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608707064978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608651222506" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608707064978" />
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607836592933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -814,10 +808,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="236" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608703837450" />
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608651201802">
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608707024470">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608651201802" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608707024470" />
     <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608193302119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -830,9 +824,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608704523698">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608707093115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608704523698" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608707093115" />
   </component>
 </project>

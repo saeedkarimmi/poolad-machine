@@ -213,7 +213,21 @@ $(function() {
                 }
             });
         }
+        var init_sidebar_links_collapse = function() {
+            var sidebar_menu = $('#side-menu');
+            var href = location.href;
+            var a = sidebar_menu.find('ul.submenu').find('a[href="' + href + '"]');
+            // var li_active = sidebar_menu.find('li.active');
+            //li_active.removeClass('active');
+            var submenu_collapse = a.parent().parent();
+            var current_li = submenu_collapse.parent();
+            current_li.addClass('active');
+            submenu_collapse.removeClass().addClass('nav nav-second-level submenu collapse in').attr('aria-expanded', 'true');
+            current_li.children('a').removeClass().attr('aria-expanded', 'true');
+        };
+
         init_select2();
+        init_sidebar_links_collapse();
     });
     $(document).ready(function () {
         $('.i-checks').iCheck({
