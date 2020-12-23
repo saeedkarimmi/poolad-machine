@@ -7,10 +7,13 @@
         <div class="row">
             <div class="col-lg-12">
 
+                {{-- change informations --}}
                 <div class="ibox">
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-md-8">
+                                <h2>تغییر اطلاعات</h2>
+                                <div class="hr-line-dashed"></div>
                                 <form class="" method="post" data-type="ajax-form"
                                       action="{{ route('panel.users.update' , $user->id) }}">
                                     @csrf
@@ -51,6 +54,45 @@
                                     </div>
                                     <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
                                         <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <a href="{{ route('panel.users.index') }}"
+                                           class="btn btn-purple svg-wrapper purple">
+                                            {{ trans('general.form.back') }}
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {{-- change password --}}
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2>تغییر رمز عبور</h2>
+                                <div class="hr-line-dashed"></div>
+                                <form class="" method="post" data-type="ajax-form"
+                                      action="{{ route('panel.users.change_password' , $user->id) }}">
+                                    @csrf
+                                    <div class="alert alert-warning d-none"></div>
+
+                                    <div class="form-group">
+                                        <label for="last_password">{{ trans('validation.attributes.last_password') }}</label>
+                                        <input type="password" class="form-control" id="last_password" name="last_password" {{--required--}}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new_password">{{ trans('validation.attributes.new_password') }}</label>
+                                        <input type="password" class="form-control" id="new_password" name="new_password" {{--required--}}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new_password_confirmation">{{ trans('validation.attributes.new_password_confirmation') }}</label>
+                                        <input type="password" class="form-control" id="new_password_confirmation"
+                                               name="new_password_confirmation" {{--required--}}>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit-change') }}</button>
                                         <a href="{{ route('panel.users.index') }}"
                                            class="btn btn-purple svg-wrapper purple">
                                             {{ trans('general.form.back') }}

@@ -196,6 +196,7 @@ $(function() {
         var init_select2 = function() {
             var select2 = $('.select2');
             $.each(select2, function(index, element) {
+                console.log(2321312);
                 var target = $(this);
                 var placeholder = target.attr('data-placeholder');
                 if (placeholder === undefined) {

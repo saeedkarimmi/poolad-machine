@@ -22,7 +22,9 @@ Route::get('/', function () {
 });
 
 Route::prefix('panel')->as('panel.')->middleware(['web','auth', 'permission:admin-login'])->group(function () {
-    // panel routes
+    Route::prefix('users/{user}')->as('users.')->middleware(['web','auth', 'permission:manage-users'])->group(function (){
+        Route::post('change_password', [UserController::class, 'changePassword'])->name('change_password');
+    });
 });
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

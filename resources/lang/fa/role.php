@@ -8,6 +8,7 @@ return [
         'action' => 'عملیات',
         'permissions' => 'دسترسی ها',
         'submit' => 'ارسال',
+        'submit-change' => 'ثبت تغییر',
         'back' => 'بازگشت',
     ]
 ];

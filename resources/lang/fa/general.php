@@ -6,6 +6,7 @@ return [
         'operation_was_failed' => 'خطا در عملیات. لطفا مجدد تلاش کنید.',
         'invalid_request'=>'درخواست نامعتبر است.',
         'fail_request'=>'خطا در درخواست.',
+        'your_current_login_password_is_incorrect' => 'پسورد فعلی ورودی شما اشتباه است',
 
         'create' => [
             'success' => 'آیتم با موفقیت ایجاد شد'

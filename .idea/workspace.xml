@@ -19,9 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="active sidebar">
+    <list default="true" id="6226a450-c3e5-4d74-a486-f1e85900d6e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/User/ChangePasswordRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Panel/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +237,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/patterns" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/User" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -253,11 +261,11 @@
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\poolad-machine\app\Http\Requests\User" />
       <recent name="C:\laragon\www\poolad-machine\public\images\patterns" />
       <recent name="C:\laragon\www\poolad-machine\public\css" />
       <recent name="C:\laragon\www\poolad-machine\packages\saeedkarimmi\cms\src\assets\js" />
       <recent name="C:\laragon\www\poolad-machine\resources\css" />
-      <recent name="C:\laragon\www\poolad-machine\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -307,14 +315,7 @@
       <workItem from="1608436102236" duration="21722000" />
       <workItem from="1608526836200" duration="27902000" />
       <workItem from="1608608888517" duration="28341000" />
-      <workItem from="1608695038780" duration="15755000" />
-    </task>
-    <task id="LOCAL-00045" summary="rewrite controller and repositories due to new structure">
-      <created>1607428343302</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1607428343302</updated>
+      <workItem from="1608695038780" duration="19964000" />
     </task>
     <task id="LOCAL-00046" summary="add alert hidden input">
       <created>1607429304792</created>
@@ -626,7 +627,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۹۳" />
       <updated>1608710755109</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL‎۰۰۰۹۴" summary="add has-error when have errors">
+      <created>1608720977967</created>
+      <option name="number" value="LOCAL‎۰۰۰۹۴" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۹۴" />
+      <updated>1608720977967</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TodoView">
@@ -706,7 +713,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update due to cms package!" />
     <MESSAGE value="partials translation" />
     <MESSAGE value="fix migration bug" />
     <MESSAGE value="add migration loader to ServiceProvider.php" />
@@ -731,7 +737,8 @@
     <MESSAGE value="assign header title and breadcrumbs" />
     <MESSAGE value="implementation title translation" />
     <MESSAGE value="active sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="active sidebar" />
+    <MESSAGE value="add has-error when have errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="add has-error when have errors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1607780401390">
@@ -754,14 +761,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608355832394" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608533319555">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608723828877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608533319555" />
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608720900843">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608723828877" />
+    <state x="527" y="186" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1608723282570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608720900843" />
+    <state x="527" y="186" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1536.824@0.0.1536.824" timestamp="1608723282570" />
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2" timestamp="1608720976736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="188" y="42" width="1234" height="740" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608720976736" />
     <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1608720900494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -794,10 +805,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1608706889048" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608710778276">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608721019430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608710778276" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608721019430" />
     <state x="530" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607836592933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -806,10 +817,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="236" y="45" width="1126" height="721" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608703837450" />
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608710774724">
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog" timestamp="1608720979900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608710774724" />
+    <state x="467" y="201" width="602" height="422" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1608720979900" />
     <state x="541" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608193302119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -822,9 +833,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607837872948" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608711272221">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608725723118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608711272221" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608725723118" />
   </component>
 </project>

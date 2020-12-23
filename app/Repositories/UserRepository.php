@@ -26,7 +26,7 @@ class UserRepository extends Repository implements RepositoryInterface
             "last_name" => $data['last_name'],
             "active"    => $data['status'],
             "email"     => $data['email'],
-            "password"  => Hash::make($data['password']),
+            "password"  => $this->getMakeHash($data['password']),
         ]);
 
         $user->syncRoles($data['roles']);
@@ -64,5 +64,23 @@ class UserRepository extends Repository implements RepositoryInterface
         }
 
         return $user;
+    }
+
+    public function changePassword(array $data, Model $model)
+    {
+        $model->update([
+            "password"  => $this->getMakeHash($data['new_password']),
+        ]);
+
+        return $model;
+    }
+
+    /**
+     * @param $password
+     * @return string
+     */
+    private function getMakeHash($password)
+    {
+        return Hash::make($password);
     }
 }
