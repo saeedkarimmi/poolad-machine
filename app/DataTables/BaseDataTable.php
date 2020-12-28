@@ -70,6 +70,6 @@ class BaseDataTable extends DataTable
      */
     protected function filename()
     {
-        return get_class($this). date('YmdHis');
+        return class_basename($this). date('YmdHis');
     }
 }
