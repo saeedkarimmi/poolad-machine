@@ -16,7 +16,10 @@ class BaseDataTable extends DataTable
     protected function getBuilderParameters()
     {
         $buttons = /*Auth::user()->isAdministrator()*/true ? [
-            ['extend' => 'excel','text' => trans('general.form.excel')],
+            ['extend' => 'excel','text' => trans('general.form.excel'),
+                'action' => 'function( e, dt, button, config){ 
+                         window.location = "?action=excel";
+                     }'],
             ['extend' =>  'print', 'text' => trans('general.form.pdf')]
         ] : [];
 
