@@ -28,21 +28,23 @@ class RoleAndPermissionSeeder extends Seeder
      */
     public function run()
     {
-        $permissions = [
-            ['id' => '1','name' => 'admin-login', 'parent_id' => null],
-            ['id' => '2','name' => 'manage-dashboard', 'parent_id' => 1],
-            ['id' => '3','name' => 'manage-users'],
-            ['id' => '4','name' => 'manage-menu-items'],
-            ['id' => '5','name' => 'manage-users'],
-            ['id' => '5','name' => 'manage-roles'],
+        $otherPermissions = [
+            ['name' => 'admin-login'],
+            ['name' => 'manage-menu-items'],
         ];
+
+        $crudPermissions = collect(collect(config('cruds.routes', [])))->transform(function($item){
+            return [
+                'name' => $item['permission'],
+            ];
+        })->all();
+
+
+        $permissions = array_merge($crudPermissions, $otherPermissions);
 
         foreach ($permissions as $row) {
            $this->permission->updateOrCreate([
-                'id' => $row['id'],
-            ],[
                 'name' => $row['name'],
-                'parent_id' => ($row['parent_id'] ?? null)
             ]);
         }
 
