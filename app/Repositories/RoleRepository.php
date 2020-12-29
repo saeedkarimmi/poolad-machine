@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Created by Saaed Km2.
+ * Created by Saeed Km2.
  * Date: 01/12/2020
  * Time: 09:50 AM
  */

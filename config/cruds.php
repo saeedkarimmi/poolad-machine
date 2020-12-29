@@ -39,9 +39,19 @@ return [
             'route' => 'panel.roles.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'index_desc' => 'لیست گروهای کاربری و دسترسی ها',
-            'create_desc' => 'درج گروه کاربری و دسترسی هایش جدید',
-            'edit_desc' => 'ویرایش یک گروه کاربری و دسترسی هایش',
+            'parent-menu' => 'کاربران',
+            'order' => 2
+        ],
+        [
+            'name' => 'groups',
+            'controller' => \App\Http\Controllers\Panel\GroupController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-groups',
+            'permission_name' => 'مدیریت گروه های کاربری',
+            'title' => 'گروه های کاربری',
+            'route' => 'panel.groups.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
             'parent-menu' => 'کاربران',
             'order' => 2
         ]
