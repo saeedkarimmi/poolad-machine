@@ -20,7 +20,7 @@ class BaseDataTable extends DataTable
                 'action' => 'function( e, dt, button, config){ 
                          window.location = "?action=excel";
                      }'],
-            ['extend' =>  'print', 'text' => trans('general.form.pdf')]
+//            ['extend' =>  'print', 'text' => trans('general.form.pdf')]
         ] : [];
 
         return [
