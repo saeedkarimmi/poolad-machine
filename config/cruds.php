@@ -107,5 +107,18 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'sellers',
+            'controller' => \App\Http\Controllers\Panel\SellerController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-sellers',
+            'permission_name' => 'مدیریت فروشنده ها',
+            'title' => 'فروشنده ها',
+            'route' => 'panel.sellers.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];

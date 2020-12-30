@@ -138,6 +138,7 @@ return [
         "country" => "کشور",
         "address" => "نشانی",
         "phone" => "تلفن",
+        "phoneNumber" => "شماره تلفن",
         "age" => "سن",
         "sex" => "جنسیت",
         "code" => "کد",
