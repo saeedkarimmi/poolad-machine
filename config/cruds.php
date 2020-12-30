@@ -54,6 +54,19 @@ return [
             'li_text'=>'lock',
             'parent-menu' => 'کاربران',
             'order' => 2
-        ]
+        ],
+        [
+            'name' => 'banks',
+            'controller' => \App\Http\Controllers\Panel\BankController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-banks',
+            'permission_name' => 'مدیریت بانک ها',
+            'title' => 'بانک ها',
+            'route' => 'panel.banks.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
