@@ -68,5 +68,18 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'currencies',
+            'controller' => \App\Http\Controllers\Panel\CurrencyController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-currencies',
+            'permission_name' => 'مدیریت ارز ها',
+            'title' => 'ارز ها',
+            'route' => 'panel.currencies.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
