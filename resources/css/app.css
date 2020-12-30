@@ -1,3 +1,17 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@font-face {
+    font-family: 'IRANSansWeb(FaNum)';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/iransans/IRANSansWeb(FaNum).eot');
+    src: local('IRANSansWeb(FaNum)'),
+    url('/fonts/iransans/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans/IRANSansWeb(FaNum).woff2') format('woff2'),
+    url('/fonts/iransans/IRANSansWeb(FaNum).woff') format('woff'),
+    url('/fonts/iransans/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+h1, h2, h3, h4, h5, h6, p, input, table, span, div {
+    font-family: "IRANSansWeb(FaNum)", "Segoe UI", sans-serif;
+}
