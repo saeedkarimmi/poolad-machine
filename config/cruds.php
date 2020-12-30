@@ -120,5 +120,31 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'system_controls',
+            'controller' => \App\Http\Controllers\Panel\SystemControlController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-system-controls',
+            'permission_name' => 'مدیریت کنترل ها',
+            'title' => 'کنترل ها',
+            'route' => 'panel.system_controls.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
+        [
+            'name' => 'orders',
+            'controller' => \App\Http\Controllers\Panel\OrderController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-orders',
+            'permission_name' => 'مدیریت سفارشات',
+            'title' => 'سفارشات',
+            'route' => 'panel.orders.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
