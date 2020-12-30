@@ -94,5 +94,18 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'spirals',
+            'controller' => \App\Http\Controllers\Panel\SpiralController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-spirals',
+            'permission_name' => 'مدیریت مارپیچ ها',
+            'title' => 'مارپیچ ها',
+            'route' => 'panel.spirals.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
