@@ -2,12 +2,15 @@
 
 namespace App\Models\Panel;
 
+use App\Traits\PersianDateTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Wildside\Userstamps\Userstamps;
 
 class MenuItem extends BaseModel
 {
-    use HasFactory;
+    use HasFactory, Userstamps, SoftDeletes, PersianDateTrait;
 
     protected $table = 'menu_items';
     protected $fillable = ['name', 'type', 'link', 'page_id', 'parent_id'];

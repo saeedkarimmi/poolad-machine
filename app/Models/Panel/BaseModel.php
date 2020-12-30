@@ -18,7 +18,7 @@ use Wildside\Userstamps\Userstamps;
 
 class BaseModel extends Model
 {
-    use LogsActivity, Userstamps, SoftDeletes, PersianDateTrait;
+    use LogsActivity;
 
     protected static $logAttributes = ['*'];
     protected static $logOnlyDirty = true;

@@ -4,8 +4,11 @@ namespace App\Models\Panel;
 
 use App\Models\Panel\BaseModel;
 use App\Models\User;
+use App\Traits\PersianDateTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Wildside\Userstamps\Userstamps;
 
 /**
  * @property integer id
@@ -19,7 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Group extends BaseModel
 {
-    use HasFactory;
+    use HasFactory, Userstamps, SoftDeletes, PersianDateTrait;
 
     protected $table = "groups";
     protected $guarded = ['id'];
