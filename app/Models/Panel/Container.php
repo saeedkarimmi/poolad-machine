@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Container extends Model
 {
     use HasFactory;
+    public $timestamps = false;
+    protected $table = 'tbl_containers';
+    protected $guarded = ['id'];
 }

@@ -81,5 +81,18 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'containers',
+            'controller' => \App\Http\Controllers\Panel\ContainerController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-containers',
+            'permission_name' => 'مدیریت کانتینر ها',
+            'title' => 'کانتینر ها',
+            'route' => 'panel.containers.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
