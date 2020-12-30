@@ -10,7 +10,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class BankDataTable extends BaseDataTable
+class BankDataTable extends BaseDataTable implements DatabaseInterface
 {
     /**
      * Build DataTable class.
@@ -45,7 +45,7 @@ class BankDataTable extends BaseDataTable
      *
      * @return array
      */
-    protected function getColumns()
+    public function getColumns()
     {
         return [
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),

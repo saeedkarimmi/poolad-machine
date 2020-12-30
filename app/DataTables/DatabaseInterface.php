@@ -11,6 +11,6 @@ interface DatabaseInterface
 {
     public function dataTable($query);
 
-    public function getColumns();
+//    public function getColumns();
 
 }

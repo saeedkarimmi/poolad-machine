@@ -44,7 +44,7 @@ class RoleDataTable extends BaseDataTable implements DatabaseInterface
      *
      * @return array
      */
-    public function getColumns()
+    protected function getColumns()
     {
         return [
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),
