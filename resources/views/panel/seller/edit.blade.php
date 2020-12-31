@@ -23,6 +23,22 @@
                                         <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" value="{{ $seller->phoneNumber }}">
                                     </div>
                                     <div class="form-group">
+                                        <label for="tel">{{ trans('validation.attributes.tel') }}</label>
+                                        <input type="text" class="form-control" id="tel" name="tel" value="{{ $seller->tel }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax">{{ trans('validation.attributes.fax') }}</label>
+                                        <input type="text" class="form-control" id="fax" name="fax" value="{{ $seller->fax }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agent">{{ trans('validation.attributes.agent') }}</label>
+                                        <input type="text" class="form-control" id="agent" name="agent" value="{{ $seller->agent }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">{{ trans('validation.attributes.address') }}</label>
+                                        <input type="text" class="form-control" id="address" name="address" value="{{ $seller->address }}">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="email">{{ trans('validation.attributes.email') }}</label>
                                         <input type="text" class="form-control" id="email" name="email" value="{{ $seller->email }}">
                                     </div>

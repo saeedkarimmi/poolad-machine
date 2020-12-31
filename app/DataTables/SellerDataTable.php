@@ -52,6 +52,9 @@ class SellerDataTable extends BaseDataTable implements DatabaseInterface
             Column::make('name')->title(trans('validation.attributes.name')),
             Column::make('phoneNumber')->title(trans('validation.attributes.phoneNumber')),
             Column::make('email')->title(trans('validation.attributes.email')),
+            Column::make('tel')->title(trans('validation.attributes.tel')),
+            Column::make('fax')->title(trans('validation.attributes.fax')),
+            Column::make('agent')->title(trans('validation.attributes.agent')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
     }

@@ -55,7 +55,7 @@ class SellerController extends Controller
     {
         DB::beginTransaction();
         try {
-            $this->seller->create($request->only(['name', 'phoneNumber','email']));
+            $this->seller->create($request->only(['name','phoneNumber','email','tel','fax','agent','address']));
 
             DB::commit();
             return returnSuccess(trans('general.message.create.success'), route('panel.sellers.index'));
@@ -87,7 +87,7 @@ class SellerController extends Controller
     {
         DB::beginTransaction();
         try {
-            $this->seller->update($request->only(['name', 'phoneNumber','email']), $seller);
+            $this->seller->update($request->only(['name','phoneNumber','email','tel','fax','agent','address']), $seller);
 
             DB::commit();
             return returnSuccess(trans('general.message.update.success'), route('panel.sellers.index'));

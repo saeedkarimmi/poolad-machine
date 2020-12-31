@@ -29,6 +29,10 @@ class StoreRequest extends FormRequest
             'name'          => ['required', 'string', 'max:50'],
             'phoneNumber'   => ['required', 'string', 'max:20'],
             'email'         => ['nullable', 'email', 'max:50'],
+            'tel'           => ['nullable', 'string', 'max:20'],
+            'fax'           => ['nullable', 'string', 'max:20'],
+            'agent'         => ['nullable', 'string', 'max:50'],
+            'address'       => ['nullable', 'string', 'max:255'],
         ];
     }
 }

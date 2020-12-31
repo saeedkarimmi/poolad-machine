@@ -16,7 +16,11 @@ class CreateSellersTable extends Migration
         Schema::create('tbl_sellers', function (Blueprint $table) {
             $table->unsignedInteger('id')->autoIncrement();
             $table->string('name',50);
-            $table->string('phoneNumber', 20);
+            $table->string('phoneNumber', 20)->nullable();
+            $table->string('tel', 20)->nullable();
+            $table->string('fax', 20)->nullable();
+            $table->string('address')->nullable();
+            $table->string('agent', 50)->nullable();
             $table->string('email',50)->nullable();
         });
     }
