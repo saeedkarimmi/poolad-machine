@@ -25,7 +25,7 @@ class CreateOrdersTable extends Migration
             $table->foreign('spiral_id')->references('id')->on('tbl_spirals');
 
             $table->unsignedTinyInteger('payment_method_id');
-            $table->foreign('payment_method_id')->references('id')->on('tbl_payment_types');
+            $table->foreign('payment_method_id')->references('id')->on('tbl_payment_methods');
 
             $table->string('description')->nullable();
 

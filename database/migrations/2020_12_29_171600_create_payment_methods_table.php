@@ -13,7 +13,7 @@ class CreatePaymentTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_payment_types', function (Blueprint $table) {
+        Schema::create('tbl_payment_methods', function (Blueprint $table) {
             $table->unsignedTinyInteger('id')->autoIncrement();
             $table->string('name', '50');
         });
@@ -26,6 +26,6 @@ class CreatePaymentTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_payment_types');
+        Schema::dropIfExists('tbl_payment_methods');
     }
 }
