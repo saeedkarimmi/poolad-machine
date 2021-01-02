@@ -14,14 +14,8 @@ class CreateSystemControlsTable extends Migration
     public function up()
     {
         Schema::create('tbl_system_controls', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedInteger('id')->autoIncrement();
             $table->string('name');
-
-            $table->timestamps();
-            $table->unsignedBigInteger('created_by')->nullable();
-            $table->unsignedBigInteger('updated_by')->nullable();
-            $table->softDeletes();
-            $table->unsignedInteger('deleted_by')->nullable()->default(null);
         });
     }
 

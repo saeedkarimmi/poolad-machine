@@ -10,7 +10,7 @@ use Wildside\Userstamps\Userstamps;
 
 class SystemControl extends Model
 {
-    use HasFactory,  Userstamps, SoftDeletes, PersianDateTrait;
+    use HasFactory;
 
     protected $table = 'tbl_system_controls';
     protected $guarded = ['id'];
