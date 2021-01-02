@@ -65,7 +65,7 @@ return [
             'route' => 'panel.banks.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
@@ -78,7 +78,7 @@ return [
             'route' => 'panel.currencies.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
@@ -91,7 +91,7 @@ return [
             'route' => 'panel.containers.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
@@ -104,7 +104,7 @@ return [
             'route' => 'panel.spirals.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
@@ -117,7 +117,7 @@ return [
             'route' => 'panel.sellers.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
@@ -130,7 +130,7 @@ return [
             'route' => 'panel.system_controls.index',
             'icon' => 'material-icons',
             'li_text'=>'lock',
-            'parent-menu' => '',
+            'parent-menu' => 'تعاریف پایه',
             'order' => 2
         ],
         [
