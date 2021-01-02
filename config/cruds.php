@@ -134,6 +134,19 @@ return [
             'order' => 2
         ],
         [
+            'name' => 'machine_models',
+            'controller' => \App\Http\Controllers\Panel\MachineModelControlController::class,
+            'except' => ['show','destroy'],
+            'permission' => 'manage-machine-models',
+            'permission_name' => 'مدیریت مدل های دستگاه',
+            'title' => 'مدل های دستگاه',
+            'route' => 'panel.machine_models.index',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => 'تعاریف پایه',
+            'order' => 2
+        ],
+        [
             'name' => 'orders',
             'controller' => \App\Http\Controllers\Panel\OrderController::class,
             'except' => ['show','destroy'],

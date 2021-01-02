@@ -18,13 +18,12 @@ class OrderController extends Controller
      *
      * @return void
      */
-    protected $order;
+    protected OrderRepository $order;
 
     public function __construct(Order $order)
     {
         $this->order = new OrderRepository($order);
     }
-
 
     /**
      * Display a listing of the resource.
