@@ -66,7 +66,7 @@ class MachineModelDataTable extends BaseDataTable implements DatabaseInterface
     {
         $params = parent::getBuilderParameters();
         array_unshift($params['buttons'], [
-            'text' => 'ایجاد مارپیچ جدید',
+            'text' => 'ایجاد مدل ماشین جدید',
             'className' => 'action',
             'action' => 'function(e, dt, node, config) { var u = "' . route('panel.machine_models.create') . '"; window.location.href = u; }'
         ]);
