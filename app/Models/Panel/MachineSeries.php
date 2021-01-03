@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MachineSeries extends BaseModel
 {
     public $timestamps = false;
-    protected $table = 'tbl_machine_weights';
+    protected $table = 'tbl_machine_series';
     protected $guarded = ['id'];
 }

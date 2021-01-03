@@ -25,6 +25,9 @@ class CreateMachineModelsTable extends Migration
             $table->unsignedTinyInteger('machine_drive_id');
             $table->foreign('machine_drive_id')->references('id')->on('tbl_machine_drives');
 
+            $table->unsignedTinyInteger('machine_type_id');
+            $table->foreign('machine_type_id')->references('id')->on('tbl_machine_types');
+
 
         });
     }
