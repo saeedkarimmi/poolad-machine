@@ -176,6 +176,10 @@ return [
         'price' => 'قیمت',
         'file' => 'فایل',
         'captcha' => 'کد امنیتی',
+        'machine_drive_id' => 'درایو',
+        'machine_weight_id' => 'تناژ',
+        'machine_series_id' => 'سری',
+        'machine_type_id' => 'دسته بندی',
     ],
 
 ];
