@@ -15,6 +15,17 @@ class CreateMachineModelsTable extends Migration
     {
         Schema::create('tbl_machine_models', function (Blueprint $table) {
             $table->unsignedInteger('id')->autoIncrement();
+
+            $table->unsignedTinyInteger('machine_series_id');
+            $table->foreign('machine_series_id')->references('id')->on('tbl_machine_series');
+
+            $table->unsignedTinyInteger('machine_weight_id');
+            $table->foreign('machine_weight_id')->references('id')->on('tbl_machine_weights');
+
+            $table->unsignedTinyInteger('machine_drive_id');
+            $table->foreign('machine_drive_id')->references('id')->on('tbl_machine_drives');
+
+
         });
     }
 

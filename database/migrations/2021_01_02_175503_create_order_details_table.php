@@ -19,14 +19,8 @@ class CreateOrderDetailsTable extends Migration
             $table->unsignedBigInteger('order_id');
             $table->foreign('order_id')->references('id')->on('tbl_orders');
 
-            $table->unsignedTinyInteger('machine_series_id');
-            $table->foreign('machine_series_id')->references('id')->on('tbl_machine_series');
-
-            $table->unsignedTinyInteger('machine_weight_id');
-            $table->foreign('machine_weight_id')->references('id')->on('tbl_machine_weights');
-
-            $table->unsignedTinyInteger('machine_drive_id');
-            $table->foreign('machine_drive_id')->references('id')->on('tbl_machine_drives');
+            $table->unsignedInteger('machine_model_id');
+            $table->foreign('machine_model_id')->references('id')->on('tbl_machine_models');
 
             $table->unsignedInteger('system_control_id');
             $table->foreign('system_control_id')->references('id')->on('tbl_system_controls');
