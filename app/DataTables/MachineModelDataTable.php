@@ -23,10 +23,17 @@ class MachineModelDataTable extends BaseDataTable implements DatabaseInterface
         return datatables()
             ->eloquent($query)
             ->addIndexColumn()
+            ->editColumn('machine', function ($row){
+                return $row->enName;
+            })
+            ->editColumn('machine_fa', function ($row){
+                return $row->faName;
+            })
             ->addColumn('action', function ($row) {
                 return sprintf('<a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
                     route('panel.machine_models.edit', $row->id), __('general.form.edit'));
-            });
+            })
+            ;
     }
 
     /**
@@ -49,7 +56,8 @@ class MachineModelDataTable extends BaseDataTable implements DatabaseInterface
     {
         return [
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),
-//            Column::make('name')->title(trans('validation.attributes.name')),
+            Column::computed('machine')->title(trans('validation.attributes.name')),
+            Column::computed('machine_fa')->title(trans('validation.attributes.name')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
     }
