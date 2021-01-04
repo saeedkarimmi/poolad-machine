@@ -6,8 +6,17 @@ use App\DataTables\OrderDataTable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Order\StoreRequest;
 use App\Http\Requests\Order\UpdateRequest;
+use App\Models\Panel\MachineModel;
 use App\Models\Panel\Order;
+use App\Models\Panel\PaymentMethod;
+use App\Models\Panel\Seller;
+use App\Models\Panel\Spiral;
+use App\Models\Panel\SystemControl;
+use App\Repositories\MachineModelRepository;
 use App\Repositories\OrderRepository;
+use App\Repositories\SellerRepository;
+use App\Repositories\SpiralRepository;
+use App\Repositories\SystemControlRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -19,10 +28,18 @@ class OrderController extends Controller
      * @return void
      */
     protected OrderRepository $order;
+    protected SellerRepository $seller;
+    protected MachineModelRepository $machineModel;
+    protected SpiralRepository $spiral;
+    protected SystemControlRepository $systemControls;
 
-    public function __construct(Order $order)
+    public function __construct(Order $order, Seller $seller, MachineModel $machineModel, Spiral $spiral, SystemControl $systemControls)
     {
         $this->order = new OrderRepository($order);
+        $this->seller = new SellerRepository($seller);
+        $this->machineModel = new MachineModelRepository($machineModel);
+        $this->spiral = new SpiralRepository($spiral);
+        $this->systemControls = new SystemControlRepository($systemControls);
     }
 
     /**
@@ -43,7 +60,12 @@ class OrderController extends Controller
      */
     public function create()
     {
-        return view('panel.order.create');
+        $sellers = $this->seller->all();
+        $spirals = $this->spiral->all();
+        $systemControls = $this->systemControls->all();
+        $machineModels = $this->machineModel->all();
+        $paymentMethods = PaymentMethod::all();
+        return view('panel.order.create', compact('sellers', 'paymentMethods', 'machineModels', 'spirals', 'systemControls'));
     }
 
     /**

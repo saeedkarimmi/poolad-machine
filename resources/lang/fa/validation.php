@@ -170,6 +170,12 @@ return [
         "size" => "اندازه",
         'bill_id' => 'شناسه قبض',
         'payment_id' => 'شناسه پرداخت',
+        'payment_method_id' => 'روش پرداخت',
+        'register_date' => 'تاریخ ثبت',
+        'machine_model_id' => 'مدل دستگاه',
+        'spiral_id' => 'قطر مارپیچ',
+        'system_control_id' => 'سیستم کنترل',
+        'FOB_price' => 'قیمت FOB',
         'image' => 'تصویر',
         'video' => 'ویدئو',
         'body' => 'شرح کامل',
@@ -180,6 +186,8 @@ return [
         'machine_weight_id' => 'تناژ',
         'machine_series_id' => 'سری',
         'machine_type_id' => 'دسته بندی',
+        'seller_id' => 'فروشنده',
+        'order_name' => 'نام سفارش',
     ],
 
 ];
