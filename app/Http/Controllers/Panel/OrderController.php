@@ -6,12 +6,14 @@ use App\DataTables\OrderDataTable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Order\StoreRequest;
 use App\Http\Requests\Order\UpdateRequest;
+use App\Models\Panel\Currency;
 use App\Models\Panel\MachineModel;
 use App\Models\Panel\Order;
 use App\Models\Panel\PaymentMethod;
 use App\Models\Panel\Seller;
 use App\Models\Panel\Spiral;
 use App\Models\Panel\SystemControl;
+use App\Repositories\CurrencyRepository;
 use App\Repositories\MachineModelRepository;
 use App\Repositories\OrderRepository;
 use App\Repositories\SellerRepository;
@@ -31,15 +33,17 @@ class OrderController extends Controller
     protected SellerRepository $seller;
     protected MachineModelRepository $machineModel;
     protected SpiralRepository $spiral;
+    protected CurrencyRepository $currency;
     protected SystemControlRepository $systemControls;
 
-    public function __construct(Order $order, Seller $seller, MachineModel $machineModel, Spiral $spiral, SystemControl $systemControls)
+    public function __construct(Order $order, Seller $seller, MachineModel $machineModel, Spiral $spiral, SystemControl $systemControls, Currency $currency)
     {
         $this->order = new OrderRepository($order);
         $this->seller = new SellerRepository($seller);
         $this->machineModel = new MachineModelRepository($machineModel);
         $this->spiral = new SpiralRepository($spiral);
         $this->systemControls = new SystemControlRepository($systemControls);
+        $this->currency = new CurrencyRepository($currency);
     }
 
     /**
@@ -64,8 +68,10 @@ class OrderController extends Controller
         $spirals = $this->spiral->all();
         $systemControls = $this->systemControls->all();
         $machineModels = $this->machineModel->all();
+        $currencies = $this->currency->all();
         $paymentMethods = PaymentMethod::all();
-        return view('panel.order.create', compact('sellers', 'paymentMethods', 'machineModels', 'spirals', 'systemControls'));
+
+        return view('panel.order.create', compact('sellers', 'paymentMethods', 'machineModels', 'spirals', 'systemControls', 'currencies'));
     }
 
     /**
@@ -78,7 +84,7 @@ class OrderController extends Controller
     {
         DB::beginTransaction();
         try {
-//            $this->order->create($request->only(['name', 'permissions']));
+            $this->order->create($request->only(['order_name', 'sum','seller_id', 'currency_id','payment_method_id','register_at','description','machine_models']));
 
             DB::commit();
             return returnSuccess(trans('general.message.create.success'), route('panel.orders.index'));

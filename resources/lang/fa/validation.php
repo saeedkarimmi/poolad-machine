@@ -186,8 +186,10 @@ return [
         'machine_weight_id' => 'تناژ',
         'machine_series_id' => 'سری',
         'machine_type_id' => 'دسته بندی',
+        'currency_id' => 'نوع ارز',
         'seller_id' => 'فروشنده',
         'order_name' => 'نام سفارش',
+        'sum' => 'مبلغ کل سفارش',
     ],
 
 ];

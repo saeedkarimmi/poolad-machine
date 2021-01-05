@@ -14,4 +14,9 @@ class Order extends Model
 
     protected $table = 'tbl_orders';
     protected $guarded = ['id'];
+
+    public function details()
+    {
+        return $this->hasMany(OrderDetail::class, 'order_id');
+    }
 }

@@ -18,15 +18,13 @@
                                             <div class="form-group">
                                                 <label
                                                     for="order_name">{{ trans('validation.attributes.order_name') }}</label>
-                                                <input type="text" class="form-control" id="order_name"
-                                                       name="order_name" value="">
+                                                <input type="text" class="form-control" id="order_name" name="order_name" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="form-group">
                                                 <label for="seller_id">{{ trans('validation.attributes.seller_id') }}</label>
                                                 <select name="seller_id" id="seller_id" class="form-control">
-                                                    <option value="">-- فروشنده را انتخاب نمایید --</option>
                                                     @foreach($sellers as $seller)
                                                         <option value="{{ $seller->id }}">{{ $seller->name }}</option>
                                                     @endforeach
@@ -35,10 +33,8 @@
                                         </div>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="form-group">
-                                                <label
-                                                    for="payment_method_id">{{ trans('validation.attributes.payment_method_id') }}</label>
-                                                <select name="payment_method_id" id="seller_id" class="form-control">
-                                                    <option value="">-- روش پرداخت را انتخاب نمایید --</option>
+                                                <label for="payment_method_id">{{ trans('validation.attributes.payment_method_id') }}</label>
+                                                <select name="payment_method_id" id="payment_method_id" class="form-control">
                                                     @foreach($paymentMethods as $paymentMethod)
                                                         <option
                                                             value="{{ $paymentMethod->id }}">{{ $paymentMethod->name }}</option>
@@ -48,75 +44,97 @@
                                         </div>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="form-group">
-                                                <label
-                                                    for="register_date">{{ trans('validation.attributes.register_date') }}</label>
+                                                <label for="register_at">{{ trans('validation.attributes.register_at') }}</label>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="register_date"
-                                                           id="register_date"/>
+                                                    <input type="text" class="form-control" name="register_at" id="register_at"/>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="currency_id">{{ trans('validation.attributes.currency_id') }}</label>
+                                                <select name="currency_id" id="currency_id" class="form-control">
+                                                    @foreach($currencies as $currency)
+                                                        <option value="{{ $currency->id }}">{{ $currency->name }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-sm-6">
                                             <div class="form-group">
                                                 <label
                                                     for="description">{{ trans('validation.attributes.description') }}</label>
-                                                <input type="text" class="form-control" id="description"
-                                                       name="description" value="">
+                                                <input type="text" class="form-control" id="description" name="description" value="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="repeater">
-                                                <div data-repeater-list="machine_models">
-                                                    <div data-repeater-item>
-
-                                                        <div class="form-inline">
-                                                            <div class="form-group pr-3 ">
-                                                                <label for="machine_model_id"  class="pl-3">{{ trans('validation.attributes.machine_model_id') }}</label>
-                                                                <select name="machine_model_id" id="machine_model_id" class="form-control">
-                                                                    @foreach($machineModels as $machineModel)
-                                                                        <option value="{{ $machineModel->id }}">{{ $machineModel->faName }}</option>
-                                                                    @endforeach
-                                                                </select>
+                                        <div class="col-md-12 repeater">
+                                            <input data-repeater-create class="float-right btn btn-success mb-2" type="button" value="افزودن"/>
+                                            <br>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr class="text-center">
+                                                    <th>{{ trans('validation.attributes.machine_model_id') }}</th>
+                                                    <th>{{ trans('validation.attributes.spiral_id') }}</th>
+                                                    <th>{{ trans('validation.attributes.system_control_id') }}</th>
+                                                    <th>{{ trans('validation.attributes.FOB_price') }}</th>
+                                                    <th>{{ trans('general.form.action') }}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody data-repeater-list="machine_models">
+                                                    <tr data-repeater-item>
+                                                        <td>
+                                                            <select name="machine_model_id" id="machine_model_id" class="form-control">
+                                                                @foreach($machineModels as $machineModel)
+                                                                    <option value="{{ $machineModel->id }}">{{ $machineModel->enName }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <select name="spiral_id" id="spiral_id" class="form-control">
+                                                                @foreach($spirals as $spiral)
+                                                                    <option value="{{ $spiral->id }}">{{ $spiral->name }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <select name="system_control_id" id="system_control_id" class="form-control">
+                                                                @foreach($systemControls as $systemControl)
+                                                                    <option value="{{ $systemControl->id }}">{{ $systemControl->name }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </td>
+                                                        <td class="input-group">
+                                                            <input type="text" name="FOB_price" class="form-control text-left">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-addon currency">$</span>
                                                             </div>
-                                                            <div class="form-group pr-3 ">
-                                                                <label for="spiral_id"  class="pl-3">{{ trans('validation.attributes.spiral_id') }}</label>
-                                                                <select name="spiral_id" id="spiral_id" class="form-control">
-                                                                    @foreach($spirals as $spiral)
-                                                                        <option value="{{ $spiral->id }}">{{ $spiral->name }}</option>
-                                                                    @endforeach
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-group pr-3 ">
-                                                                <label for="system_control_id"  class="pl-3">{{ trans('validation.attributes.system_control_id') }}</label>
-                                                                <select name="system_control_id" id="system_control_id" class="form-control">
-                                                                    @foreach($systemControls as $systemControl)
-                                                                        <option value="{{ $systemControl->id }}">{{ $systemControl->name }}</option>
-                                                                    @endforeach
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-group pr-3 ">
-                                                                <label for="FOB_price"  class="pl-3">{{ trans('validation.attributes.FOB_price') }}</label>
-                                                                <input type="text" id="machine_model_id" class="form-control">
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-addon">$</span>
-                                                                </div>
-                                                            </div>
+                                                        </td>
+                                                        <td>
                                                             <span class="btn btn-danger" data-repeater-delete="" type="submit">حذف</span>
-                                                        </div>
-                                                        <br>
-
-                                                    </div>
-                                                </div>
-                                                <input data-repeater-create type="button" value="افزودن"/>
-                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="bg-muted">
+                                                    <tr>
+                                                        <td class="" colspan="3"><b>مبلغ کل FOB</b></td>
+                                                        <td class="text-center" colspan="2"><b>$360,000</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="" colspan="3"><b>مبلغ کل سفارش</b></td>
+                                                        <td class="text-center" colspan="2">
+                                                            <input type="text" id="machine_model_id" name="sum" class="form-control text-left">
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
                                         </div>
                                     </div>
-                                    <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
+                                    <div class="text-center wow fadeIn faster">
                                         <button type="submit"
                                                 class="btn btn-primary">{{ trans('role.form.submit') }}</button>
                                         <a href="{{ route('panel.orders.index') }}"
@@ -140,15 +158,7 @@
     <script>
         $(document).ready(function () {
             'use strict';
-
             $('.repeater').repeater({
-                defaultValues: {
-                    'textarea-input': 'foo',
-                    'text-input': 'bar',
-                    'select-input': 'B',
-                    'checkbox-input': ['A', 'B'],
-                    'radio-input': 'B'
-                },
                 show: function () {
                     $(this).slideDown();
                 },
