@@ -25,11 +25,8 @@ class CreateOrderDetailsTable extends Migration
             $table->unsignedInteger('system_control_id');
             $table->foreign('system_control_id')->references('id')->on('tbl_system_controls');
 
-            $table->unsignedTinyInteger('currency_id');
-            $table->foreign('currency_id')->references('id')->on('tbl_currencies');
-
             $table->string('FOB_price');
-            $table->boolean('documneted')->default(false);
+            $table->boolean('documented')->default(false);
 
 
 

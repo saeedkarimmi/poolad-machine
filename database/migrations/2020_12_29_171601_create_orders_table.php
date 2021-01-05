@@ -16,13 +16,13 @@ class CreateOrdersTable extends Migration
         Schema::create('tbl_orders', function (Blueprint $table) {
             $table->id();
 
-            $table->string('order_name', 50);
+            $table->string('order_name', 50)->unique();
 
             $table->unsignedInteger('seller_id');
             $table->foreign('seller_id')->references('id')->on('tbl_sellers');
 
-            $table->unsignedInteger('spiral_id');
-            $table->foreign('spiral_id')->references('id')->on('tbl_spirals');
+            $table->unsignedTinyInteger('currency_id');
+            $table->foreign('currency_id')->references('id')->on('tbl_currencies');
 
             $table->unsignedTinyInteger('payment_method_id');
             $table->foreign('payment_method_id')->references('id')->on('tbl_payment_methods');
