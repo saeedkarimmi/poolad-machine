@@ -171,7 +171,7 @@ return [
         'bill_id' => 'شناسه قبض',
         'payment_id' => 'شناسه پرداخت',
         'payment_method_id' => 'روش پرداخت',
-        'register_date' => 'تاریخ ثبت',
+        'register_at' => 'تاریخ ثبت',
         'machine_model_id' => 'مدل دستگاه',
         'spiral_id' => 'قطر مارپیچ',
         'system_control_id' => 'سیستم کنترل',
