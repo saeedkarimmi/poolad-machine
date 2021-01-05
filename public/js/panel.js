@@ -60,7 +60,7 @@ $(function() {
                 return false;
             }
         }
-        
+
 
         // window.showLoading(true);
         submit_button.prop('disabled', true);
@@ -105,12 +105,15 @@ $(function() {
                 submit_button.prop('disabled', false);
                 submit_button.removeClass('loading-button');
                 // window.showLoading(false);
-                
+
                 if (data.status === 422) {
                     inputs.parents().removeClass('has-error');
                     var json = data.responseJSON;
                     var errors = [];
                     $.each(json.errors, function (index, element) {
+                        if (index.indexOf('.') > -1){
+                            index = index.replace(/\.(.+?)(?=\.|$)/g, (m, s) => `[${s}]`);
+                        }
                         form.find('[name="' + index + '"]').parent().addClass('has-error');
                         for (var i = 0; i < $(this).length; i++) {
                             if (errors.indexOf($(this).get(i)) < 0) {
