@@ -30,7 +30,7 @@ class StoreRequest extends FormRequest
             'seller_id'         => ['required', 'exists:tbl_sellers,id'],
             'currency_id'       => ['required', 'exists:tbl_currencies,id'],
             'payment_method_id' => ['required', 'exists:tbl_payment_methods,id'],
-            'register_at'       => ['required', 'date'],
+            'registered_at'       => ['required', 'date'],
             'sum'               => ['required', 'numeric'],
             'description'       => ['nullable', 'string', 'max:255'],
 

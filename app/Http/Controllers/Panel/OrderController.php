@@ -84,7 +84,7 @@ class OrderController extends Controller
     {
         DB::beginTransaction();
         try {
-            $this->order->create($request->only(['order_name', 'sum','seller_id', 'currency_id','payment_method_id','register_at','description','machine_models']));
+            $this->order->create($request->only(['order_name', 'sum','seller_id', 'currency_id','payment_method_id','registered_at','description','machine_models']));
 
             DB::commit();
             return returnSuccess(trans('general.message.create.success'), route('panel.orders.index'));

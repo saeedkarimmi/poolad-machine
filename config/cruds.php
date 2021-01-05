@@ -149,7 +149,7 @@ return [
         [
             'name' => 'orders',
             'controller' => \App\Http\Controllers\Panel\OrderController::class,
-            'except' => ['show','destroy'],
+            'except' => ['destroy'],
             'permission' => 'manage-orders',
             'permission_name' => 'مدیریت سفارشات',
             'title' => 'سفارشات',

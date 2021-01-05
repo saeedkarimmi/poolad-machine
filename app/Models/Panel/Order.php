@@ -14,6 +14,9 @@ class Order extends Model
 
     protected $table = 'tbl_orders';
     protected $guarded = ['id'];
+    protected $dates =[
+        'registered_at'
+    ];
 
     public function details()
     {

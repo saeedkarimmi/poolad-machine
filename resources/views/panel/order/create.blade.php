@@ -44,9 +44,9 @@
                                         </div>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="form-group">
-                                                <label for="register_at">{{ trans('validation.attributes.register_at') }}</label>
+                                                <label for="registered_at">{{ trans('validation.attributes.registered_at') }}</label>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="register_at" id="register_at"/>
+                                                    <input type="text" class="form-control" name="registered_at" id="registered_at"/>
                                                 </div>
                                             </div>
                                         </div>
