@@ -29,4 +29,9 @@ class OrderDetail extends Model
     {
         return $this->belongsTo(SystemControl::class, 'system_control_id');
     }
+
+    public function spiral()
+    {
+        return $this->belongsTo(Spiral::class, 'spiral_id');
+    }
 }
