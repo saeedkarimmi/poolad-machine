@@ -25,6 +25,9 @@ class CreateOrderDetailsTable extends Migration
             $table->unsignedInteger('system_control_id');
             $table->foreign('system_control_id')->references('id')->on('tbl_system_controls');
 
+            $table->unsignedInteger('spiral_id');
+            $table->foreign('spiral_id')->references('id')->on('tbl_spirals');
+
             $table->string('FOB_price');
             $table->boolean('documented')->default(false);
 
