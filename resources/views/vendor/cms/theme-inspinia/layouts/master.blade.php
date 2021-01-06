@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<div id="wrapper">
+<div id="wrapper" class="{{ request()->segment(1).'-'.request()->segment(2) }}">
     @include('cms::theme-inspinia.partials.sidebar')
     <div id="page-wrapper" class="gray-bg dashbard-1">
         @include('cms::theme-inspinia.partials.topbar')
