@@ -14,4 +14,19 @@ class OrderDetail extends Model
 
     protected $table = 'tbl_order_details';
     protected $guarded = ['id'];
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class, 'order_id');
+    }
+
+    public function machineModel()
+    {
+        return $this->belongsTo(MachineModel::class, 'machine_model_id');
+    }
+
+    public function systemControl()
+    {
+        return $this->belongsTo(SystemControl::class, 'system_control_id');
+    }
 }
