@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
 
-class OrderDetail extends Model
+class OrderDetail extends BaseModel
 {
     use HasFactory, Userstamps, SoftDeletes, PersianDateTrait;
 
