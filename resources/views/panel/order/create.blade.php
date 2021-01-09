@@ -16,8 +16,7 @@
                                     <div class="row">
                                         <div class="col-md-3 col-sm-6">
                                             <div class="form-group">
-                                                <label
-                                                    for="order_name">{{ trans('validation.attributes.order_name') }}</label>
+                                                <label for="order_name">{{ trans('validation.attributes.order_name') }}</label>
                                                 <input type="text" class="form-control" id="order_name" name="order_name" value="">
                                             </div>
                                         </div>
@@ -127,7 +126,7 @@
                                                     <tr>
                                                         <td class="" colspan="3"><b>مبلغ کل سفارش</b></td>
                                                         <td class="text-center" colspan="2">
-                                                            <input type="text" id="machine_model_id" name="sum" class="form-control text-left">
+                                                            <input type="text" id="sum" name="sum" class="form-control text-left">
                                                         </td>
                                                     </tr>
                                                 </tfoot>

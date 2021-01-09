@@ -20,3 +20,13 @@ div.dataTables_wrapper >.dataTables_wrapper > .dt-buttons > .action {
 div.dataTables_wrapper >.dataTables_wrapper > .dt-buttons > .action > span {
     color: white;
 }
+
+.panel-orders .table-borderless > tbody tr td {
+    font-size: 1.3em;
+    border: 0;
+    width: 50%;
+}
+
+.panel-orders table > tbody tr{
+    border: 0;
+}

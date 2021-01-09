@@ -94,6 +94,11 @@ class OrderController extends Controller
         }
     }
 
+    public function show(Order $order)
+    {
+        return view('panel.order.show', compact('order'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
