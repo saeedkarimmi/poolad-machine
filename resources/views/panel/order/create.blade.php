@@ -49,14 +49,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="registered_at">{{ trans('validation.attributes.registered_at') }}</label>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="registered_ats" id="registered_at" data-datepicker />
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 col-sm-6">
