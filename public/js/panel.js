@@ -228,9 +228,25 @@ $(function() {
             submenu_collapse.removeClass().addClass('nav nav-second-level submenu collapse in').attr('aria-expanded', 'true');
             current_li.children('a').removeClass().attr('aria-expanded', 'true');
         };
+        let init_datepicker = function() {
+            let datepickers = $('[data-datepicker]');
+            if (datepickers.length > 0) {
+                let current_date = new Date();
+
+                datepickers.each(function (index, element) {
+                    // $(element).attr('readonly', 'readonly');
+                    $(element).persianDatepicker({
+                        onSelect: function () {
+                            alert($(element).attr("data-gdate"));
+                        }
+                    });
+                });
+            }
+        }
 
         init_select2();
         init_sidebar_links_collapse();
+        init_datepicker();
     });
     $(document).ready(function () {
         $('.i-checks').iCheck({
