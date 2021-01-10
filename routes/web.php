@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\Panel\DashboardController;
-use App\Http\Controllers\Panel\MenuItemController;
-use App\Http\Controllers\Panel\RoleController;
 use App\Http\Controllers\Panel\UserController;
 use Illuminate\Support\Facades\Route;
 
