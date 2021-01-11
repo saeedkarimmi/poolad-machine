@@ -191,6 +191,25 @@ return [
         'seller_id' => 'فروشنده',
         'order_name' => 'نام سفارش',
         'sum' => 'مبلغ کل سفارش',
+        'order_id' => 'سفارش',
+        'serial_number' => 'شماره سریال',
+        'shipping_file' => 'پرونده حمل',
+        'file_number' => 'شماره پرونده',
+        'order_registration_code' => 'کد ثبت سفارش',
+        'incoterm' => 'اینکوترمز',
+        'proforma_number' => 'شماره پروفورما',
+        'order_register_completion_date' => 'تاریخ تکمیل ثبت سفارش',
+        'order_register_issue_date' => 'تاریخ صدور ثبت سفارش',
+        'order_register_validity_date' => 'تاریخ اعتبار ثبت سفارش',
+
+        'currency_allocate_application_date' => 'تاریخ درخواست تخصیص ارز',
+        'currency_allocate_issue_date' => 'تاریخ صدور تخصیص ارز',
+        'validity_currency_allotment_date' => 'تاریخ اعتبار تخصیص ارز',
+        'bank_id' => 'بانک',
+        'details' => [
+                'آیتم'
+        ],
+
     ],
 
 ];

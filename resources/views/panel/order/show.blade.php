@@ -43,7 +43,9 @@
                             </tr>
                             </tbody>
                         </table>
-                        <form action="#" method="post">
+                        <form action="{{ route('panel.import_files.create') }}" method="get" {{--data-type="ajax-form"--}}>
+                            <div class="alert alert-warning d-none"></div>
+                            <input type="hidden" name="order_id" value="{{ $order->id}}">
                             <table class="table table-bordered">
                                 <thead>
                                 <tr class="text-center">
@@ -57,8 +59,8 @@
                                 <tbody>
                                 @foreach($order->details as $detail)
                                     <tr>
-                                        <td><input type="checkbox" checked class="i-checks"
-                                                   name="input[{{$detail->id}}]">
+                                        <td>
+                                            <input type="checkbox" checked class="i-checks" name="details[]" value="{{$detail->id}}" {{ $detail->isDocumented() ? 'disabled':'' }}>
                                         </td>
                                         <td>
                                             {{ $detail->machineModel->enName }}
@@ -87,10 +89,10 @@
                                 </tfoot>
                             </table>
                             <button type="submit" class="btn btn-primary">تشکیل پرونده واردات</button>
-                            <a href="{{ route('panel.orders.index') }}"
-                               class="btn btn-purple svg-wrapper purple float-right">
-                                {{ trans('general.form.back') }}
-                            </a>
+{{--                            <a href="{{ route('panel.orders.index') }}"--}}
+{{--                               class="btn btn-purple svg-wrapper purple float-right">--}}
+{{--                                {{ trans('general.form.back') }}--}}
+{{--                            </a>--}}
                         </form>
                     </div>
                 </div>
