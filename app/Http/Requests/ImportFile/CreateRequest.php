@@ -28,7 +28,7 @@ class CreateRequest extends FormRequest
             'order_id'  => ['required', 'exists:tbl_orders,id'],
             'details'   => ['required', 'array'],
             'details.*' => ['required', Rule::exists('tbl_order_details', 'id')->where(function ($q){
-                $q->where('documented', 0);
+                $q->where('documented', 0)->where('order_id', $this->request->get('order_id'));
             })],
         ];
     }
