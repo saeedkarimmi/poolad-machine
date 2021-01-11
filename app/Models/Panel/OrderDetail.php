@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
 
+/**
+ * @property boolean documented
+ */
 class OrderDetail extends BaseModel
 {
     use HasFactory, Userstamps, SoftDeletes, PersianDateTrait;
@@ -33,5 +36,12 @@ class OrderDetail extends BaseModel
     public function spiral()
     {
         return $this->belongsTo(Spiral::class, 'spiral_id');
+    }
+
+    /************************************************/
+
+    public function isDocumented()
+    {
+        return $this->documented;
     }
 }
