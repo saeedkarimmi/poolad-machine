@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Panel;
 
+use App\DataTables\ImportFileDataTable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ImportFile\CreateRequest;
 use App\Http\Requests\ImportFile\StoreRequest;
@@ -20,9 +21,10 @@ class ImportFileController extends Controller
         $this->importFile = new ImportFileRepository($importFile);
     }
 
-    public function index()
+    public function index(ImportFileDataTable $dataTable)
     {
 //        Who Wants To Live Forever
+        return $dataTable->render('panel.import-file.index');
     }
 
     public function create(CreateRequest $request)
