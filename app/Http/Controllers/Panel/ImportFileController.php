@@ -30,6 +30,7 @@ class ImportFileController extends Controller
     public function create(CreateRequest $request)
     {
         // todo : check
+        /** @var Order $order */
         $order = Order::query()->findOrFail($request->get('order_id'));
         $orderDetails  = $order->details()->whereIn('id', $request->get('details'))->get();
 

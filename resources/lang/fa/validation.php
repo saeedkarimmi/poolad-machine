@@ -206,9 +206,7 @@ return [
         'currency_allocate_issue_date' => 'تاریخ صدور تخصیص ارز',
         'validity_currency_allotment_date' => 'تاریخ اعتبار تخصیص ارز',
         'bank_id' => 'بانک',
-        'details' => [
-                'آیتم'
-        ],
+        'details.*' => 'آیتم',
 
     ],
 
