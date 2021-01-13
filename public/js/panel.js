@@ -185,6 +185,7 @@ $(function() {
 
                 datepickers.each(function (index, element) {
                     // $(element).attr('readonly', 'readonly');
+                    $(element).attr('autocomplete', 'off');
                     $(element).persianDatepicker({
                         onSelect: function () {
                             alert($(element).attr("data-gdate"));
