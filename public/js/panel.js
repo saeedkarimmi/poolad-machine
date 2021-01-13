@@ -10,6 +10,19 @@ $(function() {
             error_container.removeClass('d-none');
         }
     };
+    window.showSwal = function(text, state, showConfirmButton = false, timer = 1500) {
+        if (state == undefined) {
+            state = 'success';
+        }
+        Swal.fire({
+            icon: state,
+            html:text.join('\n'),
+            showConfirmButton: showConfirmButton,
+            confirmButtonText: `باشه`,
+            timer: timer
+        })
+    };
+
     $('body').on('click', 'form[data-type="ajax-form"] button[name][type="submit"]', function(e) {
         var form = $(this).closest('form');
         var button_submit = $(this);
@@ -137,7 +150,6 @@ $(function() {
         var init_select2 = function() {
             var select2 = $('.select2');
             $.each(select2, function(index, element) {
-                console.log(2321312);
                 var target = $(this);
                 var placeholder = target.attr('data-placeholder');
                 if (placeholder === undefined) {
