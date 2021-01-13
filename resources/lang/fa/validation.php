@@ -207,7 +207,10 @@ return [
         'validity_currency_allotment_date' => 'تاریخ اعتبار تخصیص ارز',
         'bank_id' => 'بانک',
         'details.*' => 'آیتم',
-        'machine_models.0.FOB_price' => 'قیمت FOB'
+        'machine_models.*.FOB_price' => 'قیمت FOB',
+        'machine_models.*.machine_model_id' => 'مدل دستگاه',
+        'machine_models.*.spiral_id' => 'قطر مارپیچ',
+        'machine_models.*.system_control_id' => 'سیستم کنترل',
 
     ],
 
