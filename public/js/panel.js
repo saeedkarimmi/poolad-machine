@@ -122,79 +122,17 @@ $(function() {
                         }
                     });
                     errors = errors.join('<br />');
-                    showFormError(form, [ errors ], 'error');
+                    // showFormError(form, [ errors ], 'error');
+                    Swal.fire({
+                        icon: 'error',
+                        html:errors,
+                        confirmButtonText: 'باشه',
+                    })
                 }
             }
         });
     });
-    window.showSwal = function(text, state) {
-        if (state == undefined) {
-            state = 'success';
-        }
-        return swal({
-            title: '',
-            text: text.join('\n'),
-            icon: state,
-            button: 'باشه',
-            html: true
-        });
-    };
-    var BottomModal = {
-        events: {},
-        show: function(attr) {
-            var element = $(attr);
-            var bm_body = element.find('.bm-body');
-            bm_body.removeClass('bm-body-hide').addClass('bm-body-show');
-            element.fadeIn();
-            if (BottomModal.events[attr] !== undefined) {
-                $.each(BottomModal.events[attr], function(index, element) {
-                    BottomModal.events[attr][index]();
-                });
-            }
-        },
-        hide: function(attr) {
-            var element = $(attr);
-            var bm_body = element.find('.bm-body');
-            bm_body.removeClass('bm-body-show').addClass('bm-body-hide');
-            element.fadeOut();
-        },
-        init: function() {
-            var elements = $('[data-toggle="bottom-modal"]');
-            $.each(elements, function(index, element) {
-                var button = $(this);
-                var target = button.attr('data-target');
-                button.on('click', function() {
-                    BottomModal.show(target);
-                    if (target == '#bottom-modal-shop-map') {
-                        $('#map-shop-create').attr('data-input', button.attr('data-input'));
-                    }
-                });
-                $(target).find('[data-dismiss]').on('click', function() {
-                    BottomModal.hide(target);
-                });
-                $(target).find('[data-accept]').on('click', function() {
-                    BottomModal.hide(target);
-                    button.children('span').text('تغییر موقعیت');
-                });
-            });
-        },
-        onShown: function(attr, callback) {
-            if (BottomModal.events[attr] === undefined) {
-                BottomModal.events[attr] = [];
-            }
-            BottomModal.events[attr].push(callback);
-        },
-        showLoading: function(attr) {
-            var element = $(attr);
-            var bm_loading = element.find('.bm-loading');
-            bm_loading.show();
-        },
-        hideLoading: function(attr) {
-            var element = $(attr);
-            var bm_loading = element.find('.bm-loading');
-            bm_loading.fadeOut('fast');
-        }
-    };
+
     $(function() {
         var init_select2 = function() {
             var select2 = $('.select2');

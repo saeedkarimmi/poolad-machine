@@ -27,6 +27,7 @@ mix.styles(
         'vendor/saeedkarimmi/cms/src/assets/css/font-awesome.min.css',
         'vendor/saeedkarimmi/cms/src/assets/css/plugins/iCheck/custom.css',
         'vendor/saeedkarimmi/cms/src/assets/css/plugins/toastr/toastr.min.css',
+        'vendor/saeedkarimmi/cms/src/assets/css/plugins/sweetalert2/sweetalert2.css',
         'vendor/saeedkarimmi/cms/src/assets/css/plugins/dataTables/datatables.min.css',
         'vendor/saeedkarimmi/cms/src/assets/js/plugins/gritter/jquery.gritter.css',
         'vendor/saeedkarimmi/cms/src/assets/css/animate.css',
@@ -68,6 +69,7 @@ mix.scripts(
         'vendor/saeedkarimmi/cms/src/assets/js/plugins/chartJs/Chart.min.js',
         'vendor/saeedkarimmi/cms/src/assets/js/plugins/select2/select2.full.min.js',
         'vendor/saeedkarimmi/cms/src/assets/js/plugins/toastr/toastr.min.js',
+        'vendor/saeedkarimmi/cms/src/assets/js/plugins/sweetalert2/sweetalert2.min.js',
         'vendor/saeedkarimmi/cms/src/assets/js/persianDatepicker.min.js',
     ]
     , 'public/bundle/panel.js');

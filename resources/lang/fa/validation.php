@@ -207,6 +207,7 @@ return [
         'validity_currency_allotment_date' => 'تاریخ اعتبار تخصیص ارز',
         'bank_id' => 'بانک',
         'details.*' => 'آیتم',
+        'machine_models.0.FOB_price' => 'قیمت FOB'
 
     ],
 
