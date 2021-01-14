@@ -30,7 +30,7 @@ class CreateOrdersTable extends Migration
             $table->string('sum');
             $table->string('description')->nullable();
 
-            $table->timestamp('registered_at');
+            $table->string('registered_at', 20);
 
             $table->timestamps();
             $table->unsignedBigInteger('created_by')->nullable();
