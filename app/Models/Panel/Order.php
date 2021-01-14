@@ -14,10 +14,6 @@ class Order extends BaseModel
 
     protected $table = 'tbl_orders';
     protected $guarded = ['id'];
-    protected $dates =[
-        'registered_at'
-    ];
-
     public function details()
     {
         return $this->hasMany(OrderDetail::class, 'order_id');

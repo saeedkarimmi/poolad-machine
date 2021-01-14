@@ -10,8 +10,5 @@ use Illuminate\Database\Eloquent\Model;
 class OrderView extends BaseModel
 {
     use PersianDateTrait;
-    protected $dates =[
-        'registered_at'
-    ];
     protected $table = 'v_order';
 }

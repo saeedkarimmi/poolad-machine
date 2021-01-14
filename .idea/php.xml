@@ -136,6 +136,8 @@
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/melihovv/laravel-package-generator" />
       <path value="$PROJECT_DIR$/vendor/saeedkarimmi/cms" />
+      <path value="$PROJECT_DIR$/vendor/hekmatinasser/notowo" />
+      <path value="$PROJECT_DIR$/vendor/hekmatinasser/verta" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
