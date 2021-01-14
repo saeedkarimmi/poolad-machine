@@ -5,7 +5,6 @@ namespace App\Traits;
 
 
 use Illuminate\Support\Str;
-use Morilog\Jalali\Jalalian;
 
 trait PersianDateTrait
 {
@@ -28,7 +27,7 @@ trait PersianDateTrait
             return null;
         }
 
-        return Jalalian::forge($this->$what)->format($format);
+        return \Verta::instance($this->$what)->format($format);
     }
 
     /**
