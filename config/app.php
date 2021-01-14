@@ -176,6 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        Hekmatinasser\Verta\VertaServiceProvider::class,
 
     ],
 
@@ -229,7 +230,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Verta' => \Hekmatinasser\Verta\Facades\Verta::class,
+        'Verta' => Hekmatinasser\Verta\Verta::class,
 
     ],
 
