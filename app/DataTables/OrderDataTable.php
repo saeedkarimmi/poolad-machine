@@ -28,11 +28,8 @@ class OrderDataTable extends BaseDataTable implements DatabaseInterface
                 return sprintf('<a href="%s" title="%s">%s</a>',
                     route('panel.orders.show', $row->id), __('general.form.show'), $row->order_name);
             })
-            ->editColumn('registered_at', function ($row) {
-                return $row->registered_at ? with(new Carbon($row->registered_at))->format('Y/m/d') : '';
-            })
-            ->filterColumn('registered_at', function ($query, $keyword) {
-                $query->whereRaw("DATE_FORMAT(registered_at,'%Y/%m/%d') like ?", ["%$keyword%"]);
+            ->editColumn('gregorian_registered_at', function ($row) {
+                return  Carbon::instance(\Verta::parse($row->registered_at)->datetime())->format('Y/m/d');
             })
             ->addColumn('action', function ($row) {
                 return sprintf('<a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
@@ -65,8 +62,8 @@ class OrderDataTable extends BaseDataTable implements DatabaseInterface
             Column::make('payment_method_name')->title(trans('validation.attributes.payment_method_id')),
             Column::make('machine_number')->title(trans('validation.attributes.machine_number')),
             Column::make('sum')->title(trans('validation.attributes.sum'))/*->orderDataType('dom-number')*/,
-            Column::make('jalali_registered_at', 'registered_at')->title(trans('validation.attributes.registered_at') . ' (شمسی)'),
-            Column::make('registered_at', 'registered_at')->title(trans('validation.attributes.registered_at'). ' (میلادی)'),
+            Column::make('registered_at')->title(trans('validation.attributes.registered_at') . ' (شمسی)'),
+            Column::make('gregorian_registered_at', 'registered_at')->title(trans('validation.attributes.registered_at'). ' (میلادی)'),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
     }

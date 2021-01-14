@@ -22,7 +22,7 @@
                                 </td>
                                 <td>
                                     {{ trans('validation.attributes.registered_at'). ' (شمسی)' }} :
-                                    <strong>{{ $order->jalali_registered_at }}</strong>
+                                    <strong>{{ $order->registered_at }}</strong>
                                 </td>
                             </tr>
                             <tr>
@@ -32,7 +32,7 @@
                                 </td>
                                 <td>
                                     {{ trans('validation.attributes.registered_at'). ' (میلادی)' }} :
-                                    <strong>{{ $order->registered_at->format('Y/m/d') }}</strong>
+                                    <strong>{{ \Carbon::instance(Verta::parse($order->registered_at)->datetime())->format('Y/m/d') }}</strong>
                                 </td>
                             </tr>
                             <tr>
