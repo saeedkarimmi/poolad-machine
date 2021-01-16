@@ -49,10 +49,10 @@ class ImportFileDataTable extends BaseDataTable
             Column::make('file_number')->title(trans('validation.attributes.file_number')),
             Column::make('name')->title(trans('validation.attributes.seller_id')),
 
-            Column::make('jalali_order_register_issue_date', 'order_register_issue_date')->title(trans('validation.attributes.order_register_issue_date')),
-            Column::make('jalali_order_register_validity_date', 'order_register_validity_date')->title(trans('validation.attributes.order_register_validity_date')),
-            Column::make('jalali_currency_allocate_issue_date', 'currency_allocate_issue_date')->title(trans('validation.attributes.currency_allocate_issue_date')),
-            Column::make('jalali_validity_currency_allotment_date', 'validity_currency_allotment_date')->title(trans('validation.attributes.validity_currency_allotment_date')),
+            Column::make('order_register_issue_date')->title(trans('validation.attributes.order_register_issue_date')),
+            Column::make('order_register_validity_date')->title(trans('validation.attributes.order_register_validity_date')),
+            Column::make('currency_allocate_issue_date')->title(trans('validation.attributes.currency_allocate_issue_date')),
+            Column::make('validity_currency_allotment_date')->title(trans('validation.attributes.validity_currency_allotment_date')),
         ];
     }
 }

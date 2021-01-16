@@ -6,8 +6,12 @@ use App\DataTables\ImportFileDataTable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ImportFile\CreateRequest;
 use App\Http\Requests\ImportFile\StoreRequest;
+use App\Models\Panel\Bank;
+use App\Models\Panel\Currency;
 use App\Models\Panel\ImportFile;
 use App\Models\Panel\Order;
+use App\Repositories\BankRepository;
+use App\Repositories\CurrencyRepository;
 use App\Repositories\ImportFileRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -15,10 +19,14 @@ use Illuminate\Support\Facades\DB;
 class ImportFileController extends Controller
 {
     private ImportFileRepository $importFile;
+    private CurrencyRepository $currency;
+    private BankRepository $bank;
 
-    public function __construct(ImportFile $importFile)
+    public function __construct(ImportFile $importFile, Currency $currency, Bank $bank)
     {
         $this->importFile = new ImportFileRepository($importFile);
+        $this->currency = new CurrencyRepository($currency);
+        $this->bank = new BankRepository($bank);
     }
 
     public function index(ImportFileDataTable $dataTable)
@@ -33,8 +41,10 @@ class ImportFileController extends Controller
         /** @var Order $order */
         $order = Order::query()->findOrFail($request->get('order_id'));
         $orderDetails  = $order->details()->whereIn('id', $request->get('details'))->get();
+        $currencies = $this->currency->all();
+        $banks = $this->bank->all();
 
-        return view('panel.import-file.create', compact('order', 'orderDetails'));
+        return view('panel.import-file.create', compact('order', 'orderDetails', 'currencies', 'banks'));
     }
 
     /**

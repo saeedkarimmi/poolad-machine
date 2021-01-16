@@ -44,17 +44,21 @@
                                         <div class="col-md-2 col-sm-6">
                                             <div class="form-group">
                                                 <label for="currency_id">{{ trans('validation.attributes.currency_id') }}</label>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="currency_id" id="currency_id" />
-                                                </div>
+                                                <select name="currency_id" id="currency_id" class="form-control">
+                                                    @foreach($currencies as $currency)
+                                                        <option value="{{ $currency->id }}">{{ $currency->name }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-2 col-sm-6">
                                             <div class="form-group">
                                                 <label for="bank_id">{{ trans('validation.attributes.bank_id') }}</label>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="bank_id" id="bank_id" />
-                                                </div>
+                                                <select name="bank_id" id="bank_id" class="form-control">
+                                                    @foreach($banks as $bank)
+                                                        <option value="{{ $bank->id }}">{{ $bank->name }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-2 col-sm-6">
@@ -107,9 +111,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-
-                                    </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -128,10 +129,18 @@
                                                 <input type="hidden" name="order_details[{{ $key }}][order_detail_id]" value="{{ $orderDetail->id }}">
                                                 <tr>
                                                     <td>{{ $orderDetail->machineModel->enName }}</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" id="serial_number" name="order_details[{{ $key }}][serial_number]" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" id="FOB_price" name="order_details[{{ $key }}][FOB_price]" class="form-control" value="{{ $orderDetail->FOB_price }}">
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                                 </tbody>

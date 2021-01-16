@@ -21,11 +21,13 @@ class ImportFileRepository extends Repository implements RepositoryInterface
 
         foreach ($data['order_details'] as $orderDetail){
             $importFile->details()->create([
-                'order_detail_id' => $orderDetail['order_detail_id']
+                'order_detail_id' => $orderDetail['order_detail_id'],
+                'FOB_price' => $orderDetail['FOB_price'],
             ]);
         }
 
-        OrderDetail::query()->whereIn('id', $data['order_details'])->update([
+        $order_detail_ids = collect($data['order_details'])->pluck('order_detail_id')->toarray();
+        OrderDetail::query()->whereIn('id', $order_detail_ids)->update([
             'documented' => true
         ]);
     }
