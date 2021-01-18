@@ -39,7 +39,8 @@ class StoreRequest extends FormRequest
             'currency_allocate_issue_date'          => ['nullable', 'jdate'],
             'validity_currency_allotment_date'      => ['nullable', 'jdate'],
             'order_details'                         => ['required', 'array'],
-            'order_details.*.FOB_price'             => ['required', 'numeric'],
+            'order_details.*.FOB_price'             => ['required', 'numeric'], // todo: set max length to 50 characters
+            'order_details.*.serial_number'         => ['required', 'string', 'max:50'],
             'order_details.*.order_detail_id'       => ['required', Rule::exists('tbl_order_details', 'id')->where(function ($q){
                 $q->where('documented', 0)->where('order_id', $this->request->get('order_id'));
             })], // todo: belongs to only this order

@@ -21,8 +21,9 @@ class ImportFileRepository extends Repository implements RepositoryInterface
 
         foreach ($data['order_details'] as $orderDetail){
             $importFile->details()->create([
-                'order_detail_id' => $orderDetail['order_detail_id'],
-                'FOB_price' => $orderDetail['FOB_price'],
+                'order_detail_id'   => $orderDetail['order_detail_id'],
+                'FOB_price'         => $orderDetail['FOB_price'],
+                'serial_number'     => $orderDetail['serial_number'],
             ]);
         }
 
