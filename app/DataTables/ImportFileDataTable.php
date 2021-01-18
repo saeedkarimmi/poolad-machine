@@ -23,7 +23,15 @@ class ImportFileDataTable extends BaseDataTable
     {
         return datatables()
             ->eloquent($query)
-            ->addIndexColumn();
+            ->addIndexColumn()
+            ->addColumn('action', function ($row) {
+                return sprintf(
+                    '<a href="%s" title="%s"><i class="fa fa-eye text-navy"></i></a>
+                            <a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
+                    route('panel.import_files.show', $row->id), __('general.form.show'),
+                    route('panel.import_files.edit', $row->id), __('general.form.edit')
+                );
+            });
     }
 
     /**
@@ -53,6 +61,7 @@ class ImportFileDataTable extends BaseDataTable
             Column::make('order_register_validity_date')->title(trans('validation.attributes.order_register_validity_date')),
             Column::make('currency_allocate_issue_date')->title(trans('validation.attributes.currency_allocate_issue_date')),
             Column::make('validity_currency_allotment_date')->title(trans('validation.attributes.validity_currency_allotment_date')),
+            Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
     }
 }
