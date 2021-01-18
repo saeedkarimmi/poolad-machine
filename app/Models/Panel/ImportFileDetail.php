@@ -14,4 +14,9 @@ class ImportFileDetail extends BaseModel
 
     protected $table = 'tbl_import_file_details';
     protected $guarded = ['id'];
+
+    public function orderDetail()
+    {
+        return $this->belongsTo(OrderDetail::class, 'order_detail_id');
+    }
 }
