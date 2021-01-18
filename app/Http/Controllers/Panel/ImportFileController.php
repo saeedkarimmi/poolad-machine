@@ -82,4 +82,9 @@ class ImportFileController extends Controller
             return returnError([trans('general.message.internal_server_error')]);
         }
     }
+
+    public function show(ImportFile $importFile)
+    {
+        return view('panel.import-file.show', compact('importFile'));
+    }
 }
