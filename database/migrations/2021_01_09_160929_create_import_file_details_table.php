@@ -22,7 +22,8 @@ class CreateImportFileDetailsTable extends Migration
             $table->unsignedBigInteger('order_detail_id');
             $table->foreign('order_detail_id')->references('id')->on('tbl_order_details');
 
-            $table->string('FOB_price');
+            $table->string('FOB_price', 50);
+            $table->string('serial_number', 50);
             $table->boolean('documented')->default(false);
 
             $table->timestamps();
