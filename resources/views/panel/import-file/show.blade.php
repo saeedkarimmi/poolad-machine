@@ -77,7 +77,7 @@
                             @foreach($importFile->details as $detail)
                                 <tr>
                                     <td>
-                                        <input type="checkbox" checked class="i-checks details" name="details[]" value="{{$detail->id}}" {{--{{ $detail->isDocumented() ? 'disabled':'' }}--}}>
+                                        <input type="checkbox" class="i-checks details" name="details[]" value="{{$detail->id}}" {{ $detail->isDocumented() ? 'disabled':'checked' }}>
                                     </td>
                                     <td>
                                         {{ $detail->orderDetail->machineModel->enName }}
