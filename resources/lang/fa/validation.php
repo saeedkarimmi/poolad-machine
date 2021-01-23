@@ -228,7 +228,16 @@ return [
         'machine_models.*.system_control_id' => 'سیستم کنترل',
         'start_date' => 'تاریخ شروع',
         'expire_datetime' => 'تاریخ انقضا',
-
+        'shipping_name' => 'نام کشتیرانی',
+        'insurance_number' => 'شماره بیمه نامه',
+        'freight_number' => 'شماره بارنامه',
+        'freight_date' => 'تاریخ بارنامه',
+        'arrival_notice_date' => 'تاریخ اعلامیه ورود',
+        'release_date' => 'تاریخ ترخیص',
+        'container_type' => 'نوع کانتینر',
+        'unit_price' => 'قیمت واحد',
+        'count' => 'تعداد',
+        'total_price' => 'قیمت کل',
     ],
 
 ];

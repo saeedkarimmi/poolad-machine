@@ -30,3 +30,11 @@ div.dataTables_wrapper >.dataTables_wrapper > .dt-buttons > .action > span {
 .panel-orders table > tbody tr{
     border: 0;
 }
+
+.inmodal .modal-header {
+    padding:1rem
+}
+
+.panel-import_files .inmodal table > tbody tr td select{
+    width:fit-content
+}

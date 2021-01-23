@@ -172,5 +172,18 @@ return [
             'parent-menu' => '',
             'order' => 2
         ],
+        [
+            'name' => 'transfer_files',
+            'controller' => \App\Http\Controllers\Panel\TransferFileController::class,
+            'except' => ['destroy', 'store'],
+            'permission' => 'manage-transfer-files',
+            'permission_name' => 'مدیریت پرونده حمل',
+            'hasDefaultRoute' => true,
+            'title' => 'پرونده حمل',
+            'icon' => 'material-icons',
+            'li_text'=>'lock',
+            'parent-menu' => '',
+            'order' => 2
+        ],
     ],
 ];
