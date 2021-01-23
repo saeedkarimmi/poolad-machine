@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
 
+/**
+ * @property boolean documented
+ */
 class ImportFileDetail extends BaseModel
 {
     use HasFactory, Userstamps, SoftDeletes, PersianDateTrait;
@@ -18,5 +21,10 @@ class ImportFileDetail extends BaseModel
     public function orderDetail()
     {
         return $this->belongsTo(OrderDetail::class, 'order_detail_id');
+    }
+
+    public function isDocumented()
+    {
+        return $this->documented;
     }
 }
