@@ -19,7 +19,7 @@
                                         <input type="text" class="form-control" id="name" name="name" value="{{ $container->name }}">
                                     </div>
                                     <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
-                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <button type="submit" class="btn btn-primary">{{ trans('general.form.submit') }}</button>
                                         <a href="{{ route('panel.containers.index') }}"
                                            class="btn btn-purple svg-wrapper purple">
                                             {{ trans('general.form.back') }}

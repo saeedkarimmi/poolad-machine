@@ -133,7 +133,7 @@
                             </div>
                             <div class="text-center wow fadeIn faster">
                                 <button type="submit"
-                                        class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        class="btn btn-primary">{{ trans('general.form.submit') }}</button>
                                 <a href="{{ route('panel.orders.index') }}"
                                    class="btn btn-purple svg-wrapper purple">
                                     {{ trans('general.form.back') }}

@@ -55,7 +55,7 @@
                                         <div class="i-checks "><label> <input type="radio" value="0" name="status"> <i></i> {{ trans('validation.attributes.inactive') }} </label></div>
                                     </div>
                                     <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
-                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <button type="submit" class="btn btn-primary">{{ trans('general.form.submit') }}</button>
                                         <a href="{{ route('panel.users.index') }}"
                                            class="btn btn-purple svg-wrapper purple">
                                             {{ trans('general.form.back') }}

@@ -53,7 +53,7 @@
                                         <div class="i-checks "><label> <input type="radio" {{ $user->active ? "":"checked"}} value="0" name="status"> <i></i> {{ trans('validation.attributes.inactive') }} </label></div>
                                     </div>
                                     <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
-                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit') }}</button>
+                                        <button type="submit" class="btn btn-primary">{{ trans('general.form.submit') }}</button>
                                         <a href="{{ route('panel.users.index') }}"
                                            class="btn btn-purple svg-wrapper purple">
                                             {{ trans('general.form.back') }}
@@ -92,7 +92,7 @@
                                                name="new_password_confirmation" {{--required--}}>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">{{ trans('role.form.submit-change') }}</button>
+                                        <button type="submit" class="btn btn-primary">{{ trans('general.form.submit-change') }}</button>
                                         <a href="{{ route('panel.users.index') }}"
                                            class="btn btn-purple svg-wrapper purple">
                                             {{ trans('general.form.back') }}
