@@ -7,10 +7,12 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ImportFile\CreateRequest;
 use App\Http\Requests\ImportFile\StoreRequest;
 use App\Models\Panel\Bank;
+use App\Models\Panel\Container;
 use App\Models\Panel\Currency;
 use App\Models\Panel\ImportFile;
 use App\Models\Panel\Order;
 use App\Repositories\BankRepository;
+use App\Repositories\ContainerRepository;
 use App\Repositories\CurrencyRepository;
 use App\Repositories\ImportFileRepository;
 use Illuminate\Http\Request;
@@ -21,12 +23,14 @@ class ImportFileController extends Controller
     private ImportFileRepository $importFile;
     private CurrencyRepository $currency;
     private BankRepository $bank;
+    private ContainerRepository $container;
 
-    public function __construct(ImportFile $importFile, Currency $currency, Bank $bank)
+    public function __construct(ImportFile $importFile, Currency $currency, Bank $bank, Container $container)
     {
         $this->importFile = new ImportFileRepository($importFile);
         $this->currency = new CurrencyRepository($currency);
         $this->bank = new BankRepository($bank);
+        $this->container = new ContainerRepository($container);
     }
 
     public function index(ImportFileDataTable $dataTable)
@@ -85,6 +89,7 @@ class ImportFileController extends Controller
 
     public function show(ImportFile $importFile)
     {
-        return view('panel.import-file.show', compact('importFile'));
+        $containers = $this->container->all();
+        return view('panel.import-file.show', compact('importFile', 'containers'));
     }
 }
