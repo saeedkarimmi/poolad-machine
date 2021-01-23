@@ -27,7 +27,7 @@ class ImportFileRepository extends Repository implements RepositoryInterface
             ]);
         }
 
-        $order_detail_ids = collect($data['order_details'])->pluck('order_detail_id')->toarray();
+        $order_detail_ids = collect($data['order_details'])->pluck('order_detail_id')->toArray();
         OrderDetail::query()->whereIn('id', $order_detail_ids)->update([
             'documented' => true
         ]);
