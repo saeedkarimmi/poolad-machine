@@ -142,10 +142,6 @@
                                                         <td><input type="text" name="freight_number" class="form-control"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>{{ trans('validation.attributes.freight_number') }}</td>
-                                                        <td><input type="text" name="freight_number" class="form-control"></td>
-                                                    </tr>
-                                                    <tr>
                                                         <td>{{ trans('validation.attributes.freight_date') }}</td>
                                                         <td>
                                                             <input type="text" class="form-control" name="freight_date" id="freight_date" data-datepicker />

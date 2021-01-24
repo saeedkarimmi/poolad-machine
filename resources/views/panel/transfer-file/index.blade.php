@@ -1,6 +1,6 @@
 @extends('cms::theme-inspinia.layouts.master')
 
-@section('page-title'){{ trans('general.page-titles.import-file.index') }}@endsection
+@section('page-title'){{ trans('general.page-titles.transfer-file.index') }}@endsection
 
 @section('content')
     <div class="wrapper wrapper-content animated fadeInRight">
