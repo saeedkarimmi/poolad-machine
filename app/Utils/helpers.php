@@ -15,22 +15,6 @@ function returnError(array $messages, $status = false){
     ];
 }
 
-function setActive($route, $class = 'active', $classElese = '')
-{
-    $routeName = Route::currentRouteName();
-
-    if (!is_array($route) and $route != '') {
-        return routeIsInCurrent($route, $routeName) ? $class : $classElese;
-    } elseif (is_array($route) and !empty($route)) {
-        foreach ($route as $item) {
-            if (routeIsInCurrent($route, $routeName)) {
-                return $class;
-            }
-        }
-        return $classElese;
-    }
-}
-
 function routeIsInCurrent($route, $current)
 {
     //$prefix = config('cruds.admin_prefix', 'backend');

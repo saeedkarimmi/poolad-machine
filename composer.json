@@ -18,7 +18,7 @@
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
-        "saeedkarimmi/cms": "dev-master",
+        "saeedkarimmi/cms": "dev-main",
         "spatie/laravel-activitylog": "^3.16",
         "spatie/laravel-permission": "^3.18",
         "wildside/userstamps": "^2.1",
@@ -75,8 +75,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "packages/saeedkarimmi/cms"
+            "type":"vcs",
+            "url":"https://gitlab.com/saeedkarimi/cms.git"
         }
     ]
 }
