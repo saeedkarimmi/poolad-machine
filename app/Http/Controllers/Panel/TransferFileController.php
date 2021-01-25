@@ -58,4 +58,9 @@ class TransferFileController extends Controller
             return returnError([trans('general.message.internal_server_error')]);
         }
     }
+
+    public function show(TransferFile $transferFile)
+    {
+        return view('panel.transfer-file.show', compact('transferFile'));
+    }
 }

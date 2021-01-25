@@ -25,7 +25,12 @@ class TransferFileDataTable extends BaseDataTable
             ->eloquent($query)
             ->addIndexColumn()
             ->editColumn('action', function ($row){
-                return '';
+                return sprintf(
+                    '<a href="%s" title="%s"><i class="fa fa-eye text-navy"></i></a>
+                            <a href="%s" title="%s"><i class="fa fa-edit text-navy"></i></a>',
+                    route('panel.transfer_files.show', $row->id), __('general.form.show'),
+                    route('panel.transfer_files.edit', $row->id), __('general.form.edit')
+                );
             });
     }
 
@@ -49,6 +54,7 @@ class TransferFileDataTable extends BaseDataTable
     {
         return [
             Column::make('DT_RowIndex', 'DT_RowIndex')->title('#')->width(20)->searchable(false)->orderable(false),
+
             Column::make('file_number')->title(trans('validation.attributes.file_number')),
             Column::make('seller_name')->title(trans('validation.attributes.seller_id')),
             Column::make('shipping_name')->title(trans('validation.attributes.shipping_name')),
@@ -59,10 +65,6 @@ class TransferFileDataTable extends BaseDataTable
             Column::make('release_date')->title(trans('validation.attributes.release_date')),
             Column::make('order_name')->title(trans('validation.attributes.order_name')),
 
-//            Column::make('order_register_issue_date')->title(trans('validation.attributes.order_register_issue_date')),
-//            Column::make('order_register_validity_date')->title(trans('validation.attributes.order_register_validity_date')),
-//            Column::make('currency_allocate_issue_date')->title(trans('validation.attributes.currency_allocate_issue_date')),
-//            Column::make('validity_currency_allotment_date')->title(trans('validation.attributes.validity_currency_allotment_date')),
             Column::computed('action')->title(trans('general.form.action'))->orderable(false)->exportable(false),
         ];
     }

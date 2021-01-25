@@ -18,4 +18,9 @@ class TransferFileDetail extends BaseModel
         return $this->belongsTo(TransferFile::class, 'transfer_file_id');
     }
 
+    public function container()
+    {
+        return $this->belongsTo(Container::class, 'container_id');
+    }
+
 }

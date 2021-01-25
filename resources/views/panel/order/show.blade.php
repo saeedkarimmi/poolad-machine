@@ -89,10 +89,9 @@
                                 </tfoot>
                             </table>
                             <button type="submit" class="btn btn-primary">تشکیل پرونده واردات</button>
-{{--                            <a href="{{ route('panel.orders.index') }}"--}}
-{{--                               class="btn btn-purple svg-wrapper purple float-right">--}}
-{{--                                {{ trans('general.form.back') }}--}}
-{{--                            </a>--}}
+                            <a href="{{ route('panel.orders.index') }}"
+                               class="btn btn-default border-primary svg-wrapper purple float-right">
+                                {{ trans('general.form.back') }}</a>
                         </form>
                     </div>
                 </div>
