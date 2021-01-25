@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88f1b093b063aae0c918185fa19da5b0",
+    "content-hash": "e29db61419b083cd8df89807a480dc06",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -114,71 +114,6 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.3"
             },
             "time": "2020-10-30T02:02:47+00:00"
-        },
-        {
-            "name": "beberlei/assert",
-            "version": "v3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beberlei/assert.git",
-                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/5367e3895976b49704ae671f75bc5f0ba1b986ab",
-                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-intl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ext-simplexml": "*",
-                "php": "^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "*",
-                "phpstan/phpstan": "*",
-                "phpunit/phpunit": ">=6.0.0",
-                "yoast/phpunit-polyfills": "^0.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Assert\\": "lib/Assert"
-                },
-                "files": [
-                    "lib/Assert/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Richard Quadling",
-                    "email": "rquadling@gmail.com",
-                    "role": "Collaborator"
-                }
-            ],
-            "description": "Thin assertion library for input validation in business models.",
-            "keywords": [
-                "assert",
-                "assertion",
-                "validation"
-            ],
-            "support": {
-                "issues": "https://github.com/beberlei/assert/issues",
-                "source": "https://github.com/beberlei/assert/tree/v3.3.0"
-            },
-            "time": "2020-11-13T20:02:54+00:00"
         },
         {
             "name": "brick/math",
@@ -2607,65 +2542,6 @@
             "time": "2020-07-23T08:41:23+00:00"
         },
         {
-            "name": "morilog/jalali",
-            "version": "v3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/morilog/jalali.git",
-                "reference": "7ea78b84ce3b5546b01217febb2fba4915dac5e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/morilog/jalali/zipball/7ea78b84ce3b5546b01217febb2fba4915dac5e5",
-                "reference": "7ea78b84ce3b5546b01217febb2fba4915dac5e5",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "3.*",
-                "nesbot/carbon": "^1.21 || ^2.0",
-                "php": "^7.0 | ^7.1 | ^7.2 | ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Morilog\\Jalali\\": "src"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milad Rey",
-                    "email": "miladr@gmail.com"
-                },
-                {
-                    "name": "Morteza Parvini",
-                    "email": "m.parvini@outlook.com"
-                }
-            ],
-            "description": "This Package helps developers to easily work with Jalali (Shamsi or Iranian) dates in PHP applications, based on Jalali (Shamsi) DateTime class.",
-            "keywords": [
-                "Jalali",
-                "date",
-                "datetime",
-                "laravel",
-                "morilog"
-            ],
-            "support": {
-                "issues": "https://github.com/morilog/jalali/issues",
-                "source": "https://github.com/morilog/jalali/tree/v3.2.0"
-            },
-            "time": "2020-12-01T21:26:31+00:00"
-        },
-        {
             "name": "myclabs/php-enum",
             "version": "1.7.7",
             "source": {
@@ -3878,11 +3754,17 @@
         },
         {
             "name": "saeedkarimmi/cms",
-            "version": "dev-master",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:saeedkarimi/cms.git",
+                "reference": "8aedc92292880390027b33eb5100fc8c02f1701b"
+            },
             "dist": {
-                "type": "path",
-                "url": "packages/saeedkarimmi/cms",
-                "reference": "69233e8b2b78c49f79113ba7b42b08488b1ccdc4"
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/saeedkarimi%2Fcms/repository/archive.zip?sha=8aedc92292880390027b33eb5100fc8c02f1701b",
+                "reference": "8aedc92292880390027b33eb5100fc8c02f1701b",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0|^7.0|^8.0",
@@ -3892,6 +3774,7 @@
                 "orchestra/testbench": "^4.0|^5.0|^6.0",
                 "phpunit/phpunit": "^8.4|^9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3903,7 +3786,10 @@
             "autoload": {
                 "psr-4": {
                     "saeedkarimmi\\cms\\": "src"
-                }
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
             },
             "autoload-dev": {
                 "psr-4": {
@@ -3920,17 +3806,18 @@
             ],
             "authors": [
                 {
-                    "name": "",
-                    "email": ""
+                    "name": "saeed karimi",
+                    "email": "saeedkarimi454@gmail.com"
                 }
             ],
             "description": "A cms",
             "keywords": [
                 "cms"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/23086392/issues"
+            },
+            "time": "2021-01-13T06:28:16+00:00"
         },
         {
             "name": "spatie/laravel-activitylog",
