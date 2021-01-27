@@ -2,7 +2,7 @@
 
 namespace App\Models\Panel;
 
-use App\Traits\PersianDateTrait;
+use saeedkarimmi\cms\Traits\PersianDateTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

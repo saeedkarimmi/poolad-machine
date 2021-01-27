@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e29db61419b083cd8df89807a480dc06",
+    "content-hash": "9d8307507ee2c7818886fd531d71a4dc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3817,18 +3817,13 @@
         {
             "name": "saeedkarimmi/cms",
             "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.com:saeedkarimi/cms.git",
+            "dist": {
+                "type": "path",
+                "url": "packages/saeedkarimmi/cms",
                 "reference": "8aedc92292880390027b33eb5100fc8c02f1701b"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/saeedkarimi%2Fcms/repository/archive.zip?sha=8aedc92292880390027b33eb5100fc8c02f1701b",
-                "reference": "8aedc92292880390027b33eb5100fc8c02f1701b",
-                "shasum": ""
-            },
             "require": {
+                "hekmatinasser/verta": "^1.11",
                 "illuminate/support": "^6.0|^7.0|^8.0",
                 "php": ">=7.2"
             },
@@ -3836,7 +3831,6 @@
                 "orchestra/testbench": "^4.0|^5.0|^6.0",
                 "phpunit/phpunit": "^8.4|^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3876,10 +3870,9 @@
             "keywords": [
                 "cms"
             ],
-            "support": {
-                "issues": "https://gitlab.com/api/v4/projects/23086392/issues"
-            },
-            "time": "2021-01-13T06:28:16+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "spatie/laravel-activitylog",

@@ -4,10 +4,10 @@ namespace App\Models\Panel;
 
 use App\Models\Panel\BaseModel;
 use App\Models\User;
-use App\Traits\PersianDateTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use saeedkarimmi\cms\Traits\PersianDateTrait;
 use Wildside\Userstamps\Userstamps;
 
 /**
