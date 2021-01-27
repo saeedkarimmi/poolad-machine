@@ -88,12 +88,8 @@
                                     <td>
                                         {{ $detail->FOB_price }}
                                     </td>
-                                    <td>
-{{--                                        {{ $detail->FOB_price }}--}}
-                                    </td>
-                                    <td>
-{{--                                        {{ $detail->FOB_price }}--}}
-                                    </td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -105,7 +101,8 @@
                             </tr>
                             </tfoot>
                         </table>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" id="transfer-file-modal" data-target="#myModal1">
+                        <?php $hasUnDocumentedDetails = $importFile->hasUnDocumentedDetails() ?>
+                        <button type="button" class="btn btn-primary {{ $hasUnDocumentedDetails ? '' : 'disabled' }}" data-toggle="modal" id="transfer-file-modal" {{ $hasUnDocumentedDetails ? 'data-target="#myModal1"' : '' }}>
                             تشکیل پرونده حمل
                         </button>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">

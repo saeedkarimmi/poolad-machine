@@ -29,4 +29,11 @@ class ImportFile extends BaseModel
     {
         return $this->belongsTo(Bank::class, 'bank_id');
     }
+
+    /*****************************************/
+
+    public function hasUnDocumentedDetails(): bool
+    {
+        return (bool) $this->details()->where('documented', 0)->count();
+    }
 }
