@@ -62,6 +62,30 @@
                         </table>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form data-type="ajax-form" action="{{ route('panel.transfer_files.step', $transferFile->id) }}" method="post">
+                            @csrf
+                            <div class="text-center wow fadeIn faster" data-wow-delay="0.1s">
+                            <?php $buttonVal = "" ?>
+                            @if($transferFile->status == constant('INITIAL'))
+                                <?php $buttonVal = "تکمیل پرونده حمل" ?>
+                            @elseif($transferFile->status == constant('COMPLETE_FILES'))
+                                <?php $buttonVal = "ثبت" ?>
+                                <input type="text" class="form-control" name="arrival_notice_date">
+                            @elseif($transferFile->status == constant('ARRIVAL_NOTICE'))
+                                <?php $buttonVal = "ثبت" ?>
+                                <input type="text" class="form-control" name="release_date">
+                            @endif
+                            <button type="submit" class="btn btn-primary float-left">{{ $buttonVal }}</button>
+                            <a href="{{ route('panel.transfer_files.index') }}"
+                               class="btn btn-purple svg-wrapper purple float-right">
+                                {{ trans('general.form.back') }}
+                            </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

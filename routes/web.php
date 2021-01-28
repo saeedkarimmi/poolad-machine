@@ -27,6 +27,10 @@ Route::prefix('panel')->as('panel.')->middleware(['web','auth', 'permission:admi
     Route::prefix('import_files/{import_file}/transfer_files')->as('transfer_files.')->middleware(['web','auth', 'permission:manage-transfer-files'])->group(function (){
         Route::post('/store', [TransferFileController::class, 'store'])->name('store');
     });
+
+    Route::prefix('transfer_files')->as('transfer_files.')->middleware(['web','auth', 'permission:manage-transfer-files'])->group(function (){
+        Route::post('{transfer_file}/step', [TransferFileController::class, 'step'])->name('step');
+    });
 });
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

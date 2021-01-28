@@ -10,6 +10,7 @@ use Wildside\Userstamps\Userstamps;
 
 /**
  * @property mixed id
+ * @property mixed status
  */
 class TransferFile extends BaseModel
 {
